@@ -15,7 +15,7 @@ layout: default
         Join us: <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
       </div>
       <div class='col4'>
-        <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
+        <a class='button fill-au block' href='{{item.rsvp}}'>RSVP</a>
       </div>
     </div>
 
@@ -35,13 +35,13 @@ layout: default
 <div class='col12 center small strong space pad2y'>
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-      <a href='{{site.baseurl}}/' class='button fill-blue icon left-arrow'>Newer</a>
+      <a href='{{site.baseurl}}/' class='button fill-h20 icon left-arrow'>Newer</a>
     {% else %}
-      <a href='{{site.baseurl}}/page{{ paginator.previous_page }}' class='button fill-blue icon left-arrow'>Newer</a>
+      <a href='{{site.baseurl}}/page{{ paginator.previous_page }}' class='button fill-h20 icon left-arrow'>Newer</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href='{{site.baseurl}}/page{{ paginator.next_page }}' class='button fill-blue rcon right-arrow'>Older</a>
+    <a href='{{site.baseurl}}/page{{ paginator.next_page }}' class='button fill-h20 rcon right-arrow'>Older</a>
   {% endif %}
 </div>
 

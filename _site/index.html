@@ -1,0 +1,159 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@MaptimePGH' />
+  <meta property='og:site_name' content='Maptime Pittsburgh' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='' />
+  <meta property='og:title' content='' />
+  <meta name='twitter:description' content='{% for item in paginator.posts %} &amp;lt;div class=&#39;space-bottom4&#39;&amp;gt; {% if item.category == ‘event’ %} &amp;lt;h2&amp;gt;&amp;lt;a href=&#39;{{site.baseurl}}{{item.url}}&#39;&amp;gt;{{item.title}}&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt; {{item.content}} &amp;lt;div class=&#39;keyline-all round pad2 col12 clearfix&#39;&amp;gt; &amp;lt;div class=&#39;col8 pad0y&#39;&amp;gt; Join us: &amp;lt;span class=&#39;quiet&#39;&amp;gt;{{item.date...' />
+  <meta property='og:description' content='{% for item in paginator.posts %} &amp;lt;div class=&#39;space-bottom4&#39;&amp;gt; {% if item.category == ‘event’ %} &amp;lt;h2&amp;gt;&amp;lt;a href=&#39;{{site.baseurl}}{{item.url}}&#39;&amp;gt;{{item.title}}&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt; {{item.content}} &amp;lt;div class=&#39;keyline-all round pad2 col12 clearfix&#39;&amp;gt; &amp;lt;div class=&#39;col8 pad0y&#39;&amp;gt; Join us: &amp;lt;span class=&#39;quiet&#39;&amp;gt;{{item.date...' />
+  
+  <title>Maptime Pittsburgh</title>
+  <link rel='stylesheet' href='/pittsburgh/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/pittsburgh/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-fec'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-chapter'>
+    <div class='limiter contain'>
+      <a href='/pittsburgh/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-fec row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/pittsburgh/'>Maptime Pittsburgh</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/MaptimePGH/' class='contain z1 fill-fec button'>
+            @MaptimePGH on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-fec strong dark round pad2 space-bottom2'>
+          <h3>The next Maptime Pittsburgh is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/starter/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/pittsburgh/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/starter/watchers'>View all</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <!-- This loops through the paginated posts -->
+
+<div class='space-bottom4'>
+
+  
+
+    <h2><a href='/pittsburgh/event/2014/01/28/February-Event/'>February Session</a></h2>
+    <p>Our first session will be at X at X:XXpm</p>
+
+<p>In our first session, we plan to provide a broad overview of the basics of digital mapping: geodata, map projections, data sources like Open Street Map, and some of the software and websites available.</p>
+
+<p>It will be an informal gathering, and no prior experience is required! </p>
+
+    <div class='keyline-all round pad2 col12 clearfix'>
+      <div class='col8 pad0y'>
+        Join us: <span class='quiet'>Tuesday, Jan 28 2014</span>
+      </div>
+      <div class='col4'>
+        <a class='button fill-au block' href='http://meetup.com'>RSVP</a>
+      </div>
+    </div>
+
+  
+</div>
+
+<div class='space-bottom4'>
+
+  
+
+    <h2><a href='/pittsburgh/2014/01/22/hello-world/'>Hello World!</a></h2>
+    <p>Maptime Pittsburgh is official! We will be kicking-off with our first session in February 2015. The date and location are yet to be finalized - stay tuned.</p>
+
+<p>In our first session, we plan to provide a broad overview of the basics of digital mapping: geodata, map projections, data sources like Open Street Map, and some of the software and websites available.</p>
+
+<p>It will be an informal gathering, and no prior experience is required! </p>
+
+    <div class='pad1y keyline-top'>
+      <strong class='quiet small block space-bottom1'>Posted Jan 22 2014 by gassc</strong>
+    </div>
+
+  
+</div>
+
+
+<!-- Pagination links -->
+<div class='col12 center small strong space pad2y'>
+  
+  
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+      <p>This website is <a href='http://github.com/maptime/starter/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/pittsburgh/js/jquery.min.js'></script>
+<script src='/pittsburgh/js/underscore.min.js'></script>
+<script src='/pittsburgh/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2014,1,28';
+    formatted = 'Tuesday, Jan 28 2014';
+    link = 'http://meetup.com';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-au block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>

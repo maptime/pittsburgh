@@ -5,7 +5,7 @@
 body, input, textarea { color:#404040; }
 h1 { font-size:32px; line-height:36px; }
 
-a       { color:#279acb; }
+a       { color:#231f20; }
 a:hover { text-decoration:underline; }
 
 .dark a, 
@@ -113,6 +113,20 @@ a.fill-yellow:hover   { background-color:#e2d61b; text-decoration:none; }
 a.fill-orange:hover   { background-color:#de851d; text-decoration:none; }
 .fill-red             { background-color:#ec2127; }
 a.fill-red:hover      { background-color:#d41e23; text-decoration:none; }
+
+/*
+.fill-blue            { background-color:#231f20; }
+a.fill-blue:hover     { background-color:#7b7979; text-decoration:none; }
+*/
+a.fill-blue:hover     { background-color:#279acb; text-decoration:none; }
+.fill-al              { background-color:#808080;}
+a.fill-al:hover       { background-color:#b3b3b3; text-decoration:none; }
+.fill-au              { background-color:#fdb930}
+a.fill-au:hover       { background-color:#fed583; text-decoration:none; }
+.fill-h20             { background-color:#8ad3f4}
+a.fill-h20:hover      { background-color:#b9e5f8; text-decoration:none; }
+.fill-fec             { background-color:#231f20}
+a.fill-fec:hover      { background-color:#7b7979; text-decoration:none; }
 
 .fill-darken0         { background-color:rgba(0,0,0,0.10); }
 a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }

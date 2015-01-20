@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: February Session
-rsvp: http://??
+rsvp: http://meetup.com
 ---
 
 Our first session will be at X at X:XXpm

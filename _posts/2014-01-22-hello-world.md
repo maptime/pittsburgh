@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+author: gassc
 ---
 
 Maptime Pittsburgh is official! We will be kicking-off with our first session in February 2015. The date and location are yet to be finalized - stay tuned.
