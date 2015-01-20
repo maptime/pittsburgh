@@ -1,4 +1,4 @@
-baseurl: /starter
+baseurl: /pittsburgh
 permalink: pretty
 markdown: kramdown
 paginate: 5
