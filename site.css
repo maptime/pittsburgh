@@ -131,6 +131,8 @@ a.fill-fec:hover      { background-color:#7b7979; text-decoration:none; }
 .fill-darken0         { background-color:rgba(0,0,0,0.10); }
 a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
 .fill-darken1 { background-color:rgba(0,0,0,0.25); }
+.fill-darken50         { background-color:rgba(0,0,0,0.50); }
+a.fill-darken50:hover  { background-color:rgba(0,0,0,0.55); }
 
 .fill-chapter {
   /* Replace this with a map of your city */
