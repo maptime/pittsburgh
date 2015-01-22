@@ -3,7 +3,7 @@ layout: event
 category: event
 title: February Session
 rsvp: http://www.meetup.com
-published: true
+published: false
 ---
 ###Details###
 

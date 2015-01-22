@@ -103,10 +103,6 @@
   var rsvp = document.getElementById('rsvpdate');
   var date,formatted,link;
   ''
-    date = '2015,2,12';
-    formatted = 'Thursday, Feb 12 2015';
-    link = 'http://www.meetup.com';
-  ''
 
   if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
     rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
