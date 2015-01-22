@@ -3,7 +3,7 @@ layout: event
 category: event
 title: February Session
 rsvp: http://www.meetup.com
-published: false
+published: true
 ---
 ###Details###
 
@@ -15,6 +15,7 @@ published: false
 ###Overview###
 
 Our talk/demonstration will cover the basics of digital mapping:
+
 - geographic data types
 - coordinate systems and projections
 - open source software and mapping websites available
