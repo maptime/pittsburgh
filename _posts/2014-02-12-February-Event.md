@@ -3,22 +3,29 @@ layout: event
 category: event
 title: February Session
 rsvp: http://www.meetup.com
-published: true
+published: false
 ---
+###Details###
 
-Our first session will be at the Carnegie Library of Pittsburgh Lawrenceville, 7:00-8:30pm.
+- What:     MaptimePGH February Session
+- When:     February 12, 7:00pm
+- Where:    Carnegie Library of Pittsburgh Lawrenceville
+- Contact:  [@MaptimePGH](http://twitter.com/maptimePGH)
+
+###Overview###
 
 Our talk/demonstration will cover the basics of digital mapping:
-+ geographic data types
-+ coordinate systems and projections
-+ open source software and mapping websites available
-+ data sources, such as Open Street Map
-+ geoprocessing: geocoding, querying, and analyzing geographic data
+- geographic data types
+- coordinate systems and projections
+- open source software and mapping websites available
+- data sources, such as Open Street Map
+- geoprocessing: geocoding, querying, and analyzing geographic data
 
-The goal here is to provide some basic information and resources to enable folks to being playing with digitial maps and geographic data on their own.
+The goal here is to provide some basic information and resources to enable folks to being playing with digitial maps and geographic data on their own. Remember, **no prior experience is required** and Maptime is always interactive, so **don't forget to bring your laptop or tablet**! 
 
-Remember, *no prior experience is required!* Bring a laptop or tablet to follow along.
+If you do plan on bringing a machine and want to follow along, try to download and install the following software ahead of time:
 
-If you do plan on bringing a laptop and want to follow along, download the following software:
-+ QGIS:   http://qgis.org/en/site/forusers/download.html
-+ Mapbox Studio:  https://www.mapbox.com/mapbox-studio
+- [QGIS](http://qgis.org/en/site/forusers/download.html)
+- [Mapbox Studio](https://www.mapbox.com/mapbox-studio)
+
+Hope to see you there!
