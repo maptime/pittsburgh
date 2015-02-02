@@ -14,8 +14,6 @@ published: true
 
 The event will be held in the Ford-Mateer classroom at the Carnegie Museum in Oakland, which can be accessed through the portal entrance [40.443060, -79.949607](https://www.google.com/maps/place/40%C2%B026%2735.0%22N+79%C2%B056%2758.6%22W/@40.44306,-79.949607,18z/data=!4m2!3m1!1s0x0:0x0) at the rear of the museum.  You can reach the portal entrance through the parking area behind the museum from the intersection of Forbes and Craig or you can walk from Schenley Drive by the right side of the Carnegie Libary to the parking area in rear.  Take a left before you reach the courtyard. After you pass through the portal entrance, the Ford-Mateer Classroom is the first classroom on the left after you pass through the glass double doors.  
 
-We
-
 ###Overview###
 
 Our talk/demonstration/interactive session will cover the basics of digital mapping:
