@@ -2,8 +2,8 @@
 layout: event
 category: event
 title: February Session
-rsvp: http://www.meetup.com
-published: false
+rsvp: http://www.meetup.com/Open-Pittsburgh-our-Regions-Code-for-America-Brigade/events/220260137/
+published: true
 ---
 ###Details###
 
