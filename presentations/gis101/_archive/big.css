@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "monospace";
+  src: url('font/Inconsolata.otf')
+}
+
+/*font-family: 'Helvetica';*/
+
+body {
+  font-family: monospace;
+  letter-spacing:-5px;
+  background:#231f20;
+  background-size:100%;
+  color:#111;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+  line-height:80%;
+}
+
+h1, h2, h3, p {
+  color:#fdb930;
+  line-height:80%;
+}
+
+strong {
+  font-style:normal;
+  color:#fdb930;
+}
+
+em {
+  font-style:normal;
+  color:#8ad3f4;
+}
+
+a {
+  background: #8ad3f4;
+  color:#231f20;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+}
+
+div {
+  cursor:pointer;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+  color:#E1E1E1;
+}
+
+div.center {
+  text-align:center;
+}
+
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
