@@ -183,7 +183,7 @@
 <div class="center imgtxt"><img src="./img//vector_footprints6b.png">Where do these numbers come from? How do we place geodata on the globe?</div>
 <div class="center imgtxt_white"><img src="./img/whatdoesitmean.jpg"/>WHAT DOES IT MEAN</div>
 <div><strong>Let's back up.</strong></div>
-<div>Locations are identified using <strong>latitude / longitude</strong> (lat/lon).</div>
+<div>Locations are identified using <strong>latitude / longitude</strong> (lat/lon) <em>decimal degrees</em>.</div>
 <div class="imgtxt_white"><img src="./img/latlon.png"/></div>
 <div>
   <table>
@@ -225,8 +225,7 @@
 <div class="center imgtxt"><img src="./img/osm_spastateplane.png"/>Looks (and functions) well here!</div>
 <div class="center imgtxt"><img src="./img/vector_footprints6b.png">These buildings use EPSG 2272.<br><br>But the coordinates shown aren't decimal degrees!</div>
 <div>A <em>map projection</em> often also has a built-in conversion to a <em>local unit of distance</em>.</div>
-<div><strong>Web Mercator</strong> stores coordinates in lat/lon <em>decimal degrees</em>.</div>
-<div><strong>Decimal degrees</strong> are not good for measuring: <em>distances between things</em>, <em>measuring the side of a building</em>, or <em>calculating the area of a parcel</em>, etc.</div>
+<div><strong>Decimal degrees</strong> are not useful for communicating: <em>distances between things</em>, <em>the width of a building facade</em>, or <em>calculating the area of a parcel</em>, etc.</div>
 <div class="center imgtxt"><img src="./img/vector_footprints6b.png">Data in the local PA State Plane projection is stored using <strong>feet</strong>.</div>
 <div class="center imgtxt_white"><img src="./img/whatdoesitmean.jpg"/>WHAT DOES IT ALL MEAN</div>
 <div>If you have some <strong>geodata</strong> from a local source (say the Allegheny County GIS data available on <a href="http://www.pasda.psu.edu/uci/SearchResults.aspx?originator=&Keyword=Allegheny%20County&sessionID=3917188802015216233019&searchType=keyword&entry=PASDA&condition=AND" target="_newtab">PASDA</a>) that you want to put on a <em>web map</em>, or use to contribute to <strong>OSM</strong>...</div>
