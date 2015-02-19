@@ -217,7 +217,6 @@
 <div><strong>Distortion</strong> is typically worst at the edges of the map, affecting <em>relative scale</em>.</div>
 <div><strong>OSM</strong> and other web maps use a common projection:</div>
 <div class="center imgtxt"><img src="./img/osm_globe_webmercator.png"/><h2>Web Mercator</h2><a class="t" href="http://www.epsg.org/" target="_newtab">EPSG (European Petroleum Survey Group) code: 3857</a></div>
-<div><strong>Web Mercator</strong> stores coordinates in lat/lon <em>decimal degrees</em>.</div>
 <div><strong>Web Mercator</strong> is pretty good, for most of the world. East-West distance is constant. North-south distance is distorted close to the poles. <a href="http://www.openstreetmap.org/?edit_help=1#map=2/46.8/-65.0"> <br><br>See the distortion for yourself on OSM (just zoom out!).</a></div>
 <div>This distortion at the map edge is why <em>map projections</em> are typically specific to a certain <strong>geographic extent</strong>.</div>
 <div class="center imgtxt"><img src="./img/osm_globe_pastateplanesouth.png"/><h3>Pennsylvania State Plane (South)</h3>EPSG: 2272</div>
@@ -226,6 +225,7 @@
 <div class="center imgtxt"><img src="./img/osm_spastateplane.png"/>Looks (and functions) well here!</div>
 <div class="center imgtxt"><img src="./img/vector_footprints6b.png">These buildings use EPSG 2272.<br><br>But the coordinates shown aren't decimal degrees!</div>
 <div>A <em>map projection</em> often also has a built-in conversion to a <em>local unit of distance</em>.</div>
+<div><strong>Web Mercator</strong> stores coordinates in lat/lon <em>decimal degrees</em>.</div>
 <div><strong>Decimal degrees</strong> are not good for measuring: <em>distances between things</em>, <em>measuring the side of a building</em>, or <em>calculating the area of a parcel</em>, etc.</div>
 <div class="center imgtxt"><img src="./img/vector_footprints6b.png">Data in the local PA State Plane projection is stored using <strong>feet</strong>.</div>
 <div class="center imgtxt_white"><img src="./img/whatdoesitmean.jpg"/>WHAT DOES IT ALL MEAN</div>
