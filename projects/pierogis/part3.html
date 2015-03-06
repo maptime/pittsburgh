@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Some Page Title</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="jquery-2.1.1.min.js"></script>
+  <style>
+    #map{ height: 100% }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+
+  // initialize the map with our own location HRVA!
+  var map = L.map('map').setView([37.040, -76.386], 10);
+
+  // load tile layer from mapstack we copied earlier and use the required attribution
+  L.tileLayer('http://{s}.sm.mapstack.stamen.com/($375a80[@60p],(naip,$2c235c[hsl-color@70])[darker],(toner-labels,$000[@20],$38315f[hsl-color])[@50])/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by <a href=”http://stamen.com”>Stamen Design</a>, under <a href=”http://creativecommons.org/licenses/by/3.0”>CC BY 3.0</a>. Data by <a href=”http://openstreetmap.org”>OpenStreetMap</a>, under <a href=”http://creativecommons.org/licenses/by-sa/3.0”>CC BY SA</a>',
+      // we want to limit the scrollability
+      maxZoom: 12,
+      minZoom: 10
+    }).addTo(map);
+    
+     // load the geojson file you saved in this directory
+  $.getJSON("hauntedhrva.geojson",function(data){
+    // use this to reference the icon in our repo 
+    var booIcon = L.icon({
+        iconUrl: 'boo.gif',
+        iconSize: [28, 28]
+    });
+    // add it to the map 
+   L.geoJson(data,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: booIcon});
+    }
+  }).addTo(map);
+});
+    </script>
+</body>
+</html>
