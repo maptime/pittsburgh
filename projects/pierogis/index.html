@@ -16,31 +16,74 @@
 
 <body>
   <style>
+    /*font styles*/
+    body {
+      background: #fff;
+      color: #222;
+      padding: 0;
+      margin: 0;
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.5;
+      position: relative;
+      cursor: auto; }
+      
+    p, em, strong, div, bg, it, a, hr, li, ul {
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      font-weight: normal;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      text-align: left;
+      text-rendering: optimizeLegibility; }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+      font-weight: normal;
+      font-style: normal;
+      color: #fdb930;
+      text-rendering: optimizeLegibility;
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4; }
+    
+    h1 {
+      font-size: 2.125rem; }
+    
+    h2, bg {
+      font-size: 1.6875rem; }
+    
+    h3 {
+      font-size: 1.375rem; }
+
+     
+    /*leaflet styles*/
     .leaflet-sidebar > .leaflet-control h1 {
-      font-size: 24pt;
+      color: #fdb930;
     }
     .leaflet-sidebar > .leaflet-control bg {
-      font-size: 16pt;
+      color: #fdb930;
     }
     .leaflet-sidebar > .leaflet-control it {
       font-size: 12pt;
-      color: #252138;
+      color: #fdb930;
       text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
     }
     .leaflet-sidebar > .leaflet-control a {
-      color: #97DBB6;
+      color: #8ad3f4;
     }
     .leaflet-sidebar > .leaflet-control hr {
       display: block;
       height: 1px;
       border: 0;
-      border-top: 1px solid rgba(151, 219, 182, 0.4);
+      border-top: 1px solid rgba(138,211,244,0.5);
       margin: 1em 0;
       padding: 0;
     }
     .custom-popup .leaflet-popup-content-wrapper {
-      background: rgba(70, 145, 158, 0.7);
-      color: #fff;
+      background: black;
+      color: white;
       font-size: 12px;
       line-height: 18px;
     }
@@ -64,41 +107,35 @@
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      background: rgba(70, 145, 158, 0.7);
+      background: rgba(35,31,32, 0.7);
     }
   </style>
   <div id="sidebar">
+    
     <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
+    <p>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Leaflet How-To</p> 
+    <p>Some Intro Text Here</p>
+    
     <hr>
-    A Maptime Pittsburgh Leaflet How-To (via Maptime HRVA)
-    <br><a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>  &
-      <a href="https://twitter.com/jonahadkins" target="_blank">@jonahadkins</a>
-    <br>Mapping local paranormal activity is <it>dead</it> simple. Using open source components, the following instructions will guide you to <it>other side</it> of web-mapping. This exercise assumes a <it>spooky</it> knowledge of HTML and Javascript - but not at all required. This will step through each phase of what you see to the right. Just keep on scrolling down in this panel.
-      <br>Let the
-      <it>seance</it> begin!
-      <hr>
-      <bg>1st Things 1st I'm The Realest</bg>
-      <br>I learned how to do all this so I could show you! Don't send the <it>grim reaper</it> after me. Feel
-        free to fork ( or <it>knife</it> ) this repo to use or improve. Big shout outs to:
-        <br> <a href="https://twitter.com/awoodruff" target="_blank">Andy <it>"Werewolf"</it> Woodruff</a> for his
-          awesome <a href="http://awoodruff.github.io/leaflet-intro/" target="_blank">MaptimeBoston</a> how-to, which
-          I used to make this.
-          <br><a href="https://twitter.com/ungoldman" target="_blank"><it>"Gory"</it> Nate Goldman</a> for his
-          cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a> which inspired
-          the UI for this how-to.
-          <br> Also, Maptime!
-            <br><a href="http://www.maptime.io/" target="_blank">
-              <img src="https://raw.githubusercontent.com/maptime/maptime.github.io/master/img/xmaptime-logo-web-header-rainbonly.png.pagespeed.ic.sUvy41gYSf.png" style="width:300px;height:150px">
-            </a>
-      <hr>
-        <bg>Tech We'll Use</bg>
-        <br><a href="http://leafletjs.com" target="_blank">Leaflet</a>
-        ~ <a href="http://geojson.io/" target="_blank">GeoJSON.io</a>
-        ~
-        <it>Demons</it>
-        ~ <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a>
-        <br>Text Editor ~ Github Pages
-        <hr>
+    <h2>Acknowledgements!</h2>
+    <p><a href="https://twitter.com/jonahadkins" target="_blank">@jonahadkins</a> at MaptimeHRVA (<a href="https://twitter.com/maptimehrva" target="_blank">@maptimehrva</a>)for creating this <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this one!
+    <br><a href="https://twitter.com/awoodruff" target="_blank">Andy Woodruff</a> who created this Leaflet tutorial for <a href="http://awoodruff.github.io/leaflet-intro/" target="_blank">MaptimeBoston</a>.
+    <br><a href="https://twitter.com/ungoldman" target="_blank">Nate Goldman</a> for his cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a> which inspired the UI for Maptime HRVA's tutorial
+    <br>Also, <a href="http://www.maptime.io/" target="_blank">Maptime!</a></p>
+    
+    <hr> 
+    <h2>Tech We'll Use</h2>
+    <p>
+      <ul>
+        <li><a href="http://leafletjs.com" target="_blank">Leaflet</a>
+        <li><a href="http://geojson.io/" target="_blank">GeoJSON.io</a>
+        <li><a href="http://mapstack.stamen.com/" target="_blank">MapStack</a>
+        <li>Text Editor
+        <li>Github Pages
+      </ul>
+    </p>
+    <hr>
+            
         <bg>Data: The Beginning</bg>
         <br>You'll need something to map! For this example, I googled some local
           <it>paranormal</it>
