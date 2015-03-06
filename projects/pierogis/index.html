@@ -1,231 +1,239 @@
+
+
 <html>
 
 <head>
-  <title>Pittsburgh "PieroGIS" Map</title>
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-  <link rel="stylesheet" href="L.Control.Sidebar.css" />
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <script src="L.Control.Sidebar.js"></script>
-  <script src="jquery-2.1.1.min.js"></script>
-  
-  <style>
-    #map {
-      height: 100%
-    }
-  </style>
+<title>Pittsburgh "PieroGIS" Map</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="L.Control.Sidebar.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="L.Control.Sidebar.js"></script>
+<script src="jquery-2.1.1.min.js"></script>
+
+<style>
+  #map {
+    height: 100%
+  }
+</style>
 </head>
 
 <body>
-  <style>
-    /*font styles*/
-    body {
-      background: #fff;
-      color: #222;
-      padding: 0;
-      margin: 0;
-      font-family: 'Oswald', sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 1.5;
-      position: relative;
-      cursor: auto; }
-      
-    p, em, strong, bg, it, a, hr, li, ul {
-      font-family: 'Oswald', sans-serif;
-      font-weight: normal;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      margin-bottom: 1.25rem;
-      text-align: left;
-      text-rendering: optimizeLegibility; }
+<style>
+  /*font styles*/
+  body {
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    position: relative;
+    cursor: auto; }
     
-    h1, h2, h3 {
-      font-family: 'Oswald', sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      color: #fdb930;
-      text-rendering: optimizeLegibility;
-      margin-top: 0.2rem;
-      margin-bottom: 0.5rem;
-      line-height: 1.4; }
-    
-    h1 {
-      font-size: 2.125rem;
-      text-shadow:
-        4px 4px 4px #000; }
-    
-    h2, bg {
-      font-size: 1.6875rem; }
-    
-    h3 {
-      font-size: 1.375rem; }
-
-     
-    /*leaflet styles*/
-    .leaflet-sidebar > .leaflet-control h1, h2, h3 {
-      color: #fdb930;
-    }
-    .leaflet-sidebar > .leaflet-control bg, strong {
-      color: #fdb930;
-    }
-    .leaflet-sidebar > .leaflet-control it, em {
-      color: #fdb930;
-    }
-    .leaflet-sidebar > .leaflet-control a {
-      color: #8ad3f4;
-    }
-    .leaflet-sidebar > .leaflet-control hr {
-      display: block;
-      height: 1px;
-      border: 0;
-      border-top: 1px solid rgba(138,211,244,0.5);
-      margin: 1em 0;
-      padding: 0;
-    }
-    .custom-popup .leaflet-popup-content-wrapper {
-      background: black;
-      color: white;
-      font-size: 0.9em;
-      line-height: 1.2em;
-    }
-    .custom-popup .leaflet-popup-content-wrapper a {
-      color: rgba(255, 255, 255, 0.1);
-    }
-    .custom-popup .leaflet-popup-tip-container {
-      margin: 0 auto;
-      width: 40px;
-      height: 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    .custom-popup .leaflet-popup-tip {
-      width: 15px;
-      height: 15px;
-      padding: 1px;
-      margin: -8px auto 0;
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      background: rgba(35,31,32, 0.7);
-    }
-  </style>
-  <div id="sidebar">
-    
-    <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
-    <p style="text-align:center"><img src='./pierogie.png'/></p>
-    <h3><em>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Introduction to Web-Mapping with Leaflet</em></h3> 
-    <p>
-        Pierogies are a delicious food.<br>
-        "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystems.
-    </p>
-    <hr>
-    <h3>First, Some Well-Deserved Acknowledgements</h3>
-    <p>Thanks to <a href="https://twitter.com/jonahadkins" target="_blank">Jonah Adkins</a> at Maptime Hampton Roads Virginia (<a href="https://twitter.com/maptimehrva" target="_newtab">@maptimehrva</a>) for creating the original <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this one.</p>
-    <p><a href="https://twitter.com/awoodruff" target="_newtab">Andy Woodruff</a> who created this Leaflet tutorial for <a href="http://awoodruff.github.io/leaflet-intro/" target="_newtab">MaptimeBoston</a>.</p>
-    <p><a href="https://twitter.com/ungoldman" target="_newtab">Nate Goldman</a> for his cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a> which inspired the UI for Maptime HRVA's tutorial.</p>
-    <p>Also, <a href="http://www.maptime.io/" target="_newtab">Maptime!</a></p>
-    
-    <hr> 
-    <h2>Tech We'll Use</h2>
-    <p>
-      <ul>
-        <li><a href="http://leafletjs.com" target="_newtab">Leaflet</a>
-        <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a>
-        <li><a href="http://mapstack.stamen.com/" target="_newtab">MapStack</a>
-        <li>Text Editor
-        <li>Github Pages
-      </ul>
-    </p>
-    <hr>
-    <h2>Where are all the Pierogies?</h2>
-    <p>Some Introductory Text</p>
-    <p>Using <a href="http://geojson.io/" target="_blank">GeoJSON.io</a> we can create points on or near the locations mentioned. GeoJSON.io provides a simple interface for adding attributes, such as Name, Description, and Website. The resulting <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a>, located in our project repo, contains some of the pierogie sources from the region</p>
-    
-    <hr/>
-    <h2>Black n' Gold Basemap with MapStack</h2>
-    <br>The second element of this project is the basemap. To keep it simple, we are going to use a service provider rather than worry about building our own database and server. <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a> by Stamen Design is an awesome project that will allow us to create some free map tiles using OpenStreetMap data. The image filters and effects offer a wide variety of customization. When you're happy with what you've came up with copy/paste the tile url of the image. It's rather long, but required for inserting into our code. For this example our url is "http://{s}.sm.mapstack.stamen.com/.../{z}/{x}/{y}.png"
-    
-    <hr/>
-    <h2>Hosting the map with GitHub Pages</h2>
-    <p>GitHub is great resource for code-sharing, development, and storage. An added bonus is the automatic page generator for any repository you create. We will use this for hosting our web-app and storing all of the necessary components. There will a be total of 5 files in your repository that that run your app. Once you have enabled your github pages branch, you can delete everything except for the index.html file. It will keep all the code for your app, you can rename it if you like as well. Our <a href="https://github.com/maptime/hrva/tree/gh-pages/ghosts" target="_blank">sample repository</a> demonstrates the set-up for this project.</p>>
-    <h2>Leaflet!</h2>
-    <br>Leaflet is the <it>hocus pocus</it> behind may of today's web-mapping applications. It provides an extensive library of functions supported by a dedicated team of contributors. We are going to use the <a href="http://leafletjs.com" target="_blank">Leaflet.js</a> library to create our map. Using the documentation from the Leaflet.js website, we are going to start with the most basic components needed for a map. We are going to:
-    a) Add Leaflet starter code b) Specify the lat/long of our location c) Add our tile layer URL from MapStack
-    <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part1.html" target="_blank">Code</a> /
-    <a href="http://maptime.github.io/hrva/ghosts/part1.html" target="_blank">Example</a>
-    <hr>
-    <bg>Data Part 2: The Return</bg>
-    <br>We have a pretty <it>unnerving</it>  map so far. Let's add our .geojson file we made earlier.
-    An added step is using a <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a> library
-    to handle the interaction of our data. We are going to: a) Reference jQuery in the html <head> b) Load our
-    data c) add it to the map
-    <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part2.html" target="_blank">Code</a> /
-    <a href="http://maptime.github.io/hrva/ghosts/part2.html" target="_blank">Example</a>
-    <hr>
-    <bg>Attack of the Not Boring Dots</bg>
-    <br>Dots are cool, but it's October and they need a cool <it>costume</it>  .
-    We can use almost any icon-size marker, and we've got
-    <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that floats</a> !
-    Only one step here lets: a) add a new icon
-    <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part3.html" target="_blank">Code</a> /
-    <a href="http://maptime.github.io/hrva/ghosts/leaflet/part3.html" target="_blank">Example</a>
-    <hr>
-    <bg>I Ain't Afraid Of No Ghosts</bg>
-      <br>So we have some pretty <it>frightening</it>  icons for our dots, but we really
-        want to tell the viewer what they are. Let's add some pop-ups from our data's
-        attributes: a) create the pop-up b) format the text c) optionally style with css
-        <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part4.html" target="_blank">Code</a> /
-          <a href="http://maptime.github.io/hrva/ghosts/part4.html" target="_blank">Example</a>
-
-  </div>
-  <div class='custom-popup' id="map"></div>
-  <script>
-    // initialize the map
-    var map = L.map('map').setView([40.4452, -79.9866], 12);
-    L.tileLayer(
-     'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png',
-//'http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)/{z}/{x}/{y}.png',
- 
-    {attribution:'<p>Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a></p>',
-        maxZoom: 18,
-        minZoom: 8,
-      }).addTo(map);
-
-    var sidebar = L.control.sidebar('sidebar', {
-      closeButton: false,
-      position: 'left'
-    });
-
-    map.addControl(sidebar);
-
-    setTimeout(function() {
-      sidebar.show();
-    }, 500);
-
-     // load GeoJSON from an external file
-    $.getJSON("./data/pierogis.geojson", function(data) {
-      var ratIcon = L.icon({
-        iconUrl: 'pierogie.png',
-        iconSize: [28, 28],
-        popupAnchor: [0, -18]
-      });
-      // add GeoJSON layer to the map once the file is loaded
-      L.geoJson(data, {
-        pointToLayer: function(feature, latlng) {
-          var marker = L.marker(latlng, {
-            icon: ratIcon
-          });
-          marker.bindPopup('<b>' + '<font size="3">' + feature.properties.Name + '</font>' + '</b>' + '<br/>' + feature.properties.Description);
-          return marker;
-        }
-      }).addTo(map);
-    });
-  </script>
+  p, em, strong, bg, it, a, hr, li, ul {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    text-rendering: optimizeLegibility; }
   
-  <a href="https://github.com/maptime/hrva/tree/gh-pages/ghosts"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+  h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fdb930;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4; }
+  
+  h1 {
+    font-size: 2.125rem;
+    text-shadow:
+      4px 4px 4px #000; }
+  
+  h2, bg {
+    font-size: 1.6875rem; }
+  
+  h3 {
+    font-size: 1.375rem; }
+
+   
+  /*leaflet styles*/
+  .leaflet-sidebar > .leaflet-control h1, h2, h3 {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control bg, strong {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control it, em {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control a {
+    color: #8ad3f4;
+  }
+  .leaflet-sidebar > .leaflet-control hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(138,211,244,0.5);
+    margin: 1em 0;
+    padding: 0;
+  }
+  .custom-popup .leaflet-popup-content-wrapper {
+    background: black;
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
+
+  .custom-popup .leaflet-popup-tip-container {
+    margin: 0 auto;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .custom-popup .leaflet-popup-tip {
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    margin: -8px auto 0;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: rgba(35,31,32, 0.7);
+  }
+
+</style>
+
+<div id="sidebar">
+  
+  <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
+  <p style="text-align:center"><img src='./pierogie-01.png'/></p>
+  <h3><em>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Introduction to Web-Mapping with Leaflet</em></h3> 
+  <p>
+      Pierogies are a delicious food.<br>
+      "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystems.
+  </p>
+  <hr>
+  <h3>First, Some Well-Deserved Acknowledgements</h3>
+  <p>Thanks to <a href="https://twitter.com/jonahadkins" target="_blank">Jonah Adkins</a> at Maptime Hampton Roads Virginia (<a href="https://twitter.com/maptimehrva" target="_newtab">@maptimehrva</a>) for creating the original <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this one.</p>
+  <p><a href="https://twitter.com/awoodruff" target="_newtab">Andy Woodruff</a> who created this Leaflet tutorial for <a href="http://awoodruff.github.io/leaflet-intro/" target="_newtab">MaptimeBoston</a>.</p>
+  <p><a href="https://twitter.com/ungoldman" target="_newtab">Nate Goldman</a> for his cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a> which inspired the UI for Maptime HRVA's tutorial.</p>
+  <p>Also, <a href="http://www.maptime.io/" target="_newtab">Maptime!</a></p>
+  
+  <hr> 
+  <h2>Tech We'll Use</h2>
+  <p>
+    <ul>
+      <li><a href="http://leafletjs.com" target="_newtab">Leaflet</a>
+      <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a>
+      <li><a href="http://mapstack.stamen.com/" target="_newtab">MapStack</a>
+      <li>Text Editor
+      <li>Github Pages
+    </ul>
+  </p>
+  <hr>
+  <h2>Where are all the Pierogies?</h2>
+  <p>Some Introductory Text</p>
+  <p>Using <a href="http://geojson.io/" target="_blank">GeoJSON.io</a> we can create points on or near the locations mentioned. GeoJSON.io provides a simple interface for adding attributes, such as Name, Description, and Website. The resulting <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a>, located in our project repo, contains some of the pierogie sources from the region</p>
+  
+  <hr/>
+  <h2>Black n' Gold Basemap with MapStack</h2>
+  <p>The second element of this project is the basemap. To keep it simple, we are going to use a service provider rather than worry about building our own database and server. <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a> by Stamen Design is an awesome project that will allow us to create some free map tiles using OpenStreetMap data. The image filters and effects offer a wide variety of customization. When you're happy with what you've came up with copy/paste the tile url of the image. It's rather long, but required for inserting into our code. For this example our url is:<br><em>'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png'</em></p>
+  <p>Try this one too:<br><em>'http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)/{z}/{x}/{y}.png'</em></p>
+  <hr/>
+  <h2>Hosting the map with GitHub Pages</h2>
+  <p>GitHub is great resource for code-sharing, development, and storage. An added bonus is the automatic page generator for any repository you create. We will use this for hosting our web-app and storing all of the necessary components. There will a be total of 5 files in your repository that that run your app. Once you have enabled your github pages branch, you can delete everything except for the index.html file. It will keep all the code for your app, you can rename it if you like as well. Our <a href="https://github.com/maptime/hrva/tree/gh-pages/ghosts" target="_blank">sample repository</a> demonstrates the set-up for this project.</p>
+    
+  <hr/>
+  <h2>More to Come!</h2>
+  <!--
+  <h2>Leaflet!</h2>
+  <br>Leaflet is the <it>hocus pocus</it> behind may of today's web-mapping applications. It provides an extensive library of functions supported by a dedicated team of contributors. We are going to use the <a href="http://leafletjs.com" target="_blank">Leaflet.js</a> library to create our map. Using the documentation from the Leaflet.js website, we are going to start with the most basic components needed for a map. We are going to:
+  a) Add Leaflet starter code b) Specify the lat/long of our location c) Add our tile layer URL from MapStack
+  <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part1.html" target="_blank">Code</a> /
+  <a href="http://maptime.github.io/hrva/ghosts/part1.html" target="_blank">Example</a>
+  <hr>
+  <bg>Data Part 2: The Return</bg>
+  <br>We have a pretty <it>unnerving</it>  map so far. Let's add our .geojson file we made earlier.
+  An added step is using a <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a> library
+  to handle the interaction of our data. We are going to: a) Reference jQuery in the html <head> b) Load our
+  data c) add it to the map
+  <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part2.html" target="_blank">Code</a> /
+  <a href="http://maptime.github.io/hrva/ghosts/part2.html" target="_blank">Example</a>
+  <hr>
+  <bg>Attack of the Not Boring Dots</bg>
+  <br>Dots are cool, but it's October and they need a cool <it>costume</it>  .
+  We can use almost any icon-size marker, and we've got
+  <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that floats</a> !
+  Only one step here lets: a) add a new icon
+  <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part3.html" target="_blank">Code</a> /
+  <a href="http://maptime.github.io/hrva/ghosts/leaflet/part3.html" target="_blank">Example</a>
+  <hr>
+  <bg>I Ain't Afraid Of No Ghosts</bg>
+    <br>So we have some pretty <it>frightening</it>  icons for our dots, but we really
+      want to tell the viewer what they are. Let's add some pop-ups from our data's
+      attributes: a) create the pop-up b) format the text c) optionally style with css
+      <br><a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/part4.html" target="_blank">Code</a> /
+        <a href="http://maptime.github.io/hrva/ghosts/part4.html" target="_blank">Example</a>
+
+-->
+</div>
+
+<div class='custom-popup' id="map"></div>
+<script>
+  // initialize the map
+  var map = L.map('map').setView([40.4452, -79.9866], 12);
+  L.tileLayer(
+   'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png',
+//'http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)/{z}/{x}/{y}.png',
+
+  {attribution:'<p>Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a></p>',
+      maxZoom: 18,
+      minZoom: 8,
+    }).addTo(map);
+
+  var sidebar = L.control.sidebar('sidebar', {
+    closeButton: false,
+    position: 'left'
+  });
+
+  map.addControl(sidebar);
+
+  setTimeout(function() {
+    sidebar.show();
+  }, 500);
+
+   // load GeoJSON from an external file
+  $.getJSON("./data/pierogis.geojson", function(data) {
+    var ratIcon = L.icon({
+      iconUrl: 'pierogie-01.png',
+      iconSize: [75, 75],
+      popupAnchor: [0, -18]
+    });
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data, {
+      pointToLayer: function(feature, latlng) {
+        var marker = L.marker(latlng, {
+          icon: ratIcon
+        });
+        marker.bindPopup('<h3>' + feature.properties.Name + '</h3><p>' + feature.properties.Description + '<p/><p><a href=' + feature.properties.Website + '>' + feature.properties.Website + '</a>');
+        return marker;
+      }
+    }).addTo(map);
+  });
+</script>
+
+<a href="https://github.com/maptime/hrva/tree/gh-pages/ghosts"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 <!-- Start of StatCounter Code for Default Guide
 <script type="text/javascript">
 var sc_project=10081264;
