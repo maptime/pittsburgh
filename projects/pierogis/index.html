@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Haunted HRVA</title>
+  <title>Pittsburgh PieroGIS</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <link rel="stylesheet" href="L.Control.Sidebar.css" />
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
@@ -68,16 +68,12 @@
     }
   </style>
   <div id="sidebar">
-    <h1><b>Let's Map Some Ghosts!</b></h1>
+    <h1><b>Pittsburgh "PieorGIS" Map!</b></h1>
     <hr>
-    A Maptime HRVA Leaflet How-To
-    <br><a href="https://twitter.com/maptimehrva" target="_blank">@maptimehrva</a>  &
+    A Maptime Pittsburgh Leaflet How-To (via Maptime HRVA)
+    <br><a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>  &
       <a href="https://twitter.com/jonahadkins" target="_blank">@jonahadkins</a>
-    <br>Mapping local paranormal activity is
-      <it>dead</it> simple. Using open source components, the following instructions will guide you to
-      <it>other side</it>  of web-mapping. This exercise assumes a
-      <it>spooky</it> knowledge of HTML and Javascript - but not at all required. This will step through
-      each phase of what you see to the right. Just keep on scrolling down in this panel.
+    <br>Mapping local paranormal activity is <it>dead</it> simple. Using open source components, the following instructions will guide you to <it>other side</it> of web-mapping. This exercise assumes a <it>spooky</it> knowledge of HTML and Javascript - but not at all required. This will step through each phase of what you see to the right. Just keep on scrolling down in this panel.
       <br>Let the
       <it>seance</it> begin!
       <hr>
@@ -111,7 +107,7 @@
           <a href="http://virginiaghosthunters.webs.com/ourinvestigations.htm" target="_blank">Haunted Va. Paranormal Investigations</a>, and
           <a href="http://harpsva.com/our-investigations.php" target="_blank">Hampton Roads Paranormal Society</a> - Using
           <a href="http://geojson.io/" target="_blank">GeoJSON.io</a> we can create points on or near the locations mentioned. GeoJSON.io provides a simple interface for adding attributes, such as Name, Description, and Website. The resulting
-          <a href="https://github.com/maptime/hrva/blob/gh-pages/ghosts/hauntedhrva.geojson" target="_blank">.geojson file</a>, located in our project repo, contains about 25
+          <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_blank">.geojson file</a>, located in our project repo, contains about 25
           <it>ghoulish</it> features spread across the region.
           <hr>
           <bg>The MapStack Massacre</bg>
@@ -165,7 +161,7 @@
     // initialize the map
     var map = L.map('map').setView([37.040, -76.386], 10);
     L.tileLayer(
-      'http://{s}.sm.mapstack.stamen.com/($375a80[@60p],(naip,$2c235c[hsl-color@70])[darker],(toner-labels,$000[@20],$38315f[hsl-color])[@50])/{z}/{x}/{y}.png', {
+    'http://{s}.sm.mapstack.stamen.com/($375a80[@60p],(naip,$2c235c[hsl-color@70])[darker],(toner-labels,$000[@20],$38315f[hsl-color])[@50])/{z}/{x}/{y}.png', {
         attribution: 'Map tiles by <a href=”http://stamen.com”>Stamen Design</a>, under <a href=”http://creativecommons.org/licenses/by/3.0”>CC BY 3.0</a>. Data by <a href=”http://openstreetmap.org”>OpenStreetMap</a>, under <a href=”http://creativecommons.org/licenses/by-sa/3.0”>CC BY SA</a>',
         maxZoom: 12,
         minZoom: 10,
@@ -183,7 +179,7 @@
     }, 500);
 
      // load GeoJSON from an external file
-    $.getJSON("hauntedhrva.geojson", function(data) {
+    $.getJSON("./data/pierogis.geojson", function(data) {
       var ratIcon = L.icon({
         iconUrl: 'boo.gif',
         iconSize: [28, 28],
@@ -201,8 +197,9 @@
       }).addTo(map);
     });
   </script>
+  
   <a href="https://github.com/maptime/hrva/tree/gh-pages/ghosts"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-<!-- Start of StatCounter Code for Default Guide -->
+<!-- Start of StatCounter Code for Default Guide
 <script type="text/javascript">
 var sc_project=10081264;
 var sc_invisible=1;
