@@ -86,7 +86,7 @@
     padding: 0;
   }
   .custom-popup .leaflet-popup-content-wrapper {
-    background: black;
+    background: rgba(35,31,32,0.9);
     color: white;
     font-size: 0.9em;
     line-height: 1.2em;
@@ -118,18 +118,26 @@
   
   <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
   <p style="text-align:center"><img src='./pierogie-01.png'/></p>
-  <h3><em>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Introduction to Web-Mapping with Leaflet</em></h3> 
+  <h3><em>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Project for Teaching Web-Mapping with Leaflet</em></h3> 
   <p>
       Pierogies are a delicious food.<br>
-      "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystems.
+      "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystem.<br>
+      The <strong>Pittsburgh PieroGIS Map</strong> is a GIS for the places you get your Pierogies.
   </p>
+  <!-- Temporary call to arms -->
+  <h2>We need your help!</h2>
+  <p>
+    Have a favorite local Pierogie spot? Know where a secret kitchen with the best dough and potatoes and/or other thing is combined into a scrumptious comfort food item? Tweet the location to <a style="font-size: 1.2em" href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a> (bonus points for geotagged photographs)! We'll use the data points to show you how to make this map in the upcoming Maptime tutorial on Web-mapping Leaflet (of course, we know we could just search <em>The Internet</em> for this info ourselves, but we also plan to show you how to take the data you've captured and turn it into <strong>geodata</strong>).
+  </p>
+  
   <hr>
-  <h3>First, Some Well-Deserved Acknowledgements</h3>
-  <p>Special Thanks to <a href="https://twitter.com/jonahadkins" target="_blank">Jonah Adkins</a> at Maptime Hampton Roads Virginia (<a href="https://twitter.com/maptimehrva" target="_newtab">@maptimehrva</a>) for creating the original <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this one.</p>
+  <h3>Some Well-Deserved Acknowledgements</h3>
+  <p>Special Thanks to <a href="https://twitter.com/jonahadkins" target="_blank">Jonah Adkins</a> at Maptime Hampton Roads Virginia (<a href="https://twitter.com/maptimehrva" target="_newtab">@maptimehrva</a>) for creating the original <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this map.</p>
   <p>By extension, thanks to <a href="https://twitter.com/awoodruff" target="_newtab">Andy Woodruff</a> who created this <a href="http://awoodruff.github.io/leaflet-intro/" target="_newtab">Leaflet tutorial</a> for MaptimeBoston, as well as <a href="https://twitter.com/ungoldman" target="_newtab">Nate Goldman</a> for his cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a>, which inspired the UI for Maptime HRVA's tutorial.</p>
   <p>And of course, the <a href="http://www.maptime.io/" target="_newtab">Maptime!</a> community!</p>
-  
-  <hr> 
+
+<!--  
+  <hr>
   <h2>Tech We'll Use</h2>
   <p>
     <ul>
@@ -196,7 +204,7 @@
    'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png',
 //'http://{s}.sm.mapstack.stamen.com/(toner-lite,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)/{z}/{x}/{y}.png',
 
-  {attribution:'<p style="font-size:0.6rem">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> license.<br>Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>license.</p>',
+  {attribution:'<p style="font-size:0.6rem">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> license.<br>Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a> license.</p>',
       maxZoom: 18,
       minZoom: 8,
     }).addTo(map);
