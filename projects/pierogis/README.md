@@ -1,1 +1,1 @@
-[Maptime Pittsburgh's PieroGIS Map](http://maptime.io/pittsburgh/pierogis/index.html) 
+[Maptime Pittsburgh's PieroGIS Map](http://maptime.io/pittsburgh/projects/pierogis) 
