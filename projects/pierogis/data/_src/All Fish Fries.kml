@@ -1,0 +1,2604 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>All Fish Fries</name>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Church of the Resurrection</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Church of the Resurrection<br><br>1100 Creedmoor Avenue<br>Pittsburgh, PA 15226<br>Where: Located in Garden Room, Door is on Chelton Avenue<br>When: Ash Wednesday and Fridays in Lent (except Good Friday)<br>Times: Lunch: 11-1:30 pm; Dinner: 4-7 pm<br>Cost: Adult Dinners $11.00, Child Dinner $7.50<br>Menu:<br>Hand Beer Battered Fried Fish or Delicious Baked Fish, Homemade Mac n Cheese or Fries, Stewed Tomatoes or Veggie, Apple Sauce or Cole Slaw, Roll and Butter, Drink and Dessert<br>Huge Fish Sandwich (fried or baked) $8.00<br>Homemade Pierogies 4 for $3.00, Haluski $3.00<br>Takeout Phone Number: (412) 563-4400<br>Website: http://www.eressi.com/<br><br>LUNCH TAKE OUT MENU<br>Hand Beer Battered Giant Fried Fish Sandwich<br>on Breadworks Bun..............$8.00<br>French Fries....................$1.00<br>Homemade Cole Slaw..................$1.00<br>Homemade Mac N Cheese.....$3.00<br>Homemade Haluski............$3.00<br>Homemade Pierogies.........4 for $3.00<br>“Best of Ressi” Lunch Special.....$20.00<br>2 Giant Fish Sandwiches and choice of 4 sides: French Fries, Cole<br>Slaw, Haluski, Pierogies, Mac N Cheese<br>Hours 11 am to 1:30 pm <br><br>INNER MENU<br>Adult Dinner: $11.00<br>Child Dinner: $7.50<br>Includes Beer Battered Fried Fish<br>or Delicious Baked Fish, Home-<br>made Mac N Cheese or Fries, Stewed Tomatoes or Veggie, Apple<br>Sauce or Cole Slaw, Roll, Drink and Dessert<br>Hand Beer Battered Giant Fried Fish Sandwich<br>on Breadworks Bun..............$8.00<br>French Fries....................$1.00<br>Homemade Cole Slaw..................$1.00<br>Homemade Mac N Cheese.....$3.00<br>Homemade Haluski............$3.00<br>Homemade Pierogies.........4 for $3.00<br>Pop or Bottled Water............$1.00<br>Cheese Pizza.................$3.00<br>Call 412 563-4400 for Take Outs <br>4pm-7pm]]></description>
+			<Point>
+				<coordinates>-80.014849,40.390844,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>Eastern Area EMS</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[192 11th Street, Turtle creek, Pennsylvania 15145<br>MENU: https://www.facebook.com/EasternAreaPrehospitalService/photos/gm.1603260363226125/866254626730746/?type=1&theater<br>DATES/HOURS: Ash Wednesday and every Friday in lent. 11 AM till 7 PM.]]></description>
+			<Point>
+				<coordinates>-79.822482,40.40368,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Epiphany Catholic Church of Pittsburgh</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesdays, Fridays of Lent, including Good Friday, and every Friday throughout the year, 11 a.m.-7 p.m., McDowell Hall (underneath church, next to Consol Energy Center), 164 Washington Place. Menu: baked and fried fish; pierogies; shrimp; crab cakes; New England clam chowder; assorted desserts. For more information, call 412-279-5669 or 412-471-0257, or visit www.epiphanychurch.net. Takeout is available, call 412-471-1008 on Fridays from 8-10 a.m.]]></description>
+			<Point>
+				<coordinates>-79.991127,40.440125,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Faith United Methodist Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[305 Freeport Street<br>Delmont, Pennsylvania 15626<br>Where: Faith UMC Fellowship Hall<br>When: Every Friday during Lent (except Good Friday): Feb. 20, 27, March 6, 13, 20, 27<br>Times: 4 p.m. – 7:30 p.m.<br>Menu & Cost:<br>Dinners – $9 include choice of 1 entree, any 2 sides, 1 dessert (apple dumpling extra), and 1 drink<br>Entrees: fried fish, baked fish, baked chicken, 2 salmon patties, 6 pierogis, or 5 fried shrimp<br>Sides: halushka, french fries (with or without cheese sauce), macaroni & cheese, green beans, 3 pierogis, baked potato, cole slaw, applesauce<br>Children’s dinners (10 & under) – $4.50 : hot dog, 1 salmon patty, small fried fish, or baked chicken<br>Carry-outs do not include drinks.<br>Ala carte menu available.<br>Website: http://fumcdelmont.com/]]></description>
+			<Point>
+				<coordinates>-79.570046,40.420637,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Good Samaritan Roman Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[https://www.facebook.com/103487426423392/photos/a.190530797719054.33721.103487426423392/627881857317277/?type=1<br><br>Fridays of Lent, except Good Friday, 11 a.m.-7 p.m., Jericho Hall (parish cafeteria), Eighth and Melrose avenues. Menu: fried or baked fish sandwich, $8; fried or baked fish dinner, $10; crab cake dinner, $10; shrimp dinner, $10, Francine special combo dinner (with 1 piece of fish, 2 shrimp, 1 crab cake, 1 side, cole slaw or applesauce, dessert and beverage), $10. Side orders: macaroni and cheese; french fries; haluski; cole slaw or apple sauce. Delivery to Ambridge area, call 724-266-6010, and allow at least a minimum of half hour for order to be cooked, with minimum order of $20. A la carte menu available all day. Takeout available, call 724-266-6010.]]></description>
+			<Point>
+				<coordinates>-80.226845,40.588827,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Most Holy Name Church </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., social hall, 1515 Tinsbury St. Dinners, $10: choice of fried or baked cod, two crab cakes, or jumbo shrimp; choice of french fries,or macaroni and cheese; cole slaw; applesauce or stewed tomatoes; roll or sandwich bun; beverage; dessert. Fish sandwiches are $6. For more information, call 412-231-2994, ext. 0. Visit www.facebook.com/mostholynameofjesus. Takeout available, call 412-231-2196.]]></description>
+			<Point>
+				<coordinates>-79.983187,40.464201,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Mount St. Peter Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[100 Freeport Road<br>New Kensington, Pa. 15068<br>Where: Parish Marble Hall<br>When: Fridays throughout Lent, except Good Friday<br>Times: 11 a.m. to 6 p.m.<br>Menu: Handbreaded Fried or Baked fish Dinner includes fish, bun, homemade coleslaw and French Fries $ 9.00, Handbreaded Fried or Baked Fish Sandwich with bun $7.75, Fried Shrimp Dinner includes homemade coleslaw, French Fries $7.75, Linguine with homemade sauce (Marinara or Aglio Olio) $7.50 dinner, $4.00 side dish, Homemade Macaroni & Cheese $3.50, Pasta Fagioli (soup) bowl $3.25 or quart $6.50.<br>Takeout Phone Number: (724) 335-1458 – Call ahead to place your order 10:00amam (pick up starts at 11am) until 5:00pm (must be picked up by 6:00pm)<br>Website: www.mountsaintpeter.org]]></description>
+			<Point>
+				<coordinates>-79.761166,40.563557,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>North American Martyrs Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11:30 AM - 7 PM<br>Ash Wednesday and Fridays in Lent <br>www.namschool.org.]]></description>
+			<Point>
+				<coordinates>-79.748329,40.425438,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady Of Victory Maronite Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[February 20-March 27<br>4pm-7:30pm<br>Fried and baked fish<br>Salads, macaroni and cheese<br>A variety of delicious Lebanese side dishes<br>https://scontent-lga.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10996536_757836147635456_3946770730277883848_n.jpg?oh=d227a677f4c28f317c06765ff4128cd8&oe=5596425D]]></description>
+			<Point>
+				<coordinates>-80.07526,40.38615,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Alexis Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4:30-7:30 p.m., school cafeteria, 10090 Old Perry Highway. Dinner: baked cod or “King Cod’ (fresh battered fried fish), with two side dishes (pierogies, scalloped potatoes, green beans, cole slaw, applesauce, macaroni and cheese), roll and choice of a variety of homemade desserts and drink (no drink with takeout). Cost: dinner, $9 adults, $6 children under 10, and free for children under 3; sandwich, $6; bowl of soup and roll, $3. Also featuring Boston clam chowder. Credit cards accepted with a minimum purchase of $25. Handicap and takeout parking reserved behind cafeteria. For takeout, call 724-401-1FRY (after 3:30 p.m.) or use online ordering at stalexis.org. Fish fry is supported and run by parish’s youth ministry.]]></description>
+			<Point>
+				<coordinates>-80.04267,40.595842,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Alphonsus Church </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday (special menu and takeout only, 4:30-7 p.m.) and Fridays of Lent, including Good Friday, 4:30-7:30 p.m., school cafeteria, 201 Church St. Dine-in dinner: fried or baked fish sandwich/platter or shrimp, includes choice of one (macaroni and cheese, french fries, baked potato), choice of coleslaw or applesauce, choice of clam chowder or tomato Florentine soup (adult menu only), and beverage. Cost is $10 for adults, $2 for kids (dine-in only). Takeout dinner does not include beverage. Items also can be purchased a la carte. Ash Wednesday takeout-only menu is a brown bag dinner special for $8, and includes fish sandwich, macaroni and cheese, and cole slaw. Ash Wednesdays orders, call 724-759-8659 or 412-799-4042 after noon. Ash Wednesday pickup is from 4:30-7 p.m. For takeout orders on Fridays, call 724-759-8659 or 412-779-4042 after 3 p.m. For more information, visit www.saintalphonsuswexford.org.]]></description>
+			<Point>
+				<coordinates>-80.0572,40.628381,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-5</styleUrl>
+			<name>St. Anne Church </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., school gym, 4040 Willow Ave. Menu: baked or fried fish dinner; fried seafood platter dinner; shrimp dinner; baked fish Florentine dinner; crab cake dinner; jumbo fish sandwiches; cole slaw; french fries; onion rings; baked potatoes; homemade pierogies (potato-cheese or sauerkraut); macaroni and cheese; haluski; pizza. Takeout available, call 412-561-0101 after 3:30 p.m. on day of fish fry. For more information, call 412-531-5964 or visit www.stanneparish.com. Sponsored by St. Anne fair committee.]]></description>
+			<Point>
+				<coordinates>-80.030421,40.362038,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Barbara Catholic Church </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Barbara Catholic Church<br>111 Raymaley Rd<br>Harrison City, Pa., 15636<br>4pm-7pm<br>http://www.stbarbara.org/bulletins/0208/page06.html]]></description>
+			<Point>
+				<coordinates>-79.648241,40.363179,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Catherine Of Sweden Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., Farmer Hall, 2554 Wildwood Road. Menu: baked or fried fish, or steamed shrimp dinner, with choice of two sides and dessert; macaroni and cheese dinner, with french fries and a choice of applesauce or cole slaw, and dessert; vegetarian chef salad with or without shrimp; 9-inch cheese pizza. Sides include pierogies, macaroni and cheese, french fries, cole slaw, applesauce. Boston clam chowder and fish sandwiches can be purchased from a la carte menu. Cost: $9 adult fish dinner; $11 adult shrimp dinner; $5 child fish dinner; $6 child shrimp dinner; $8 senior fish dinner; $10 senior shrimp dinner; sandwiches, $8; salad, $6 ($8 with shrimp); pizza, $6.50. For more information and takeout orders, call 412-486-6001, or visit www.stcatherineofsweden.org. Takeout and drive-thru service is available for phone or online orders.]]></description>
+			<Point>
+				<coordinates>-79.967029,40.591891,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Mary's Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[LENTEN FISH FRY DINNERS<br><br>Dinners will be served from 4:00 to 7:00 PM on the following Fridays:<br><br>February 20; February 27; March 6;<br><br>March 13; March 20; March 27<br><br> <br><br>Dinners are not served on Good Friday<br><br> <br><br>Cost: Adults $8.50 and Children Under 12 $4.50<br>Menu: Choice of Baked or Fried Fish; Fried Clams;<br>Fried Shrimp; Seafood Platter<br>Dinners Include: Choice of Baked Potato or French Fries;<br>Cole Slaw; Bread; Coffee, Tea, or Fruit Drink.<br>*Dessert and additional drinks are available at extra charge<br><br><br>Take-out dinners are available at no extra charge.<br><br>Please call 724-783-6895 for take-out dinners.]]></description>
+			<Point>
+				<coordinates>-79.334418,40.800622,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Maximilian Kolbe Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St Maximilian Kolbe Parish<br>ADDRESS: 363 West 11th Avenue Extension, Homestead, Pennsylvania 15120<br>WEBSITE: https://www.facebook.com/StMaxParish<br>Fridays of Lent, including Good Friday, 11 a.m.-7 p.m., parish hall, 363 W. 11th Ave. Extension. Dinners: fried fish sandwich or full dinner with french fries and cole slaw, $9.50; baked fish sandwich or dinner; jumbo fried shrimp; crab cakes dinner, $9.75; stuffed flounder dinner, $9.25; linguini with shrimp or scallops. Also: pizza; pierogies; potato pancakes; haluski; potato haluski; salad; macaroni and cheese; soup; tuna noodle casserole. For information, call 412-461-1054. Takeout available, call 412-462-1743. FULL MENU BELOW:<br><br>Fish: Fried fish sandwich $7.75 <br>Fried fish dinner $9.50 <br>Baked fish sandwich $8.00 <br>Baked fish dinner $9.75 <br>Extra Bun $1.00 <br>Shrimp: <br>Jumbo shrimp (6) $6.75 <br>Jumbo shrimp dinner $9.25 <br>Popcorn shrimp $5.50 <br>Popcorn shrimp dinner $7.50 <br>Crab: <br>Crab cakes (2) $7.50 <br>Crab cake dinner $9.75 <br>Stuffed flounder dinner $9.25 <br>Linguini (comes with salad and roll): <br>Shrimp $9.25 red white Scallops $9.25 <br>red white Pizza with cheese $6.00 <br>3 Pierogies $2.75 <br>6 Pierogies $5.00 <br>12 Pierogies $8.75 with onion without onion <br>Potato pancakes (3) $4.75 Applesauce sour cream <br>Steak Fries $2.25 <br>All dinners come with steak fries, cole slaw and roll. No substitutions, please. Sorry, we cannot deliver. <br>Haluski: 12 ounce $3.00 32 ounce $6.50 <br>Potato Haluski: 12 ounce $4.00 32 ounce $8.00 <br>Mac N Cheese: 8 ounces $3.00 16 ounces $5.00 Quart $8.25 <br>Soup: Bowl $3.00 Quart $7.00 <br>Stewed tomatoes $1.75 <br>Cole Slaw: Serving $1.00 Pint $2.50 Quart $4.50 <br>Salad: Side $2.75 Large $4.75 <br>Tuna Noodle Casserole $7.00]]></description>
+			<Point>
+				<coordinates>-79.912492,40.402231,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Saint Norbert Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7:30 p.m. (fish sandwich lunch takeout from 11 a.m.-2 p.m., dinners from 4-7:30 p.m.), parish hall, 2413 St. Norbert St. Menu: baked or fried fish dinners or sandwiches; shrimp or crab cake dinners; pierogies; macaroni and cheese; french fries; haluski; cole slaw; soup; stewed tomatoes, potato pancakes; pizza and more. All dinners include two side orders, and coffee or tea. Fish sandwich with french fries or cole slaw served for lunch from 11 a.m.-2 p.m. for takeout only. Dine-in or takeout for dinner, call 412-881-8201.]]></description>
+			<Point>
+				<coordinates>-79.994513,40.382341,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Philip Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4:30-7 p.m., school cafeteria, 50 W. Crafton Ave. Dinners, include french fries or salad and cole slaw: cod fish; crab cake; jumbo shrimp; Also: pasta dinner, haluski, homemade macaroni and cheese; salad; pierogies; grilled cheese sandwich; tomato soup, fish taco. Dinners are $8. For more information, call 412-922-6300, ext. 5. Takeout is available, call 412-922-2742, ext. 9, after 4:15 p.m. Hall is not handicap accessible.]]></description>
+			<Point>
+				<coordinates>-80.068147,40.437357,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Winifred Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m., Benedict Hall, 550 Sleepy Hollow Road. Dinners: fried and baked fish, $9; crab cakes, $9; shrimp, $9; fish sandwich dinner, $9.50. Dinners include cole slaw and choice of macaroni and cheese, or french fries, with roll, dessert and drink. A la carte menu: pizza, clam chowder; macaroni and cheese; french fries; onion rings; haluski, cole slaw, tossed salad; buttered noodles. Fried or baked fish sandwich, $7.50. For more information, call 412-343-6929 or 412-608-9581, or visit www.stwinifred.org. Takeout is available. For takeout, call 412-563-1415. Also featuring craft corner for children. Meals are delivered to your table.]]></description>
+			<Point>
+				<coordinates>-80.023261,40.375202,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Ascension Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-6:30 p.m. (3-6:30 p.m. on Good Friday), Father Connor Hall, 114 Berry St. Dinners: fish sandwich; baked fish; jumbo fish; homemade crab cakes; and seafood. Also, fish sandwich, macaroni and cheese, soup, haluski, desserts and beverages. Takeout is available. No orders taken by phone.]]></description>
+			<Point>
+				<coordinates>-80.06864,40.449165,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Assumption, Bellevue</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Assumption Fish Fry, Ash Wednesday & Friday's during Lent (except Good Friday). 4:00 to 7:00 pm. McGovern Hall (under church) 45 North Sprague Avenue, Bellevue, PA 15202 We hand-bread our fish & offer home made slaw. Plus Low Carb options. Eat in or take out available.<br>Phone number 412- 766-9727.<br><br>More information:<br><br>Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., McGovern Hall (under church), 45 N. Sprague Ave. Menu: baked and breaded fried cod dinners; shrimp dinner; fried fish sandwiches. Sides include pierogies, haluski, french fries, macaroni and cheese, cole slaw, tossed salad; green beans. Kids’ menu: fish sticks or grilled cheese with macaroni and cheese or french fries, and applesauce. Cost is $9.50 for adults, $2 for child and $7.50 for sandwiches. Takeout available, call 412-766-9727. For information, call 412-766-6661 or visit www.Assumptionchurch.org.]]></description>
+			<Point>
+				<coordinates>-80.05688,40.497729,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-5</styleUrl>
+			<name>St. Bernadette, Monroeville</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 4:30-7 p.m., Lourdes Center (parish hall), 245 Azalea Drive. Menu: fried or baked fish sandwich, $7; fried or baked fish on a dish, $7; fried shrimp, $7; macaroni and cheese, $3; homemade pierogies, haluski or soup, $3; saber spuds, $3; pizza, $2; grilled cheese sandwich, $2; cole slaw, applesauce, $1; Gargotta sandwich, $8. For more information, visit www.stbfestival.com. Takeout is available, call 412-843-0668.]]></description>
+			<Point>
+				<coordinates>-79.771726,40.440756,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Bernard, Mount Lebanon</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.stbernardfishfry.net/<br>“Pittsburgh Gourmet Fish Fry,” Fridays of Lent, except Good Friday, 4-7:30 p.m., Clairvaux Hall, 311 Washington Road. Menu: fried and baked fish dinners and sandwiches; fried shrimp dinner, macaroni and cheese dinners, pizza, fish tacos. Weekly special menus includes crab cakes, pasta and shrimp, pasta fra diavolo with shrimp, pasta with sautéed garlic, pine nuts and tomato sauce. Also featuring homemade gumbo and salads. Cost: dinner, $9; sandwiches, $7; weekly specials, $9. Takeout is available, call 412-341-1565. Like on Facebook to check out the weekly specials.]]></description>
+			<Point>
+				<coordinates>-80.043844,40.386452,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Bonaventure</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays, Feb. 27 and March 27, 4-7:30 p.m., Newmeyer Hall (under church), 2001 Mount Royal Blvd. Menu: beer-battered fried cod; fish sandwiches; baked fish; breaded shrimp; shrimp scampi. Dinners served with macaroni and cheese, baked potato, cole slaw or applesauce. Soup choices include clam chowder or tomato Florentine. Beverage and desserts are available. Choice of soup: clam chowder or tomato Florentine. Takeout available, call 412-486-2606, ext. 305, or 412-487-9949. For more information, call 412-486-2606, ext. 305.]]></description>
+			<Point>
+				<coordinates>-79.969142,40.532768,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Corpus Christi</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[2015 information to come.]]></description>
+			<Point>
+				<coordinates>-79.865943,40.34779,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Guardian Angels, West End</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Friday, Feb. 20, and including Good Friday, 3-7 p.m., parish center hall, 1000 Logue St. Dinners, $9 and includes coffee/hot tea and desert: crab cake; shrimp; fried and baked fish. Other menu items include macaroni and cheese (large/small); cabbage and noodles (large/small); broccoli soup (large/small); clam chowder and tomato soup (large/small); pierogies; cheese sticks; grilled cheese sandwich; french fries (with cheese also available): green beans; cole slaw and more. For more information, call 412-921-4077. Takeout available, call 412-921-9463 starting at 3 p.m.]]></description>
+			<Point>
+				<coordinates>-80.05084100000002,40.443941,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Holy Angels, Hays</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 11 a.m.-6:30 p.m., parish hall, 408 Baldwin Road. Dinner menu: fried fish sandwich with french fries and cole slaw, $9; baked fish dinner, with baked potato, cole slaw and roll, $9. Side dish menu: macaroni and cheese; baked potato, french fries; cole slaw. Fish sandwich with or without bun can be ordered a la carte. Cheese pizza is $7 for a whole or $1 by the slice. New England clam chowder and Maryland crab soup. Assorted dessert menu available. For more information, call 412-461-6906, or visit www.holyangelshays.org. Takeout is available, call 412-461-9503. Hall is not handicap accessible.]]></description>
+			<Point>
+				<coordinates>-79.932751,40.387626,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Holy Family, Creighton</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 11 a.m.-6 p.m., social hall, 787 Freeport Road. Menu: adult dinner of baked or fried fish, with haluski or rice, one potato pancake, cole slaw, roll/butter, $10; child’s dinner includes fish on a dish, with macaroni and cheese, or seasoned rice, $5; fish sandwich, $7; fish on a dish; macaroni and cheese; vegetable cod bake with sautéed vegetables and mild salsa. Homemade a la carte menu: pagach (filled with potato and cheese, potato and sauerkraut or cabbage); shrimp and rice; pierogies; haluski; potato pancakes; crepes; meatless stuffed cabbage; seasoned rice; macaroni and cheese; cole slaw; soup of the day; portabella bruschetta; plain or cranberry horseradish; baked goods and more. Free lunch deliveries on orders of $20 or more. For large orders, please telephone one day ahead. For information, call 724-224-1626. Takeout is available, call 724-224-8342 or fax 724-224-0609.]]></description>
+			<Point>
+				<coordinates>-79.779311,40.58093,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Irenaeus, Oakmont</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, starting Feb. 20, except Good Friday, 11 a.m.-1 p.m. lunch, 4-7 p.m. dinner, social hall, 387 Maryland Ave. Menu: baked or fried fish; shrimp; tuna croissant; haluski; baked potato; pizza; onion rings; chicken nuggets; macaroni and cheese; french fries; wide variety of desserts. Featuring large salad bar. Cost: $8.50, adult dinner; $5, sandwiches. Takeout is available. For more information and takeout, call 412-828-9846. All beverages are free.]]></description>
+			<Point>
+				<coordinates>-79.841676,40.518967,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. James, Wilkinsburg - ASH WEDNESDAY ONLY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday only, 4-7 p.m., school cafeteria, 721 Rebecca Ave. (next to school yard). Menu: baked or fried fish (sandwich or dinner); side dishes; beverages. For more information, call 412-241-1392, or visit www.StJameswilkinsburg.org.]]></description>
+			<Point>
+				<coordinates>-79.885502,40.44059,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. John the Baptist, Unity</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., school cafeteria, 418 Unity Center Road. Menu and cost: fish dinner, includes baked or fried fish sandwich and choice of macaroni and cheese, french fries, or haluski and cole slaw, $8; family special, $28, includes four fish sandwiches (baked or fried), two large sides. Children’s menu and a la carte items available. Featured dinner menu: $9; Feb. 20, crab cake; Feb. 27, eggplant Parmesan; March 6, stuffed shells; March 13, pierogie; March 20, crab cake; March 27, pierogie. Takeout available, call 412-793-0555. For more information, call 412-793-0555 or visit www.stjohnthebaptistparish.net.]]></description>
+			<Point>
+				<coordinates>-79.777515,40.489174,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Joseph, Coraopolis</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, 11:30-1:30 p.m. (lunch), 3:30-6:30 p.m., social hall, 1313 Fifth Ave. Menu: deep fried or baked fish, with french fries and cole slaw, $10; fried shrimp with french fries and cole slaw, $10; macaroni and cheese dinner, with cole slaw and roll, $8. A la carte menu: fish sandwich; macaroni and cheese; french fries; haluski; potato pancakes. Pierogies sold by the half or whole dozen. Desserts are for sale. Takeout is available, call 412-329-7911.]]></description>
+			<Point>
+				<coordinates>-80.159198,40.515612,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Louise de Marillac, Upper St. Clair</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4:30-7:30 p.m., LaGras Parish Center, 320 McMurray Road. Features weekly fried and baked fish options, crab cakes and pizza. Also featuring pastas for three weeks, with choice of sauces from local restaurant Pasta Too. Different soups offered each week, including crab and shrimp bisque, tomato basil and Manhattan clam chowder. Desserts will be provided by Bethel Bakery and Swirlie Whirlie. For more information, call 412-833-1010, or visit www.stlouisedemarillac.org. Takeout is available.]]></description>
+			<Point>
+				<coordinates>-80.070952,40.315452,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Madonna del Castello, Swissvale</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, noon-7 p.m., social hall, 2021 S. Braddock Ave. Baked or fried fish dinners. Also, a la carte menu: eggplant; haluski; macaroni and cheese; pasta a fagioli pasta a fagioli, applesauce, bread and butter and beverage. Dine-in or takeout. For information, call 412-271-3959. Delivery available until 2 p.m.]]></description>
+			<Point>
+				<coordinates>-79.88516,40.421865,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Malachy, Kennedy Township</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, noon-7 p.m. (3-6 p.m. on Good Friday), school cafeteria, 343 Forest Grove Road. Menu: fish sandwich, $8; baked fish, $7; tuna salad sandwich, $5; crab cake sandwich with cole slaw, $4; shrimp in a basket, $6; macaroni and cheese, cabbage and noodles, $3; pierogies, $5 half a dozen, $9 a dozen; pizza, $5. For more information, call 412-771-5483. Takeout is available, call 412-771-0848.]]></description>
+			<Point>
+				<coordinates>-80.103452,40.480537,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Mary of the Assumption, Glenshaw</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, 2-8:30 p.m., and Fridays of Lent, 4:30-7 p.m., except Good Friday, Marian Hall, 2510 Middle Road. Ash Wednesday meal is $7, and includes fish sandwich, cole slaw and potato chips for $7. Sponsored by Knights of Columbus Council 14722 and the Colombian Squires Circle 5444. Takeout is available, call 412-681-1112. Fridays fish fry menu is choice of baked fish or fried breaded fish filet with sandwich bun or dinner roll, choice of three sides (baked potato, macaroni and cheese, green beans, corn, cole slaw, applesauce). Dinner includes homemade desserts and drinks. Child’s menu includes pizza or fish and two sides. Cost: adult dinner, $9, senior dinner, $8; children dinner for ages 4-10, $5; children’s dinner for age 3 and younger, $3. For more information, visit www.stmaryglenshaw.org. Takeout is available, call 412-684-1112.]]></description>
+			<Point>
+				<coordinates>-79.932074,40.555305,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Maurice, Forest Hills</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 2-7 p.m., Keane Hall of East Catholic School, 2001 Ardmore Blvd. Menu: hand-breaded fried cod fish; baked cod fish; shrimp; pizza; french fries; pasta; haluski; macaroni and cheese; cole slaw. Pierogies sold by the dozen for takeout only. For more information, call 412-271-0809, or visit www.stmauriceparish.org. Takeout is available, call 412-723-1200.]]></description>
+			<Point>
+				<coordinates>-79.854418,40.422235,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Nativity, South Park Townshp</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, 3-7 p.m. cafeteria, 5811 Curry Road. Menu: fish dinner; fish sandwich; haluski; macaroni and cheese; french fries; cole slaw; applesauce; pizza. Beverage also available. Featuring bake sale and Chinese auction. Cost: $9, adult dinner; $5 child dinner; $8 sandwich.]]></description>
+			<Point>
+				<coordinates>-79.987502,40.328775,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Norbert, Overbrook</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Our Fish Fry will be held each Friday during Lent, including Good Friday. Lunch will be served from 11:00 am until 2:00 every Friday during Lent. Dinners are from 4:00 pm until 7:30 pm.]]></description>
+			<Point>
+				<coordinates>-79.994513,40.382341,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of Grace, Scott Township</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, (except Friday, Feb. 20), 4:30-7 p.m. (3:30-7 p.m. on Good Friday), Conroy Hall, 310 Kane Blvd. Dinners, include entree, potato, cole slaw, roll, dessert and drink: seafood platter, $12.50; shrimp, $10.50; baked or fried fish dinner, $10.50; fish sandwich dinner, $10.50; crab cake dinner, $10.50. Senior/child discount available. A la carte menu: fried shrimp; fish sandwich; slice of pizza; baked potato; pierogies; haluski; soup of the day; lobster bisque and more. Sale features hand-breaded North Atlantic cod. For more information, call 412-279-7070, or visit www.olgscott.org. Takeout is available. For phone orders, call 412-200-2694.]]></description>
+			<Point>
+				<coordinates>-80.084458,40.373653,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-5</styleUrl>
+			<name>Our Lady of Most Blessed Sacrament, Natrona Heights</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4-7 p.m., school cafeteria, 800 Montana Ave. Deep-fried or baked fish dinner, includes fish sandwich, macaroni and cheese, cole slaw. A la carte menu includes deep-fried or baked fish sandwich, homemade potato and cheese pierogies, macaroni and cheese, and cole slaw. For more information, call 724-226-4905.]]></description>
+			<Point>
+				<coordinates>-79.727064,40.620012,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Peter, North Side</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-6:30 p.m., Our Lady Queen of Peace Church hall, Suismon and Middle streets (across from Max’s Allegheny Tavern). Dinner menu includes choice of baked cod fish, fried cod fish, salmon cakes or crab cakes, macaroni and cheese, stewed tomatoes or haluski, vegetable of the day, cole slaw or pickled beets, roll, butter, dessert, coffee or tea. Cost is $9 for dinner, with a la carte items available for sale. Takeout is available, call 412-321-2499.]]></description>
+			<Point>
+				<coordinates>-79.999864,40.455762,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Prince of Peace, South Side-ASH WEDNESDAY AND GOOD FRIDAY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Good Friday, 11 a.m.-6:30 p.m., parish center, 81 S. 13th St. Fish or crab cake dinner, with applesauce or cole slaw, two sides, dessert and coffee or tea, $9. Fish or crab cake sandwich, with applesauce or cole slaw, $6. Pierogies: ready-to-eat, $2.50 for three; frozen $7 a dozen.]]></description>
+			<Point>
+				<coordinates>-79.9853,40.42879,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Queen of the Rosary, Glassport</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 11 a.m.-7 p.m., social hall, 530 Michigan  Ave. Menu: batter-dipped cod fish; baked cod loin; shrimp; fish sandwich; potato pancakes made fresh daily; variety of soups. Sides include french fries, pierogies, haluski, macaroni and cheese, and more. Cost: $8.50 dinner, includes two sides; $7 fish sandwich; $7.50 fish and chips. Also featuring bake sale, raffles and small games of chance. Free coffee and tea is offered. Takeout is available, call 412-872-5136.]]></description>
+			<Point>
+				<coordinates>-79.89088700000002,40.326832,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Risen Lord, Marshall-Shadeland</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[3250 California Ave.<br>Pittsburgh, PA 15212<br>Where: Family Life Education Center<br>When: Ash Wednesday and Fridays of Lent, with dinner only on Good Friday<br>Times: 11 a.m.-1:30 p.m. (lunch), 3-6:30 p.m. (dinner)<br>Menu: Lunch menu: fried fish sandwich with french fries, $6.50; shrimp with french fries, $6.50; baked fish with cole slaw, $6.50; fish and chips, with fish planks, hush puppies and french fries, $6; Maryland crab cake, with cole slaw and french fries, $5; grilled cheese with tomato soup, $5; tuna salad croissant with chips, $4.50; egg salad croissant with chips, $4.50. Also, baked potato, homemade potato soup, soup of the day, tossed salad and seafood salad. A variety of a la carte items include haluski, hush puppies, cheese sticks with sauce and more. Delivery to business only with $15 minimum order. For lunch delivery and pick up orders, fax 412-761-6454 the day before or until 11 a.m. on Fridays, or call 412-766-1702 after 8:30 a.m. on Fridays. Dinner menu, $9 and includes choice of french fries, sweet potato fries, macaroni and cheese, haluski or baked potato and choice of cole slaw, stewed tomatoes, applesauce or hush puppies: fried fish sandwich platter; baked fish dinner; fried shrimp dinner; Maryland crab cakes dinner. Also offering seafood platter dinner for $11, which includes fried fish, crab cake and shrimp. Also available: homemade potato soup; soup of the day; homemade pierogies. Also featuring an a la carte menu with onion rings, cheese sticks and much more. Variety of homemade desserts available. Children’s menu for those 10 and under: grilled cheese with french fries and applesauce, $4.50; fish plank with french fries, hush puppies and applesauce, $4.50; grilled cheese, $3.<br>Takeout Phone Number: 412-766-1702 after 2 p.m.<br>School Website: http://diopitt.org/parishes/risen-lord]]></description>
+			<Point>
+				<coordinates>-80.038859,40.47488800000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Robert Bellarmine, East McKeesport</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m., parish center, 1313 Fifth Ave. Dinners feature fried or baked fish or shrimp, and includes haluski or pierogies, french fries, applesauce or cole slaw, bread and beverage, $9.50 for adults, $4.75 for children 12 and under with reduced portions. Also, fish sandwich, $7. Free ice cream for children 12 and under. Dine-in or takeout. Sponsored by Men’s Club. For more information, call 412-824-2644.]]></description>
+			<Point>
+				<coordinates>-79.812205,40.378761,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>St. Scholastica, Aspinwall FEB 27 ONLY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday, Feb. 27, 11 a.m.-1 p.m. (lunch), 4-7 p.m. (dinner), Christ the Divine Teacher Academy cafeteria, 205 Brilliant Ave. (entrance on Third Street). Menu: fried and baked fish dinners; fried and baked fish sandwiches; kids’ pizza, pierogies; homemade macaroni and cheese; side salad; green vegetable; french fries; desserts. Menu includes fried and baked fish dinner, fried fish sandwich, homemade pierogies, macaroni and cheese, kids’ pizza, side salad, vegetable, french fries and homemade desserts. Cost: adult dinner, $10; senior dinner $9; child dinner, $6; sandwich, $6; side dishes, $3-$4. For information, call 412-781-7927 or visit www.cdtca.org. Takeout available, call 412-781-6846. Hall is not handicap accessible.]]></description>
+			<Point>
+				<coordinates>-79.900858,40.491224,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Sebastian, Ross Township</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4:30-7 p.m. (4-7 p.m. for takeout), Vincentian Hall cafeteria, 311 Siebert Road. Menu: baked for fried fish dinner; fish sandwich; potato pancakes; macaroni and cheese; french fries; vegetables; cole slaw; applesauce; kids’ pizza. Costs: $10 adult dinner; $5 child dinner; $9 sandwich; children under 3 are free. For information, call 412-364-7171, ext. 326, or visit www.fish4lent.org or www.saintsebastianparish.org. Takeout is available, call 412-364-7171, ext. 326.]]></description>
+			<Point>
+				<coordinates>-80.011257,40.529323,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Therese of Lisieux, Munhall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 3:30-7 p.m., school cafeteria, 3 St. Therese Court. Menu: baked or fried fish dinners; fried shrimp; stir-fry vegetables over rice; haluski; crab cakes; pierogies; macaroni and cheese; fish sticks; pizza and more. Also featuring bake sale. Dinners are $7-$9.50, sandwiches are $7.50, and side dishes are $1-$3. Takeout is available. For more information and takeout, call 412-462-8164.]]></description>
+			<Point>
+				<coordinates>-79.901906,40.387902,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Thomas A Becket, Jefferson Hills</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 3:30-7 p.m., school, 139 Gill Hall Road. All homemade sauces by Lucia Facco. Menu: baked or fried cod dinners; fried shrimp dinner; combo dinner platter (with fried fish and fried shrimp); tuna melts; baked or fried fish sandwiches. Also featuring soups, french fries, homemade macaroni and cheese, pizza and haluski. Dinners include two side dishes and a beverage. All cod fish is hand-breaded. Children’s menu available. Special menu: March 6 and 27, homemade crab cakes; April 3 (Good Friday), homemade pierogies. For more information, call 412-655-2885 or 412-653-4322. Takeout is available, call 412-655-9966.]]></description>
+			<Point>
+				<coordinates>-79.96413,40.316077,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Thomas More, Bethel Park</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4:30-7:30 p.m., Family Life Center, 126 Fort Couch Road. Menu: No. 1, $9, includes authentic featured pasta, with tossed salad, cole slaw or applesauce, roll and beverage; No. 2, with baked cod, side of pasta with marinara sauce, choice of tossed salad, cole slaw or applesauce, roll and beverage; kids’ menu, $5 for those 10 and under, choice of authentic featured pasta, buttered noodles or baked fish and pasta marinara, with tossed salad, cole slaw or applesauce, roll and beverage; takeout menu, $9, and includes choice of authentic featured pasta or baked fish with pasta marinara, choice of tossed salad, cole slaw or applesauce and roll. Featured pasta: Feb. 20: linguini with shrimp, penne with four cheese, penne with marinara; Feb. 27, linguini with three pepper sauce, fried fish cake with side of penne, penne with four cheese, penne with marinara; March 6, eggplant Parmesan lasagna, penne with four cheese, penne with marinara; March 13, linguini with smoked salmon, penne with four cheese, penne with marinara; March 20, tortellini with mushroom Marsala sauce, fried fish cake with side of penne, penne with four cheese, penne with marinara; March 27, pesto lasagna, penne with four cheese, penne with marinara. Frequent diner card offers diners a chance to buy one dinner over four different weeks and earn one free dessert. Buy meals all six weeks and get a second dessert free.]]></description>
+			<Point>
+				<coordinates>-80.051208,40.342731,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Valentine, Bethel Park</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4-7:30 p.m., Frawley Hall, 2710 Ohio St. Menu: jumbo beer-battered cod sandwich, $7.75; child-size fried cod sandwich, $4; Nantucket baked cod, $7.25; butterfly shrimp, $7; pierogie dinner, $5.50. A la carte menu: soup; french fries; homemade haluski; macaroni and cheese; pierogies; cole slaw; garden salad; garlic breadsticks; cheddar cheese sauce. A $1 discount offered on entrees for senior citizens, eat-in only. For more information, call 412-851-4415, or visit www.stvals.org. Takeout available, call 412-851-9176 from 2-6:30 p.m.]]></description>
+			<Point>
+				<coordinates>-80.031895,40.330178,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Cecilia, Rochester</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 11 a.m.-7 p.m., social hall, 632 Virginia Ave. Dinner, $10: fried fish; baked fish; shrimp. Also: fish sandwiches; fish salads; other side dishes. Dine-in or takeout. Delivery available, call 724-775-3775 or 724-775-3776.]]></description>
+			<Point>
+				<coordinates>-80.285264,40.71429700000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Our Lady of Peace, Conway</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays, Feb. 6, Feb. 20, March 6, March 20, April 3, May 1, 11 a.m.-7 p.m., Stephens Hall, 1000 Third Ave. Dinner menu, includes cole slaw, roll, coffee and choice of macaroni, and cheese or baked potato: shrimp, $8; baked or fried adult fish, $8; adult chicken, $8; senior fish dinner, $7.50; senior citizen chicken dinner, $7.50; children (ages 12 and under) fish dinner, $6.50; children (ages 12 and under) chicken dinner, $6.50; fish sandwich, $7. Side orders include baked potato, french fries, cole slaw, macaroni and cheese. Also featuring bake sale. Guests can buy whole dessert or just enjoy one piece with dinner. Takeout is available, call 724-869-5723.]]></description>
+			<Point>
+				<coordinates>-80.236906,40.660296,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Titus, Aliquippa</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, noon-6:30 p.m. (3-6:30 p.m. on Good Friday), Titan Hall, 952 Franklin Ave. Menu: fried or baked fish dinners and sandwiches; shrimp dinner; pierogies (potato/cheese); macaroni and cheese; haluski; french fries; cole slaw. Cost: $8.50 adult dinner; $7 sandwich; $8 a dozen for potato/cheese pierogies. For more information, call 724-378-8561 or visit www.sttituschurch.org. Takeout is available, call 724-378-2734.]]></description>
+			<Point>
+				<coordinates>-80.255818,40.61286,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Fidelis, Lyndora/Meridian</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Starting Friday, Feb. 13, and continues through Fridays of Lent, except Good Friday, 4-7 p.m., parish hall, 125 Buttercup Road. Dinner menu features baked or fried fish, with potatoes or french fries, green beans, cole slaw, bread, beverage and dessert. Cost is $10 for adult dinner, $5 for children under 10. For more information, call 724-482-2690, or visit www.stfidelis.org. Takeout is available. Special takeout and handicap line available.]]></description>
+			<Point>
+				<coordinates>-79.971124,40.847453,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Ferdinand, Cranberry Township</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Every Friday<br>during Lent<br>4:00–7:00 pm - Oldenski Hall<br>BAKED/FRIED FISH<br>DINNER—-$9.00<br>8 oz. Cod, Green Beans,<br>French Fries or<br>Macaroni & Cheese,<br>Cole Slaw or Applesauce<br>CHILD'S DINNER-$5.00<br>Choice of<br>Macaroni & Cheese or<br>Penne with Marinara Sauce<br>with Roll, Cole slaw or<br>Applesauce<br>FISH SANDWICH<br>DINNER $9.00<br>8 oz. Fried Fish & Green Beans,<br>French Fries or Mac & Cheese,<br>Cole Slaw or Applesauce]]></description>
+			<Point>
+				<coordinates>-80.110317,40.698071,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Gregory, Zelienople</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., school cafeteria, 115 Pine St. Dinners, with choice of two sides (french fries, baked potato, two pierogies, macaroni and cheese, vegetable), homemade cole slaw, roll, dessert, beverage (for those dining-in), $10 for adults, $8 for seniors: breaded eight-ounce fried cod; hand-breaded eight-ounce baked cod (new, larger baked fish for 2015); fried fish sandwich on Amoroso roll; six large fried shrimp. Combo dinner is $3 extra, and includes three shrimp with fish dinner. Fish sandwich is $6, or $7 with french fries and cole slaw. Children’s menu: pizza; children’s fish dinner (half fried fish or half a shrimp order) or weekly featured non fish special. Takeout is available, call 724-452-8010 after 3:30 p.m. Takeout orders can be picked up at school concession stand.]]></description>
+			<Point>
+				<coordinates>-80.142277,40.789785,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Holy Sepulcher, Glade Mills</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4:30-7 p.m., school cafeteria, 1304 E. Cruikshank Road. Dinner features baked or beer-battered fried cod or breaded shrimp, with choice of two sides (french fries, scalloped potatoes, green beans, macaroni and cheese, cole slaw, applesauce), roll, beverage, homemade dessert. Cheese pizza and baked for fried fish sandwich with chips also available. Cost: $9.50 for adult dinner, $7 for child; $7 for seniors: $7 for sandwich; $7.50 for pizza; $1.50-$5 for assorted sides. For more information, call 724-272-9860, or visit www.holysepulcher.org. Takeout is available, call 724-272-9860.]]></description>
+			<Point>
+				<coordinates>-79.92307,40.72973,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Mary of the Assumption, Herman</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday, Feb. 13, and Fridays of Lent, except Good Friday, 4-7 p.m., school cafeteria, 821 Herman Road. Dinner features baked or pan-fried fish fillet, scalloped potatoes or french fries, green beans, Spanish rice, cole slaw, bread, homemade desserts and a beverage. Cost is $10 for adult dinner, $6 for child dinner. For more information, call 724-285-3285. Takeout is available.]]></description>
+			<Point>
+				<coordinates>-79.81627,40.830089,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Michael, Butler</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, 4-7 p.m., social hall, 432 Center Ave. Dinner includes fish (baked or fried), scalloped potatoes, cole slaw, green beans, bread/butter, dessert and beverage. Cost is $10 for adult dinner, $5 for child ages 6-10 and free for children 5 and under. Takeout is not available, with the exception of fried fish. Call 724-282-4107.]]></description>
+			<Point>
+				<coordinates>-79.88807,40.85363,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Ann, Waynesburg</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday (lunch only), 11:30 a.m.-1 p.m. (lunch), 4:30-7 p.m. (dinner, no dinner on Good Friday), social hall, 232 E. High St. Lunch menu: sandwiches; french fries; cole slaw; pasta fagioli. Dinner menu; beer-battered Alaskan pollock served with french fries, cole slaw, roll, drink and dessert; baked tilapia served with baked potato, cole slaw, roll, drink and dessert. Specials include shrimp, pierogies and pasta fagioli. Cost: $8 for regular adult meal; $9 for baked fish adult meal; $6 for students; free for children under 12; $6 fish sandwich for adults; $5 for fish sandwich for students and seniors. Free delivery for lunch only. For more information, call 724-852-2529 or 724-627-7568. Takeout is available, call 724-627-6568, ext. 17. All sales from pasta fagioli benefit Heart & Sole program to provide shoes for needy children.]]></description>
+			<Point>
+				<coordinates>-80.183432,39.896388,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>ASH WEDNESDAY ONLY: St. Camillus, Neshannock Township</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[The Ash Wednesday Fish Dinner will be help on Wednesday, February 18th from 11am until 6pm in the Parish Gym.<br><br>Dinner includes: Baked or Oven Fried Fish, Haluski, Macaroni and Cheese or French Fries, Cole Slaw, Applesauce, Dinner Roll, Desert and Beverage.<br><br>Price: Adults - $10, Children (12 and under) - $5<br><br>Take-outs are available]]></description>
+			<Point>
+				<coordinates>-80.355405,41.026717,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. James the Apostle, New Bedford</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., social hall, 4019 U.S. Route 422. Menu: fried or baked fish; pierogies; macaroni and cheese; cole slaw; french fries; roll/butter; dessert. Cost: $9 for adult dinner, $4 child dinner: Takeout is available, call 724-964-8047.]]></description>
+			<Point>
+				<coordinates>-80.488911,41.08017000000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Vincent de Paul, New Castle</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 11 a.m.-6 p.m., 1 Lucymont Drive. Menu: baked or fried sandwich with one side, $8; baked or fried fish dinner with two sides, $10; shrimp basket with two sides, $10; child’s dinner with one side, $5. Sides include waffle fries, macaroni and cheese, cabbage and noodles, cole slaw and green beans. All dinners include a treat. Free drinks for dine-in customers. Also includes homemade bake sale. Takeout is available, call 724-652-5829, ext. 6 or 8.]]></description>
+			<Point>
+				<coordinates>-80.377109,40.97935,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Vitus, New Castle</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Vitus School Friday<br>Lenten Take-outs<br>February 20th & 27th<br>March 20th & 27th<br>Whole Pizza<br>Baked or Unbaked: $10<br>Pasta Fagioli: $7 a quart<br>Cavetelli with meatless sauce<br>single serving: $5<br>Eggplant Sandwich: $5<br>Preorders requested by noon on<br>Fridays @ 724)654-9297 <br><br>***ASH WEDNESDAY****<br>Full Meal (Adults $10.00 Kids $6.00) Includes:<br>Fish (Baked or Fried)<br>Coleslaw Dessert Drink<br>Mac ‘n Cheese OR Pasta Fagioli<br>Ala Carte Items:<br>Fish Sandwich (Baked or Fried) ........................$5.00<br>Coleslaw ...........................................................$ 1.00<br>Mac ‘n Cheese...................................................$ 2.00<br>Pasta Fagioli (Bowl)...........................................$ 2.00<br>Pasta Fagioli (Quart) .........................................$ 7.00<br>Pizza Slice .........................................................$ 2.00<br>8-Cut Whole Pizza.............................................$12.00<br>Piece of Cake.....................................................$ 1.00<br>Applesauce........................................................$ 1.00<br>Drink (Regular, Diet, Sprite, Coffee, Water)......$1.00]]></description>
+			<Point>
+				<coordinates>-80.34570900000001,40.989906,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Joseph, Roscoe</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and<br>Every Friday During Lent<br>The smallest Catholic Church in<br>the Pittsburgh Diocese invites you<br>to come and join us every Friday for<br>our Fish Fry. We will do the cook-<br>ing and you can sit and enjoy it.<br>Located at the corner of Good<br>and Garfield Streets in Roscoe.<br>A large selection of Lenten<br>dishes will be available.<br>All dinners include French fries<br>and cole slaw.<br>Each week a “soup du jour” will be offered as well as<br>a weekly special.<br>We are open from 12-6 p.m.<br>Last order taken at 5:45 p.m.<br>We Deliver<br>Call 724-938-2660.]]></description>
+			<Point>
+				<coordinates>-79.869274,40.078267,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Mary, Cecil</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 11 a.m-7:30 p.m., church hall, 10 St. Mary’s Lane. Menu: panko-breaded cod deep-fried in healthy tri-fry oil that is cholesterol- and trans-fat free; baked cod or salmon; Maine lobster rolls; tuna melts; homemade crab cakes; pan-seared scallops; shrimp in a basket; jumbo shrimp; cabbage and noodles. Seafood pizza. Side orders include green beans, baked potatoes, fries, cole slaw, and macaroni and cheese. Homemade desserts are $2.50.  Takeout is available. See ad on Page 7.]]></description>
+			<Point>
+				<coordinates>-80.184459,40.327002,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of Lourdes, Burgettstown</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 3-7 p.m., McCashin Hall, 1109 Main St. Menu: fish, french fries; shrimp; cabbage and noodles; pierogies; crab cakes; desserts; and more. Cost is $9 for dinner and $7 for sandwich. For more information, call 724-947-3363. Takeout is available, call 724-947-3911.]]></description>
+			<Point>
+				<coordinates>-80.389538,40.371822,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of the Valley, Donora</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 3-6 p.m., parish hall, 1 Park Manor Road. Menu: baked monster fish; fried monster fish; breaded jumbo fish dinner; crab cake dinner; shrimp in a basket; monster fish sandwich. Sides include french fries, haluski, pierogies, pasta fagioli, cole slaw and desserts. Children’s menu: plain cheese personal pizza; grilled cheese sandwich. Cost is $12.75 for dinner, $9.50 for sandwich. Also featuring weekly specials. For more information, call 724-379-4777. Takeout is available, call 724-379-7559.]]></description>
+			<Point>
+				<coordinates>-79.876677,40.148384,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>St. Patrick, Canonsburg</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 11 a.m.-1 p.m. (lunch), 4-7 p.m. (dinner), school cafeteria, 317 W. Pike St. Menu: adult/child baked or fried fish dinner; adult/child fish sandwich; adult/child shrimp dinner; seafood platter (fish, shrimp, clams; homemade pierogies; soup; sides. For more information, call 724-745-6560 or visit www.stpatrickparish.net. Takeout is available, call 724-745-6560.]]></description>
+			<Point>
+				<coordinates>-80.194043,40.258031,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>BLESSED SACRAMENT PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[School Cafeteria<br>1626 W. 26th St., Erie<br>February 20 / March 6, 20<br>4:30-7:00 pm<br>Baked SCrod, MaC<br>and CheeSe<br>or<br>CheeSe ravioli<br>All dinners include green beans,<br>coleslaw, roll and butter, sherbet and<br>beverage; fish dinners also include French<br>fries or mac and cheese.<br><br>FiSh or CheeSeravioli<br>adult $9<br>MaCaroni and CheeSe<br>adult $5<br>Child (12 and under):<br>FiSh or CheeSe ravioli<br>$5<br>MaCaroni and CheeSe<br>$3<br>*Takeout available;<br>bake sale too!<br>(814) 454-0171]]></description>
+			<Point>
+				<coordinates>-80.110003,42.099323,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ST. BRIGID PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Brigid Social hall, 383 Arch St., Meadville<br>February 20 through March 27<br>4:30-6:30 pm<br>FiShadult $8; MaC and CheeSe or grilled CheeSe Child (5-12) $4 iCe CreaM Bar $1.50 (814) 336-4459]]></description>
+			<Point>
+				<coordinates>-80.149074,41.636013,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>ADDRESS UNCERTAIN: St Paul's Center</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Confirm address before visiting this fish fry.<br><br>St. paul Center (Sponsored by St. Anthony Knights of Columbus) Rt. 6 (Saybrook), Sheffield; February 20 and every lenten Friday; 5:00-7:00 pm FiSh FrY: adult $9 Includes large portion of haddock, French fries, coleslaw, roll, beverage, homemade dessert; 50/50 drawing! (814) 968-5915]]></description>
+			<Point>
+				<coordinates>-79.051341,41.723532,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ST. TERESA PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Parish Center, 9 Third Ave., Union City<br>February 20, 27 / March 6, 13, 20, 27 4:30-7:00 pm<br>Baked or Fried haddock<br>adult $9; Child $4<br>Includes choice of baked potato, French fries or mac and cheese, coleslaw or apple-sauce, dinner roll with butter, homemade dessert and beverage. *Takeout available. (814) 438-2783; More info: (814) 438-2000]]></description>
+			<Point>
+				<coordinates>-79.85063800000002,41.899876,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ST. BONIFACE SCHOOL</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[School Cafeteria, 359 Main St., Kersey<br>ash Wed., February 18 and every lenten Friday including april 3<br>4:00-7:00 pm<br>Fried or Baked FiSh<br>adult $10.50 extra piece of fish $6<br>ChiCken FingerS<br>adult $8; Child $4<br>Includes baked potato or French fries, macaroni salad or coleslaw and homemade desserts.(814) 885-8093]]></description>
+			<Point>
+				<coordinates>-78.601931,41.361494,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ALL SAINTS PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11264 Route 97 N., Waterford<br>February 20, 27/ March 6, 13, 20, 27<br>4:30-7:00 pm<br>Baked or Fried White Fish<br>Adult $9; Child 12 and under $4<br>Toddlers Free<br>Includes choice of baked potato or<br>French fries, coleslaw/applesauce,<br>homemade desserts and drink.<br>*Takeout available. (814) 796-3023]]></description>
+			<Point>
+				<coordinates>-79.99526200000001,41.977578,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ST. LUKE PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[knights of Columbus Msgr. robert goodill Council #11229<br>School Cafeteria; 421 E. 38th St., Erie<br>February 20, 27 / March 6, 13<br>5:00-7:00 pm<br>Fish adult $9; Child (6-12) $5.50<br>5 and under Free; <br>Shrimp Basket $7 Captains platter $12; <br>*Takeout available starting at 5:00. (814) 434-4167]]></description>
+			<Point>
+				<coordinates>-80.056597,42.105099,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>OUR LADY OF MOUNT CARMEL</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Scheffner hall<br>1553 E. Grandview Blvd., Erie<br>February 27 / March 13, 27<br>4:00-7:00 pm<br>Fried FiSh and/or CheeSe pierogi<br>adult $9.50; Child $4.50<br>(*Takeout 50 cents extra)<br>Includes choice of French fries, potato<br>salad or macaroni and cheese,<br>coleslaw<br>or green beans<br>and ice cream dessert. (814) 825-7313]]></description>
+			<Point>
+				<coordinates>-80.02811,42.107782,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>ST. JOSEPH PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[17735 Bennetts Valley Highway, Force<br>ash Wed., February 18 and every lenten Friday; noon-6:30 pm<br>Baked or Fried haddoCk<br>adult $10; Child 10 and under $6<br>Includes choice of French fries or baked potato, cup of soup, dinner roll, coleslaw, dessert and drink. *Eat in or takeout (soup and drink not included with takeout).(814) 787-4819; delivery in Bennetts valley!]]></description>
+			<Point>
+				<coordinates>-78.501696,41.257919,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ST. STANISLAUS PARISH</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[516 E. 13th St., Erie<br>February 20 / March 6, 20; 4:00-7:00 pm<br>FiSh or pierogi<br>adult $10; Child (6-12) $5;<br>Under 6 Free<br>*Takeout: $10.25; (814) 452-6606]]></description>
+			<Point>
+				<coordinates>-80.0693,42.126987,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of the Lake Social Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Our lady Of the lake<br>Social hall, 128 Sunset Drive, Edinboro<br>February 20, 27 / March 6, 13, 20, 27 5:00-7:00 pm<br>Baked or Fried FiSh<br>adult $9; Child donation $4Includes baked potato or mac and cheese, coleslaw, green beans, bread, refreshments and dessert. *Tickets and takeout available at the door. (814) 763-2986 or jchfarm1@hotmail.com]]></description>
+			<Point>
+				<coordinates>-80.136606,41.87438,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Holy Trinity National Catholic</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[It's Friday and that means it's time again for the best fish in Washington! Come on in and enjoy home made pierogi, cabbage and noodles, potato pancakes and much more! Serving from 11 a.m. to 7 p.m.<br><br>https://www.facebook.com/HolyTrinityNationalCatholicChurch]]></description>
+			<Point>
+				<coordinates>-80.282571,40.198904,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Maria Goretti, Bloomfield</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., Friendship campus hall, 321 Edmond St. Dinner specials: Weekly dinner menu: Feb. 18, baked or fried fish dinner or shrimp, french fries and cole slaw; Feb. 20, baked or fried fish dinner or shrimp, spaghetti with garlic and oil, broccoli; Feb. 27, baked or fried fish dinner or shrimp, french fries and cole slaw; March, 6, baked or fried fish dinner or shrimp, macaroni and cheese, vegetable; March 13, baked or fried fish dinner or shrimp, spaghetti with garlic and oil, broccoli; March 20, baked or fried fish dinner or shrimp, ditaline (pasta with peas); March 27, baked or fried fish dinner or shrimp, french fries, coleslaw. All meals include a free drink of coffee, tea or water. French fries will be available each week as an alternative to various other side dishes offered. Dinners: adults, $10; children, $7. Fish sandwich is $8. For more information, call 412-682-2509 or 412-621-5199. Dine-in or takeout. For takeout, call 412-682-2509. <br>Accessibility note: Hall is not wheelchair accessible.]]></description>
+			<Point>
+				<coordinates>-79.94794600000002,40.461535,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of Fatima </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4-7 p.m. (3-7 p.m. on Good Friday), school cafeteria (for dine-in), Kohler Hall (for takeout), 2270 Brodhead Road. Menu: fried and baked fish; shrimp; pierogies; homemade macaroni and cheese; haluski; vegetable of the day; homemade desserts. Also featuring a special dish each week. Cost is $9 for adult dinner, $8 for senior dinner, and includes one side, cole slaw, roll and drink. Fish sandwich is $7.50, and includes french fries and cole slaw. Takeout is available.]]></description>
+			<Point>
+				<coordinates>-80.259026,40.585271,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>St. Elias Byzantine Catholic Church </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[9th Annual LENTEN KITCHEN<br>Dine In or Take Out   412-461-9271<br>"Delivery in the West Mifflin and Steel Valley Area<br>with minimum $40 Purchase"<br>THANK YOU Tribune Review South Readers for<br>voting us the GOLD under Best Ethnic category.<br>Lenten Fish Fry<br>11:30-6:00pm February 18, 2015<br>11:30-6:00pm February 20, 2015<br>11:30-6:00pm February 27, 2015<br>11:30-6:00pm March 6, 2015<br>11:30-6:00pm March 13, 2015<br>11:30-6:00pm March 20, 2015<br>11:30-6:00pm March 27, 2015]]></description>
+			<Point>
+				<coordinates>-79.894981,40.383232,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Gabriel 
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., parish hall, 5200 Greenridge Drive. Menu: baked orange roughy; seafood cakes; hand-breaded cod; macaroni and cheese; haluski; pizza; french fries; baked potato; cole slaw and pierogies. Cost: $9 adult dinner, $3.25 child dinner; $7 sandwiches. For more information, call 412-881-8115, or visit www.stgabespgh.org. Takeout available, call 412-881-0495.]]></description>
+			<Point>
+				<coordinates>-80.006003,40.35631000000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Kilian Roman Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-8 p.m., cafeteria, 7076 Franklin Road. Dinners, includes entree and two sides (one choice of french fries, baked potato, haluski, or macaroni and cheese, choice of cole slaw or applesauce), tomato Florentine soup, beverage and dessert: hand-breaded fried cod; fish sandwich; baked cod; fried shrimp. Children’s meal, for ages 10 and under: entree and two sides (choice of french fries or macaroni and cheese, choice of cole slaw or applesauce), beverage and dessert: hand-breaded fried cod; fried shrimp; cheese pizza. Cost is $10 for adult meal, $8 for seniors 65 and over, $5 for children ages 10 and under. Takeout is available, call 724-625-1665, or go online at www.saintkilian.org/fishfry. For more information, call 724-625-1665, ext. 9.]]></description>
+			<Point>
+				<coordinates>-80.074539,40.68379500000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-5</styleUrl>
+			<name>St. Albert the Great, Baldwin</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 3-7 p.m., parish hall, 3198 Schieck St. Dinners: Icelandic cod fish sandwich; Icelandic cod breaded fish on a dish; Icelandic cod baked fish; breaded shrimp, Maryland crab cakes; homemade pierogies. Dinners are $9, and include roll/butter, coffee/tea, and choice of two sides (french fries, potato pancakes, haluski, macaroni and cheese, cole slaw, stewed tomatoes). A la carte menu: fish sandwich; shrimp (6); homemade pierogies; tuna salad on crescent sandwich; cheese pizza; potato pancakes (3); desserts and more. Fresh homemade doughnuts are 50 cents each, $6 a dozen. Takeout available, call 412-440-0221. Credit cards accepted.]]></description>
+			<Point>
+				<coordinates>-79.960541,40.385745,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Columbkille, Imperial</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., parish hall, 103 Church Road. Menu: combo dinner, $7.75, includes five shrimp, fried fish, french fries, cole slaw, macaroni and cheese, and roll; shrimp dinner, $7.75 and includes nine shrimp, french fries, cole slaw, macaroni and cheese, and roll; baked fish dinner, $6.75 and includes 8-ounce baked fish, green beans, cole slaw, macaroni and cheese, and roll; fried fish dinner, $6.75 adults, $5.50 seniors and includes 8-ounce fried fish, french fries, cole slaw, macaroni and cheese and roll; child’s fish dinner, $4.50 and includes 4-ounce fried fish, french fries, cole slaw, macaroni and cheese, and roll; fish sandwich, $5.75, and includes fried fish on a bun with french fries; “The Columbkille sandwich,” $6.25 and includes 8-ounce fried fish, french fries, cole slaw and cheese, all on a hoagie bun. Sides include clam chowder, haluski, cheese pizza and more. For more information, call 724-695-9084, or visit www.saintcolumbkilleparish.org. Takeout is available.]]></description>
+			<Point>
+				<coordinates>-80.24406700000002,40.44763700000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Holy Child, Bridgeville</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 11 a.m.-1 p.m. lunch, 4-7 p.m. dinner, former school building, 220 Station St. Menu: hand-breaded fish on a dish or fish sandwich on Mancini roll; baked fish; breaded shrimp; cheese pizza by slice; pierogies; haluski; french fries; macaroni and cheese, stewed tomatoes, tossed side salad, cole slaw, vegetable of day; clam chowder. Beer-battered fish offered on Fridays, Feb. 27 and March 20. Cost: $9.50 for adult dinner, and includes two sides; $5.50 child dinner. A la carte menu available. For more information, call 412-221-5213, or visit www.holychildrcparish.org. Takeout available, call 412-221-6514. Hall is not handicap accessible. ]]></description>
+			<Point>
+				<coordinates>-80.115404,40.359283,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Holy Spirit Catholic School-GOOD FRIDAY ONLY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Good Friday, April 3, only, takeout from 7 a.m.-6 p.m., eat-in from 11 a.m.-6:30 p.m., lyceum on North Avenue. Menu: fish or shrimp dinner, with macaroni and cheese or french fries, stewed tomatoes, cole slaw, roll, dessert and drink; fish sandwich; children’s dinner. A la carte items include french fries, macaroni and cheese, mushrooms, cole slaw and stewed tomatoes. Cost: $10 adult dinner; $7, child dinner; $6, sandwich. Takeout is available. For more information and takeout, call 412-874-5470. Hall is not handicap accessible.]]></description>
+			<Point>
+				<coordinates>-79.975874,40.480296,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Joseph, Verona</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m., social hall, 825 Second St. Dinner menu: regular fish dinner, includes baked or fried fish sandwich on Breadworks roll, or fish on a dish, with french fries, cole slaw and dessert, $9 for adults, $8 for seniors; regular shrimp dinner, breaded shrimp with french fries, cole slaw and dessert, $9 ($8 for seniors); small fish dinner, half fish sandwich (fried only) or fish on a dish with french fries, cole slaw and dessert. A la carte menu: weekly specials, homemade soup, hush puppies; haluski; macaroni and cheese; pizza and more. Delivery is available to shut-ins. Orders must be placed on the day before fish fry. To place an order, call 412-795-5114 from noon-4 p.m. Also featuring 50/50 raffle.]]></description>
+			<Point>
+				<coordinates>-79.835625,40.506954,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-5</styleUrl>
+			<name>St. Mary of the Mount, Mount Washington</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m., Sullivan Hall cafeteria, 131 Bigham St. Dinners, $10 and includes cole slaw and a choice of french fries, macaroni and cheese, stewed tomato, vegetable, baked potato, haluski, with roll/butter and desert; fried fish; baked fish; breaded shrimp; crab cakes. Family meal deal is $36 for family of four, and features fried or baked fish. A la carte menu: fish sandwich; crab cakes; shrimp; hush puppies; vegetables; homemade haluski; homemade pierogies; grilled cheese; cheese pizza; and more. Senior discount available. Local delivery to senior high-rise available. Takeout available, call 412-390-4011.]]></description>
+			<Point>
+				<coordinates>-80.01456,40.435743,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Michael, Elizabeth</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., Archangel Hall, 101 McLay Drive. Menu: fish dinner; shrimp dinner; fish sandwiches; pierogies; cheese ravioli; haluski; macaroni and cheese; cheese pizza; cole slaw, various homemade soups; french fries and desserts. Takeout available. For more information and takeout, call 412-751-0663.]]></description>
+			<Point>
+				<coordinates>-79.838062,40.271346,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of Joy, Holiday Park</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m., Father Marchukonis Hall, 2000 O’Block Road. Menu: fried cod dinners; baked cod dinners; sandwiches; macaroni and cheese; french fries; cole slaw; cheese pizza and beverages. Cost is $9 for adults, $7 for sandwiches, $1-$3 for a la carte items. For more information, call 412-795-3388, or visit www.ourladyofjoy.org. Takeout is available. Hall is handicap accessible, but restroom is not.]]></description>
+			<Point>
+				<coordinates>-79.718811,40.479917,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Teresa of Avila, Perrysville</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4:30-7:30  p.m. (4-7 p.m. on Good Friday), Schoppol Hall, 1000 Avila Court. Dinner is $9, and includes choice of main dish of fried cod, baked cod, fried shrimp, choice of tomato Florentine or clam chowder soup, and sides (fresh-cut french fries, macaroni and cheese, cole slaw, applesauce), bread and drink (for dine-in only). Fish sandwich and a la carte menu available. Kids menu is available for dine-in only and is $4 for kids ages 6-10 years old and free for kids 5 years and under. For more information, call 412-334-5748. Takeout is available, call 412-367-9001, ext. 506, after 3 p.m.]]></description>
+			<Point>
+				<coordinates>-80.03824,40.539147,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Transfiguration/Saint Victor Roman Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, noon-7 p.m., St. Victor Parish Activity Hall, 527 Bairdford Road. Menu: deluxe fish sandwich; freshly breaded or baked cod sandwiches and dinner; shrimp basket; clam strips; crab cakes; breaded oysters; pierogies; haluski, New England clam chowder; bake sale and more. Eat-in or takeout. For takeout, call 724-265-4017.]]></description>
+			<Point>
+				<coordinates>-79.873652,40.63405,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Holy Redeemer Church, Ellwood City</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, 3-7 p.m., Catholic Center, 311 Lawrence Ave. Menu: fried or baked fish dinner, with macaroni and cheese, cole slaw and cake, $9; fried or baked fish sandwich, $6.50; a la carte items, including macaroni and cheese, cole slaw and cake, $1.50]]></description>
+			<Point>
+				<coordinates>-80.287704,40.860616,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Francis of Assisi, Finleyville</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, noon-6:30 p.m., Finley Hall, 3609 Washington Ave. Baked or fried fish dinner, with choice of french fries, macaroni and cheese, or pierogies. A la carte menu available. For more information, call 724-348-7145. Takeout is available, call 724-348-0803.]]></description>
+			<Point>
+				<coordinates>-79.99958,40.254276,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Holiday Park VFD</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.holidayparkvfd.org/fish-fry/<br>Fish Fry begins on Ash Wednesday, February 18th!<br>We will be open all day from 11:30 am until 7:30 pm on Ash Wednesday and Good Friday. Regular hours are every Friday during Lent, Lunch – 11:30 – 1:30 and Dinner – 4:30 – 7:30.]]></description>
+			<Point>
+				<coordinates>-79.705907,40.467299,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>North Side Sportsmen, Warrendale</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[North Side Sportsmen, Warrendale.<br>325 Mt. Pleasant Road Warrendale, PA 15086<br>http://northsidesportsmen.com/]]></description>
+			<Point>
+				<coordinates>-80.072911,40.666701,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Saint Joan of Arc</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 11 a.m.-7 p.m., 6470 Library Road (Route 88). Lunch specials, from 11 a.m.-2 p.m.: fried cod sandwich with french fries, $7.50; pizza with side salad, $5 (toppings additional); 1 crab cake with cup of soup, $6. Dinner entrees: fried cod sandwich, $7; baked cod fish sandwich with dill hollandaise sauce, $7; cod fish dinner, with fried or baked fish, french fries, cole slaw and dinner roll, $9; baked Norwegian salmon, with a dill hollandaise sauce $7.50, with a side salad and roll, $10.50; fried shrimp (5 butterfly shrimp), $5.50; shrimp Po’boy sandwich with french fries, $8; homemade lump crab cake, $4.50 for one, $9.50 for two; seafood combo (fried or baked code with bun, 2 shrimp, 1 crab cake), $11; fish taco, $5.50 for two; pierogies, with butter and onions, $5 for six; tossed salad with shrimp and crackers, $7; red flatbread pizza, $3 plain, 75 cents extra for pepperoni; white flatbread pizza, $3, with tomatoes and spinach, $1.50. Side orders: New England clam chowder; soup of the day; cole slaw; cabbage and noodles; side salad; macaroni and cheese; french fries, cheese. Desserts and ice cream available. Dine-in or takeout. To place an advance order, call 412-854-3173.]]></description>
+			<Point>
+				<coordinates>-80.02541200000002,40.287731,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Benedict the Abbot Church, McMurray (Peters Township)</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 11 a.m.-1 p.m., 120 Abington Road. Lunch menu: fried fish sandwich basket (sandwich with french fries and cole slaw); fish sandwiches; weekly homemade soup specials; cheese pizza. Dinner menu: fish baskets (fried or baked fish or shrimp with french fries and cole slaw); fish sandwich; pasta with marinara sauce; applesauce; cheese pizza (whole or by the slice); weekly homemade soup specials by Jackson’s Restaurant (Southpointe); pierogies with butter and onions; haluski, macaroni and cheese.]]></description>
+			<Point>
+				<coordinates>-80.08571800000001,40.283109,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Grapeville Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Grapeville Volunteer Fire Co.<br>2528 Newark Street<br>Grapeville, PA 15634<br>(724) 527-9903<br><br><br>FISH FRY STARTS FEBRUARY 18, 2015 <br>ASH WEDNESDAY<br>COME SUPPORT OUR LOCAL VOLUNTEER FIRE COMPANY<br>EAT IN OR TAKE OUT<br>LOCAL DELIVERIES<br>11- 7 PM CALL ORDERS IN EARLY 10 AM<br>724-527-9903]]></description>
+			<Point>
+				<coordinates>-79.605472,40.324645,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Original Oyster House</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Monday - Saturday 10am - 10pm 				<br>20 Market Square, Pittsburgh, PA 15222<br><br>Menu: <br>http://www.originaloysterhousepittsburgh.com/Menu<br><br>Facebook: https://www.facebook.com/pages/The-Original-Oyster-House/286154598061756]]></description>
+			<Point>
+				<coordinates>-80.002003,40.440866,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St Regis Parish-MARCH 13 ONLY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday, March 13, 11 a.m.-6 p.m., social hall (back of church), 3235 Parkview Ave. Fried or baked cod fish dinner includes sandwich, cole slaw, dessert, and choice of french fries or macaroni and cheese, $10. Child’s dinner is $5. Fish sandwich with cole slaw is $8. For more information, call 412-681-9365, or visit www.saintregisparish.org. Takeout is available, call 412-681-9149 on same day as fish fry.]]></description>
+			<Point>
+				<coordinates>-79.952873,40.430996,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>McGinnis Sisters, 3825 Saw Mill Run Blvd</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://Www.mcginnis-sisters.com<br>We'll be serving our hand breaded fish sandwiches daily through Lent. We've also got everyone's Lenten favorites from Haluski to pierogies, seafood soup to mac & cheese. Dine in at Adams Twp and Monroeville, hot bar Ash Wednesday and Fridays at our Brentwood location. All locations offer call ahead ordering for take out. Brentwood 412-882-6400 ext 123, Monroeville 412-858-7000 ext 3, Adams Twp 724-779-1212 ext 3.]]></description>
+			<Point>
+				<coordinates>-79.981995,40.370014,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>McGinnis Sisters, 4311 Northern Pike</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://Www.mcginnis-sisters.com<br>We'll be serving our hand breaded fish sandwiches daily through Lent. We've also got everyone's Lenten favorites from Haluski to pierogies, seafood soup to mac & cheese. Dine in at Adams Twp and Monroeville, hot bar Ash Wednesday and Fridays at our Brentwood location. All locations offer call ahead ordering for take out. Brentwood 412-882-6400 ext 123, Monroeville 412-858-7000 ext 3, Adams Twp 724-779-1212 ext 3.]]></description>
+			<Point>
+				<coordinates>-79.753056,40.434016,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>McGinnis Sisters, 700 Adams Shoppes</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.mcginnis-sisters.com<br>We'll be serving our hand breaded fish sandwiches daily through Lent. We've also got everyone's Lenten favorites from Haluski to pierogies, seafood soup to mac & cheese. Dine in at Adams Twp and Monroeville, hot bar Ash Wednesday and Fridays at our Brentwood location. All locations offer call ahead ordering for take out. Brentwood 412-882-6400 ext 123, Monroeville 412-858-7000 ext 3, Adams Twp 724-779-1212 ext 3.]]></description>
+			<Point>
+				<coordinates>-80.054411,40.689252,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Bridgeville Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[www.bridgevillevfd.com <br><br>Bi-weekly during Lent -- The Very Best Fish Fry! Menu coming soon -- begins Feb 20!]]></description>
+			<Point>
+				<coordinates>-80.10691,40.362041,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Mt. Oliver Fire Dept.</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11am-7pm<br><br>menu: https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10990817_10205117755036386_1246613246611295571_n.jpg?oh=d6dd9229e0879541d874508b2ba6fc3e&oe=555C7A4F&__gda__=1431989290_7fb4ede70205285c6752cbcc972a15b4]]></description>
+			<Point>
+				<coordinates>-79.987008,40.417083,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Elks Lodge</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Allegheny Elks #339<br>The first Lenten Fish Fry benefitting the lodge’s building fund will be next Friday, February 20th and continuing through Good Friday April 3rd. Please come early and often! Serving times will be 5:30 – 8:30. Looking forward to seeing you there, with fins on! ]]></description>
+			<Point>
+				<coordinates>-80.001018,40.451853,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Margaret's School</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., school cafeteria, 310 Mansfield Ave. Entrée menu with cost: fried fish sandwich, $6; fried fish dinner, $7; fried fish on a dish, $5; baked fish sandwich, $6; baked fish dinner, $7; baked fish on a dish, $5; shrimp in a basket dinner, $6; fish Parmesan sandwich, $7. A la carte menu: crab cakes (2), $5; shrimp in a basket, $4; hand-cut french fries, $2-$3; cole slaw, $1; macaroni and cheese, $3-4; vegetable, $2; pizza boat, $4. Family special includes four fish sandwiches, with large french fries and cole slaw for $26. For more information, call 412-922-4765. Takeout available, call 412-922-7279.]]></description>
+			<Point>
+				<coordinates>-80.046964,40.422869,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Rosalia's Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7:30 p.m., Wuerl Hall (beneath church), 411 Greenfield Ave. Baked or fried fish served on Mancini bread, and includes cole slaw and fresh-cut french fries. New this year: Herky’s crab cakes, Maryland crab soup; pizza; homemade tuna salad. A la carte menu: homemade haluski; pierogies; macaroni and cheese; nachos. Also featuring a bake sale and basket raffle. Cost is $8 for adult dinner, $6 for sandwich. For more information, call 412-521-9987 during fish fry hours, or visit www.saintrosalia.org. Takeout is available, call 412-521-9887 from 3:30-6:30 p.m.]]></description>
+			<Point>
+				<coordinates>-79.942698,40.425595,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Dravosburg Volunteer Fire Department #1</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday (February 18th) and every Friday in Lent 11am to 7pm! Stay tuned for menus and more information. <br><br>https://www.facebook.com/DVFDFishFry]]></description>
+			<Point>
+				<coordinates>-79.892192,40.352028,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Croatian National Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Croatian National Hall JAVOR<br>ADDRESS: 805 East ST, Pittsburgh, Pennsylvania 15212<br>DATES/HOURS: Open Ash Wednesday and every Friday during Lent. Dinner served from 4pm-8pm<br>Menu, more details: https://www.facebook.com/photo.php?fbid=10205606476660259&set=pcb.10205606478380302&type=1&theater]]></description>
+			<Point>
+				<coordinates>-79.998308,40.455055,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>St Jude's Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Jude Knights’ Friday Lenten fish dinners will<br>begin on February 13, 2015, from 4-7 P.M. in the<br>church social hall. Please join us for a delicious,<br>all-you-can-eat meal that includes fried and baked<br>fish, popcorn shrimp, fried clams, French fries,<br>macaroni and cheese, stewed tomatoes, corn,<br>green beans, coleslaw, applesauce, rolls, puddings,<br>and a selection of homemade desserts.<br>Pay at the door: Adults - $12.00, Ages 6-12 -<br>$6.00; Under 6 – free. Please come and enjoy a<br>great meal while supporting the fundraising efforts of our Knights.]]></description>
+			<Point>
+				<coordinates>-77.394417,40.563384,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Second Avenue United Methodist</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Second Avenue United Methodist Church, 130 Second Ave., will its annual youth group-sponsored fish dinners every Friday during Lent. The dinners will be held from 4:30 to 7 p.m. Feb. 20 to March 27. Takeout may be ordered at 4 p.m. by calling 943-2072.]]></description>
+			<Point>
+				<coordinates>-78.384105,40.52008,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Colman Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesdays, Fridays of Lent, including Good Friday. 4-7 p.m., school cafeteria, 100 Tri-Boro Ave. Hand-dipped fried or baked cod fish sandwich, $6. Mix or match two sides for $3. Sides include haluski, pierogies, macaroni and cheese, french fries, cole slaw, Boston clam chowder and crab cakes.]]></description>
+			<Point>
+				<coordinates>-79.82765,40.40643,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Immaculate Heart of Mary Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[3058 Brereton St.<br>Pittsburgh, PA 15219<br>Where: church hall<br>When: Ash Wednesdays and Fridays of Lent, except Good Friday<br>Times: 3 p.m. until dinners are sold out<br>Menu: Fish, french fries, cole slaw, beverage and haluski.<br>Website: http://www.immaculateheartpolishhill.com/]]></description>
+			<Point>
+				<coordinates>-79.967908,40.456392,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. James, Sewickley</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, including Good Friday, 4:30-7 p.m., school cafeteria, 200 Walnut St. Menu: fried fish sandwich dinner; Boston baked fish dinner; baked salmon dinner; linguini with clam sauce; pierogies; children’s plate; pizza; and more. Side dishes include french fries, haluski, macaroni and cheese, applesauce and green beans. For more information, call 412-741-6650, ext. 310, or visit www.saintjames-church.com. Takeout is available, call 412-741-5540, press 2 for cafeteria.]]></description>
+			<Point>
+				<coordinates>-80.184429,40.537759,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Richard, Richland</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays, Feb. 27 and March 27, 4-7 p.m., social hall. For more information, call 724-444-1971, or visit www.saintrichardparish.org.]]></description>
+			<Point>
+				<coordinates>-79.966157,40.635134,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Stephen, Hazelwood</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 3-7 p.m., parish hall, 5115 Second Ave. Menu: fried and baked fish; french fries; cole slaw; and other sides. For more information, call 412-421-9210. Takeout is available, call 412-421-4748.]]></description>
+			<Point>
+				<coordinates>-79.942379,40.40691000000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Peter &amp; Paul Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 3-7 p.m., school cafeteria, 370 East End Ave., Beaver. Menu: fried or baked fish (haddock) dinner, includes large piece of fish, cole slaw, roll, dessert and choice of side (pierogies, macaroni and cheese, haluski, french fries, baked potato); fried or baked fish sandwich; aglio et olio pasta with/without broccoli and baked fish and garlic bread; aglio et olio pasta with or without broccoli, and garlic bread. Cost; $9 adult dinner; $5 child dinner: $8 senior dinner; $7 sandwiches; $9 pasta with baked fish; $6 pasta with garlic bread. Sides are available for purchase upon request. For more information, call rectory at 724-775-4111 or visit wwwssppbeaver.org. Takeout available, call 724-312-4088.]]></description>
+			<Point>
+				<coordinates>-80.297994,40.698384,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Alphonsus Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-6 p.m., St. Louis Church hall, 202 W. State St. Menu: fried or baked cod; scalloped potatoes; macaroni and cheese; french fries; green beans; cole slaw; Italian bread; homemade pies and cakes. Cost: $9.50 for adult dinner; $5 child dinner; $9.50 takeout. Homemade whole pies for sale. Takeout is available.]]></description>
+			<Point>
+				<coordinates>-79.898134,41.005222,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Venango Catholic High School</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[1505 W. First St., Oil City<br>February 20, 27 / March 6, 13, 20, 27<br>5:00-7:00 pm<br>all-You-Can-eat Fish Fry<br>adult $9.50; Senior $9; Child under 12 $7; Child under 5 $4; Includes baked potato or French fries, coleslaw, rolls, dessert and beverage. pizza $2.50/slice.*Takeout available, (814) 676-9429]]></description>
+			<Point>
+				<coordinates>-79.726961,41.414096,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Epiphany of Our Lord, Monessen</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Beginning Wednesday, February<br>18, Ash Wednesday, and continuing through the Fridays in Lent<br>(except Good Friday when there will<br>be take-outs only)<br>we will hold our<br>weekly Fish Fry from 11:00 a.m.<br>until 6:00 p.m. in the Main Church<br>Hall. Fish or Shrimp Dinners, Fish Sandwiches, Pierogi and<br>many a la carte items as well as desserts and beverages will be<br>served. All are most welcome. Take out orders will be available by calling ahead to order (724-684-9199). (http://www.eolparish.weebly.com)]]></description>
+			<Point>
+				<coordinates>-79.889395,40.158414,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Fire Department of North Versailles</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[10:30a-7:30p Ash Wednesday and Fridays of Lent<br><br>Menu + info<br>https://scontent-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10400006_1039057729441865_4906988588821274803_n.jpg?oh=c00800146dbc61d393b6e677d9a4d259&oe=5596B6C9]]></description>
+			<Point>
+				<coordinates>-79.795318,40.389236,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Holy Assumption of St. Mary Orthodox Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[105 S. 19th Street<br>Pittsburgh, Pa. 15203<br>Where: Church Hall<br>When: Ash Wednesday & every Friday throughout Lent<br>Times: Ash Wednesday – 11 a.m. to 2 p.m.; Fridays – 11 a.m. to 7 p.m.<br>Cost & Menu: Fish Sandwich & Chips – $6.00, Baked Fish Dinner – $8.50, Shrimp Dinner – $9.00. Also Available: Pierogi, Halushki, Cole Slaw, Macaroni & Cheese Desserts.<br>Takeout Phone Number: (412) 431-6428<br>Website: www.stmaryorthodoxchurch.net/]]></description>
+			<Point>
+				<coordinates>-79.978963,40.428091,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Rainbow Volunteer Fire Company</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[every Friday during lent 11a-7pm]]></description>
+			<Point>
+				<coordinates>-79.801556,40.340999,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Shop N Go</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Shop N Go<br>ADDRESS: Route 837, Jefferson Hills, Pennsylvania 15025<br><br>3rd place winner in WPXI Fish Contest in 2011!]]></description>
+			<Point>
+				<coordinates>-79.902257,40.268297,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Slippery Rock Vol. Fire Co. &amp; Rescue Team</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fish and Chicken Dinners are back!!<br>Every Friday starting February 20th from 4-7pm!<br>(Feb 20, 27. March 6, 13, 20, 27. April 3)<br><br>Adults $10, Children 8 and under $5.00. Take-out and Delivery available!<br><br>Hope to see you all there!]]></description>
+			<Point>
+				<coordinates>-80.057202,41.062723,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Zelienople Memorial Skate Park Fish Fry Friday's</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[At Zelienople American Legion Hall.<br>4-8 PM every Friday of Lent<br>Menu:<br>https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/10934136_921711911186649_8780994568444436258_o.jpg]]></description>
+			<Point>
+				<coordinates>-80.139738,40.795071,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Richhill  Twp VFD
+
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[MAP PLACEMENT APPROXIMATE<br>Menu + Details: <br>https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10647043_628332937300664_4113874666246947456_n.jpg?oh=738eb84d9dcdd5e80add603121a76a79&oe=5549719D&__gda__=1435397953_0706334bc9675f9aac733ce949c9d85f]]></description>
+			<Point>
+				<coordinates>-80.433076,39.913873,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Nemacolin Volunteer Fire Co</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[February 18th Ash Wednesday the NVFD will be having a fish fry for half a day from 3pm-6pm. Then every Friday following that from 11am-6pm. Stay tuned for weekly specials. Eat in, take out and deliver (min delivery amount). <br><br>2015 Fish Fry Menu<br>-Fish Dinner: $10.00<br>-Fish Sandwich: $7.00<br>-Chicken Dinner: $9.00<br>-Chicken Tenders: $6.25<br>-Shrimp Dinner: $9.00<br>-Shrimp: $6.25<br>-Cheese Pizza: $6.00<br>-Pep Pizza: $ 6.75<br>-Clams: $3.00<br>-Cheese Sticks: $4.00<br>-French Fries: $3.00<br>-Onion Rings: $3.50<br>-Cole Slaw: $1.00<br>-Pop: $ 0.50<br>-Water: $1.00<br>-Cheese for Fish or Fries $0.25 / 0.50<br>**Ask about weekly specials<br>**$20.00 minimum order for delivery<br>**Dinner includes fries or onion rings and cole slaw<br>****OUR FISH ARE 8OZ HADDOCK FILLET SERVES ON CELLONE BUN WITH YOUR CHOICE OF SAUCE]]></description>
+			<Point>
+				<coordinates>-79.928873,39.876588,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Hanover Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Hanover Volunteer Fire Department<br>ADDRESS: 9 Starck Drive, Burgettstown, Pennsylvania 15021<br>WEBSITE: www.hanovervfd45.com <br>Hours: 11 am - 7pm, orders for delivery start at 10 am <br>Menu/details: http://hanovervfd45.com/news.html?view=1&id=69250]]></description>
+			<Point>
+				<coordinates>-80.482176,40.409806,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>California Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and every Friday through Lent from 11:00-7:00.]]></description>
+			<Point>
+				<coordinates>-79.894254,40.060929,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Lowber Volunteer Fire Company</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Map placement is approximate<br>Lowber Volunteer Fire Company<br>ADDRESS: 22 Cherry Blossom St, Lowber, Pennsylvania 15660<br>WEBSITE: https://www.facebook.com/lvfc16<br>We will be starting our fish fry on February 18th-Ash Wednesday and every Friday during lent. The hours are 3-7! The menu is...,<br>10" fish sandwich $6<br>10" fish sandwich with 2 sides. $8<br><br>Shrimp. $4<br>Shrimp with 2 sides. $6<br><br>Macaroni and cheese dinner served with bread. $4<br><br>Halushki dinner served with bread. $4<br><br>5 pierogies served with bread. $4<br><br>Our sides are home made macaroni and cheese, home made halushki, pierogies, fresh cut fries and cole slaw<br><br>We also have chicken tenders, cheese balls and cheese sticks for the non seafood person!]]></description>
+			<Point>
+				<coordinates>-79.771427,40.244642,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St Elizabeth Ann Seton Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Elizabeth Ann Seton Church<br>ADDRESS: 200 Leger Road, North Huntingdon, Pennsylvania 15642<br>WEBSITE: www.seasnh.org<br>Menu/details: https://stelizannsetonnhpa.files.wordpress.com/2014/01/fish-fry-menu-2015.pdf]]></description>
+			<Point>
+				<coordinates>-79.760552,40.345517,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Ellsworth Sportsmen's Club</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fish Fry starts February 20 and ends April 3rd. Runs every Friday night during Lent, 6:00 pm - 11:00 pm.<br><br>Menu: http://media.wix.com/ugd/ba1f35_a6ab865c17da4627a446d3c8ecaa0b36.pdf]]></description>
+			<Point>
+				<coordinates>-80.047165,40.077817,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Geeseytown Fire Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[The Lenten Fish Dinners start on Friday February 20, 2015 starting at 3 pm.  They continue every week up to and including Good Friday.  We serve until 7 pm and you can eat in or take out.  We offer baked or fried fish with choices on potatoes, and multiple sides.  Dessert is included.  Price is not determined yet.  Look for our ad in the Altoona Mirror and here for additional information. ]]></description>
+			<Point>
+				<coordinates>-78.344963,40.450206,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Holy Angels Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[201 Caldwell Ave<br>Wilmerding, PA 15148<br><br>Every Friday of Lent 11-6:30<br><br>Menu and details: http://www.holyangelshays.org/fish-fry.html]]></description>
+			<Point>
+				<coordinates>-79.810481,40.392457,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Holy Ghost Byzantine Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Holy Ghost Byzantine Catholic Church<br>828 Meadow Ave.<br>Charleroi, PA 15022<br><br>Ash Wednesday- February 18th 2015<br>Holy Ghost Byzantine Catholic Church<br>828 Meadow Ave.<br>Charleroi PA. 15022<br>(724) 489-0500<br>Fresh Hand Breaded Fish Sandwich<br>Potato/ cheese Pirogi or Cabbage Pirogi (Both served with sautéed onions and butter or Frozen<br>Cabbage and Noodles<br>Soup Lima Bean or Vegetable Barley<br>Special Pirogi Platter:Featuring a Bed of fried cabbage topped with sautéed golden pirogies and angel hair onions dipped in flour and fried golden brown on top and served with sour cream and chives.<br>Potato Pancakes<br>Coleslaw<br>Baked goods & Beverages<br>Call for takeout or<br>Eat in the Social Hall<br>(724) 489-0500]]></description>
+			<Point>
+				<coordinates>-79.904947,40.139012,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Luke Wholey's Wild Alaskan Grill</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Lent is fast approaching and we are happy to again partner with the Catholic Charities, Diocese of Pittsburgh and donate $1 from every Broiled Atlantic Cod Sandwich sold any time during #Lent.]]></description>
+			<Point>
+				<coordinates>-79.982712,40.451785,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Robert Wholey &amp; Co Inc</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fish sandwiches and meals, fish market<br><br>http://www.wholey.com/wholeys-kitchen.html]]></description>
+			<Point>
+				<coordinates>-79.985887,40.450001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>American Serbian Club</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11am-7pm <br>http://americanserbianclub.us/?event=htoc-fish-fry-starts-in-february]]></description>
+			<Point>
+				<coordinates>-79.969247,40.426623,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Raphael Elementary School</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, 4-7 p.m., multipurpose room of St. Raphael School, 1154 Chislett St. Dinners, includes entree and two sides (choice of french fries, macaroni and cheese, pierogies, cole slaw, vegetables) and roll: fried fish dinner, $9.50; baked fish dinner, $10.50; jumbo fried shrimp, $9; pierogies (6), $7. Sandwiches: fried fish, $6.50; baked fish, $7.50; fish and chips (fried fish sandwich with french fries), $8. A la carte menu includes haluski, jumbo shrimp, pierogies and more. Also featuring eighth-grade bake sale. For more information, call 412-661-3100 or 412-661-0288, or visit www.straphaelelementaryschool.net.<br><br>Accessibility note: Not wheelchair accessible.]]></description>
+			<Point>
+				<coordinates>-79.92866700000002,40.478049,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Saint Josephs Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fish Fry (10 to 1 Lunch) (4 to 7 Dinner)]]></description>
+			<Point>
+				<coordinates>-79.3656,41.31117400000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Swissvale VFD</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[ASH WED & EVERY FRIDAY DURING LENT - 11 am until 7 pm – eat in or take out – <br>All deep fried items are prepared in trans fat free oil <br>Sandwiches and featured items: <br>Beer battered cod sandwich , 12 oz.: $ 7 . 50 <br>Baked cod loin sandwich , 8 oz.: $6.00 <br>Breaded fantail fried shrimp (8 ) : $ 6 .00 <br>Grilled cheese sandwich: $3.00 <br>Beer battered grilled cheese sandwich: $ 4 . 0 0 <br><br>À la carte side dishes: <br>Haluski: 8 oz: $ 1 . 75 16 oz: $ 3 . 50 <br>Mac n Cheese : 8 oz: $ 1 . 75 16 oz: $ 3 . 50 <br>Cole Slaw : 8 oz: $ 1.50 16 oz: $ 3.0 0 <br>French fries : $ 2.00 <br>Onion rings : $ 2 .00 <br>Hot pepper cheese balls: 8 oz. $ 3 . 00 <br>Pierogies, with butter & onion ( 6 ): $ 3 . 50 <br>Chicken nuggets (6) : $ 2 . 00 <br>Kosher deli pickle: $1.00 <br>Cheese on any sandwich: $0. 50 Extra bun: $0.50 <br>7400 Irvine Street – Swissvale 412 - 271 - 8787 PHONES ANSWER FROM 10:30 AM UNTIL 6:30 PM.]]></description>
+			<Point>
+				<coordinates>-79.889368,40.420637,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Nicholas Serbian Orthodox Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[The very popular St. Nicholas Serbian Orthodox Church Fish Fry in Monroeville is back again in 2015. The Klub Karadjordje Men's Club sponsors and works the event. We will be open starting on Friday, February 20th, and continue until April 3rd. Important details for the FISH FRY are as follows: Hours: 4-7 PM Address: 2110 Haymaker Road, Monroeville, PA 15146 Phone Number for TAKE OUT: 412-372-9895 Menu: Fish (Cod), Shrimp, Scallops (all Hand-Breaded on Site); we also feature Baked Cod Sides: Hand-Cut Fries, Serbian-Style Cole Slaw, and Cabbage & Noodles. Desserts: Homemade dessert table (Get there early; desserts are the first to go!) NOTE: ALL MENU ITEMS AND DESSERTS ARE DAIRY/MEAT FREE for those following strict fasting practices during the LENTEN Period. HVALA PUNO, SVE NAJBOLJE...]]></description>
+			<Point>
+				<coordinates>-79.756536,40.406699,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>North Braddock VFD</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Seafood Platter - $9.50<br>Shrimp Platter - $6.50<br>Fish Sandwich - $8.00<br>Haluski - $3.00<br>Chicken Nuggets - $1.25<br>Crabcake - $1.50<br>Extra Shrimp - $0.75<br>Fries - $1.75<br>Coleslaw - $0.50<br>Mac n Cheese - $2.25<br>Beverage - $0.75<br>Extra Bun - $0.50]]></description>
+			<Point>
+				<coordinates>-79.845253,40.405117,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Sacred Heart Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[310 Shady Avenue<br>Pittsburgh, PA 15206<br>Where: School Cafeteria<br>When: Fridays, February 20-March 27<br>Times: 5:00-7:30 p.m., Take Out call after 4:00 p.m.<br>Menu: Fish Dinners/Sandwiches (Fried or Baked), Shrimp, Macaroni & Cheese, Cheese Pizza, Haluski, Cole Slaw, French fries, Desserts, Coffee/Soft drinks<br>Takeout Phone Number: (412) 361-3131<br>School Website: http://www.sacredheartpgh.org/ <br><br>Accessibility note: Not wheelchair accessible]]></description>
+			<Point>
+				<coordinates>-79.923271,40.45617200000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Hookstown Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[every Friday until Easter.<br><br>Starting at the fish fry on 2/27 we will also be collecting can goods at the door. Those who bring in three non perishables food items or hygiene items will get a free drink with dinner. These items will be used to start a local food bank for those in need.]]></description>
+			<Point>
+				<coordinates>-80.475862,40.585865,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-10</styleUrl>
+			<name>Forgotten Taste</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Forgotten Taste Pierogies<br>ADDRESS: 11978 Route 19, Village at Pine, Wexford, Pennsylvania 15090<br>WEBSITE: http://forgottentaste.com/index.html<br>DATES/HOURS: Every Friday all year round!<br>COST & MENU INFORMATION: Fish sandwich on fresh Mancini roll: $8.50]]></description>
+			<Point>
+				<coordinates>-80.059092,40.63297800000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Perrytowne Draft House</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Perrytowne Draft House<br>ADDRESS: 1002 Perry Hwy, Pittsburgh, Pennsylvania 15237<br>WEBSITE: www.perrytownedrafthouse.net<br>Voted North Hills #1 Fish Sandwich!]]></description>
+			<Point>
+				<coordinates>-80.036192,40.539424,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Feb 27, Mar 20: St Paul's Episcopal Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Paul’s Episcopal Church Fish Fry will take place on Friday, February 27 from 5:00 to 7:30 p.m. Please join us for a delicious dinner and support St. Paul’s Outreach Ministries! The menu includes: Fried Fish or Shrimp ($8.00) or Baked Salmon in wine ($9.00) dinners with a choice of 2 sides: tossed salad, coleslaw, macaroni and cheese, fiesta rice or French fries. Also, giant fish sandwich – $6.00, homemade New England clam chowder – $3/$5 and awesome homemade desserts – $1.00. Now: gluten-free and vegetarian combos! Take out is available. Dinner is prepared by the ECM (Episcopal Church Men) and served by the Squids of our EYC (Episcopal Youth Community).]]></description>
+			<Point>
+				<coordinates>-80.050296,40.370642,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>First United Methodist Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Our First Lenten Fish Dinner will be held on Friday, February 20th and will continue through Friday, March 27, 2015 at the Covenant Center from 4:30-6:30 PM.<br><br>MENU: Baked or Fried Fish, Sloppy Joe Sandwich or Chicken<br><br>Baked Potato, Curly Fries or Macaroni & Cheese<br><br>Cole Slaw or Applesauce, Roll, Beverage and PIE<br><br>Adult $9.00 Children $4.00<br><br>Come and eat, bring your family and friends. Help support our fund raising efforts to raise finances for our church programs and missions.]]></description>
+			<Point>
+				<coordinates>-79.52297,40.816874,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>STARTS MARCH 13 New Wine Harvest </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[New Wine Harvest Church <br>5206 East Willock Road Pittsburgh PA 15236<br><br>Dates: <br>March 13, 20, 27 <br>5pm]]></description>
+			<Point>
+				<coordinates>-79.964336,40.353279,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>Youngwood Historical Museum</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Station Cafe @Youngwood Historical & Railroad Museum<br>ADDRESS: 1 Depot Street (AT THE TRACKS), Youngwood, Pennsylvania 15697<br><br>11a-7p<br><br>Menu/details:<br>https://www.facebook.com/YoungwoodRRMuseum/photos/a.646641922040101.1073741826.111633968874235/796747260362899/?type=1&theater]]></description>
+			<Point>
+				<coordinates>-79.576177,40.239149,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Sts. John and Paul </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[“Fish Fry with Polish Flair,” Ash Wednesday and Fridays of Lent, except Good Friday, 11 a.m.-7:30 p.m., Cardinal DiNardo Center, 2586 Wexford Bayne Road. Platter menu, $10: fish platter, choice of fried or baked fish, large serving of haluski, three pierogies; fish sandwich platter, with roll and choice of fried or baked fish, large serving of haluski and three pierogies; stuffed cabbage platter, with meatless stuffed cabbage, large serving of haluski, three pierogies, barley and mushroom soup; meatless platter, with two potato pancakes, large haluski, three pierogies; pierogie platter, with 12 pierogies (four of each flavor). Also, fish soft taco platter, with fish on lettuce, tomatoes and cheese in a soft taco shell, $7. Kids menu, $5: fried mozzarella sticks with sauce; small fish and two pierogies with applesauce; macaroni and cheese, with two pierogies and applesauce. Also kids’ platter, with two apple pancakes and three pierogies for $7. A la carte menu includes apple pancakes, potato pancakes, soup, fish sandwich, pierogies, Nalesniki (Polish-style crepes with sweet farmer cheese and poser sugar), Pasztecik (small bread like roll stuffed with kraut and mushrooms), and more. Baked goods menu includes Chrusciki, Kolaczki, walnut almond roll, poppy seed roll and individual desserts. Frozen pierogies are available for $8. Takeout is available, call 412-616-8831, or e-mail fishfry@stsjohnandpaul.org. To order online, visit www.stsjohnandpaul.org/fishfry. Sponsored by parish’s men’s club and S&D Polish deli..]]></description>
+			<Point>
+				<coordinates>-80.106348,40.608214,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>North Irwin VFC</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[our Lenten fish fry starts on Ash Wednesday and continues every Friday of Lent! Come into the club for lunch from 11 am until 1 pm or come to the club or banquet hall for dinner from 4pm until 8pm. <br><br>29 Broadway Ave.<br> North Irwin, PA 15642]]></description>
+			<Point>
+				<coordinates>-79.709868,40.337243,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Fawn Township Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[State Route 908 Tarentum, PA 15084<br><br>10th Annual<br>Dine-In, Take-Out, or Call-Ahead 724-224-4613<br><br>Dinner - Fish, Fries, & Slaw: $8.00<br>Sandwich: $7.00<br>French Fries: $1.50<br>Cole Slaw: $1.50<br>Cabbage and Noodles: $2.00<br>Pop and Water: $1.00<br>Coffee: FREE]]></description>
+			<Point>
+				<coordinates>-79.790888,40.649869,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Blaine Hill Volunteer Fire</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4pm-7pm<br>Menu and information: <br>http://www.blainehillvfc.com/fishfry.html]]></description>
+			<Point>
+				<coordinates>-79.875079,40.272983,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Chippewa Township fire department.</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Chippewa Twp VFD<br>Fish Fry<br>11:00 AM – 7:00 PM<br>January 9th and 23rd   <br>February 6th, 20th and 27th   <br>March 6th, 13th, 20th and 27th <br>April 3rd  <br><br>MENU<br>Haddock Fish Dinner              $10.00<br>- Includes Coleslaw and choice of Pierogies, French Fries or Onion Rings<br>Chicken Tenders Dinner         $10.00<br>- Includes Coleslaw and choice of Pierogies, French Fries or Onion Rings<br>Kids Fish or Chicken Dinner    $7.00<br>- Includes Coleslaw and choice of Pierogies, French Fries or Onion Rings<br>Fish Sandwich                     $7.00<br>Piece of Haddock Fish            $6.50<br>Chicken Tenders                $6.50<br>Pierogies                        $3.00<br>French Fries                     $2.50<br>Onion Rings                    $2.50<br>Coleslaw                        $1.50<br>Extra Sandwich Bun            $1.00<br><br>Take Out Available<br>724-847-0391]]></description>
+			<Point>
+				<coordinates>-80.376766,40.773418,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Crabtree Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Crabtree Volunteer Fire Department<br><br>1610 Latrobe-Crabtree Road<br>Crabtree, Pa. 15624<br>EVERY FRIDAY DURING LENT from 4:30PM - 7:30PM.  Eat in or take out.  724-837-2231<br><br>Menu:<br><br>BAKED FISH & PIEROGIE DINNER: Includes roll, coleslaw & dessert.<br><br>BAKED ITALIAN FISH & PIEROGIE DINNER: Includes roll, coleslaw & dessert.<br><br>PIEROGIE DINNER: Includes roll, coleslaw & dessert.<br><br>FRIED FISH SANDWICH with FRIES<br><br>FRIED POPCORN SHRIMP with FRIES<br><br>SMELTZ<br><br>HOMEMADE MAC-N-CHEESE<br><br>HOMEMADE HALUSKI<br><br>HOMEMADE DESSERT<br><br>Website: www.crabtreevfd.com]]></description>
+			<Point>
+				<coordinates>-79.465163,40.361621,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Leetsdale Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[The Leetsdale Fire Department is holding its annual fish frys at the Veterans of Foreign Wars post, near Beaver and Ferry streets.<br><br>The fish frys will be held from 4:30 to 7:30 p.m.<br><br>Takeout meals or deliveries are available by calling 412-716-4626. Proceeds benefit the fire department.]]></description>
+			<Point>
+				<coordinates>-80.2058532,40.5641426,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Manor Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Manor Borough Volunteer Fire Department<br><br> Come and enjoy all you can eat fish dinners and help support the Manor VFD. Hope to see everyone there on fridays 4-7pm in lent.<br><br>Menu:<br>http://manorvfd.org/news.html?view=1&id=69182]]></description>
+			<Point>
+				<coordinates>-79.667839,40.33256800000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Smithton Volunteer Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Smithton Volunteer Fire Department<br><br>609 Center Street<br>Smithton, Pa. 15479<br>Where: Smithton VFD Social Hall<br>When: Every Friday throughout Lent<br>Times: 4 p.m. to 7 p.m.<br>Menu and details: https://scontent-lga.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10959351_1080878371928092_153283568742060083_n.png?oh=4116179ff48eda26af9354e6d22bfe72&oe=5554DAA8<br>Website: www.smithtonfire.org]]></description>
+			<Point>
+				<coordinates>-79.741963,40.154621,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Skyview VFC</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[https://www.facebook.com/Skyview4vfc<br><br>Lent starts Feb 18th. Fish fry ash wed and every friday during lent. 11am-7pm. Free local delivery.]]></description>
+			<Point>
+				<coordinates>-79.929672,40.360829,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St Agnes Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, social hall, 126 Church St. 10:30 a.m.-6 p.m. Menu: fish; shrimp; wraps; soup; macaroni and cheese; pierogies; cabbage and noodles; french fries; tuna; crab cakes; more. Local delivery available. Takeout is available, call 724-632-5857.]]></description>
+			<Point>
+				<coordinates>-80.001578,40.05424,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>PYROHI SALE ONLY Holy Trinity Ukranian Catholic Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.htucc.org/pyrohi_workers.htm<br><br>CALL FOR INFORMATION:<br><br>AUDITORIUM 412-276-9897]]></description>
+			<Point>
+				<coordinates>-80.083641,40.403595,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Wilkins Township VFD #3</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday February 20th marks the beginning of our Annual Lenten Fish Fry. We will open from 4pm-7pm every Friday evening through Good Friday. Our hours of operation for Good Friday will be 12pm-7pm. You may eat in our beautiful hall, and take-out is also available.<br><br>Wilkins Township VFC #3  Annual Lenten Fish Fry 2015 Menu<br><br>Fish Dinner (sandwich, fries, coleslaw)<br>    $8.00     <br>Fish Sandwich     $6.50     <br>Baked Fish Dinner (fish, fries, coleslaw)     $8.00     <br>Baked Fish Only     $6.50     <br>Shrimp Dinner (shrimp, fries, coleslaw)     $7.50     <br>Shrimp Only     $6.00     <br>Crab Cake Dinner (2 crab cakes, fries, coleslaw)     $6.00     <br>Crab Cake Only     $2.00     per cake<br>Fries Only     $2.00     <br>Cheddar Cheese     $0.50     <br>Extra Bun     $1.00     <br>Extra Coleslaw     $0.75     <br>Soup (12 oz. New England Clam Chowder)     $3.00     <br>Shrimp Cocktail (6 count; tail on, cleaned and peeled)     $4.00     <br>Macaroni & Cheese (8 oz)     $2.00     <br>Hush Puppies (5 count)     $1.00]]></description>
+			<Point>
+				<coordinates>-79.839093,40.41792,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St Sava Church Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[901 Hartman Street<br>McKeesport, PA 15132<br>When: Every Friday during Lent, including Good Friday<br>Times: 12- 6 p.m.<br>Menu: Hand Breaded Cod Fish Sandwich – $8.00<br>Baked Cod Dinner or Hand Breaded Cod Dinner or Shrimp Dinner – $10.00<br>dinner includes Coleslaw, Coffee, Tea and desert and your choice of French Fries or Haluski or Spanish Rice<br>Soup of the Day – $3.00/bowl or pint and $6.00/ quart<br>Bakala (Cod fish with potatoes) – $8.00 pint<br>*BE SURE TO CHECK OUT OUR DAILY SPECIALS* (We have additions to our menu, that change weekly.)<br>Also a Bake Sale, Homemade Apple Strudel, Palachinke, Donuts, and much more!<br>Takeout Phone Number:(412) 664-0820<br>Website: www.stsavapa.org]]></description>
+			<Point>
+				<coordinates>-79.83401,40.350403,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Al's Fish &amp; chicken</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[M-F 10:00 am - 10:00 pm<br>Sat: 11:00 am - 10:00 pm<br>Sun: 11:00 am - 8:00 pm<br>https://www.facebook.com/als.fish.chicken]]></description>
+			<Point>
+				<coordinates>-79.879259,40.441768,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>New Stanton Volunteer Fire Co</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Annual Fish Fry<br>Every Friday During Lent<br>Lunch and Dinner Served<br>11 Am Till 7 Pm<br><br>https://www.facebook.com/newstanton.vfd]]></description>
+			<Point>
+				<coordinates>-79.607613,40.218705,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>51 Wings</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[51 Wings & Things<br>ADDRESS: 4022 Saw Mill Run Blvd. , Pittsburgh, Pennsylvania 15227<br>WEBSITE: fiftyonewings.com<br>DATES/HOURS: Every Friday during Lent <br>we will be serving our 1 lb. Fish Sandwich, Fresh Cut Fries, & hand rolled Mac 'N Cheese Wontons!!! **New this year is hand rolled Pierogie Wontons!<br><br>EVERY FRIDAY THROUGH LENT!<br><br>Eat in. Take out. Delivery.<br><br>412-885-5101<br><br>4022 Saw Mill Run Blvd.<br>Rt. 51 in Brentwood]]></description>
+			<Point>
+				<coordinates>-79.98342900000002,40.368037,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Double Wide Grill</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Double Wide Grill<br>DoubleWideGrill is Serving up Everybody's Favorite Seafood Delights for Lent.<br><br>Try our Sauteed Tilapia, Fresh Tilapia Lightly Sauteed and Topped with our Cajun Honey Garlic Sauce served with 2 Sides, A House Specialty! Come 'N Git It.<br><br>100 Adams Shoppes Mars, Pa & 2339 E. Carson St. In The South Side. www.doublewidegrill.com<br><br>Menu: https://scontent-iad.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1010490_10155228538205402_1672336736937157009_n.jpg?oh=439257b53e871336e9807938a97285ff&oe=55948F7F]]></description>
+			<Point>
+				<coordinates>-79.971345,40.428498,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St Gregory Russian Orthodox Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St.Gregory's Russian Orthodox Church<br>ADDRESS: 214 E.15th Ave, Homestead, Pennsylvania 15120<br>DATES/HOURS: Fridays 11:00A.M to 5:00 PM<br>http://www.stgregoryrussianchurch.org/fish-fry-english/]]></description>
+			<Point>
+				<coordinates>-79.905171,40.402718,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Norvelt Fire Department</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[3p-7p<br>Menu: https://www.facebook.com/187103461330962/photos/a.187118754662766.35954.187103461330962/831387640235871/?type=1&theater]]></description>
+			<Point>
+				<coordinates>-79.49713,40.208554,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Elks Lodge</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Lenten fish fry starts Feb. 20th from 5 to 7 pm. Eat in or take out. Fresh beer battered cod, baked cod, jumbo shrimp, cabbage and noodles, mac and cheese and desserts available. Come on down and find out why we are the best in the valley!]]></description>
+			<Point>
+				<coordinates>-79.84726400000001,40.516323,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Agnes/Holy Trinity, West Mifflin</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 11 a.m.-6 p.m., Holy Trinity Church social hall, 529 Grant Ave. Extension. Menu: Captain’s platter; fried fish dinner; baked fish dinner; shrimp dinner; crab cake dinner; fish sandwich; baked macaroni; basket of shrimp; haluski; french fries; cole slaw; pierogies; soup of the day; crab cakes. Kids’ menu: small fish, or basket of shrimp dinner, with french fries, applesauce and drink. Information, call 412-466-6545 or 412-466-6238. Takeout available,  call 412-466-9695. Website, stagneswm.com or holytrinitywm.com. Also featuring Chinese auction.]]></description>
+			<Point>
+				<coordinates>-79.865834,40.3705558,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Elizabeth Ann Seton 
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesdays and Fridays of Lent, 11:30 a.m.-6:30 p.m. (3:30-6:30 p.m. on Good Friday), St. Luke Church hall, 330 Third Ave. Dinners: baked fish, fried fish, crab cake, shrimp, $8, with french fries, cole slaw and roll/butter; pierogie dinner (6) with cole slaw and roll, $8; macaroni and cheese dinner, with stewed tomatoes, $6. Other menu items: baked or fried fish sandwich, $5.75; crab cakes (3), $5; shrimp basket, $5; pierogies, $1.25 each, $7 half dozen; haluski, $2, potato and clam chowder, $3, and more. Beverages include lemonade, coffee/tea, sweet iced tea and soda. Takeout is available. For phone orders, call 412-276-1011, ext. 220, from 11 a.m.-5 p.m. Express pick-up for phone orders is available. For information, visit seascarnegie.org.]]></description>
+			<Point>
+				<coordinates>-80.09109309999998,40.4038093,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Joseph- ASH WEDNESDAY ONLY
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday, 11 a.m.-7 p.m., dine-in at St. John Hall, 342 Dorseyville Road, takeout from John Paul II Hall. Menu and costs: fish sandwich, $7; fish sandwich and french fries, $8; fish dinner, with fish sandwich, drink and choice of two sides, $10. Sides, $2 each ($1 applesauce): applesauce; macaroni and cheese; haluski; french fries; cole slaw. No phone orders accepted.]]></description>
+			<Point>
+				<coordinates>-79.92426160000002,40.5187804,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Rene's Restaurant &amp; Lounge</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.renesrestaurant.com/pages/menu]]></description>
+			<Point>
+				<coordinates>-79.81026400000002,40.382986,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Monica
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, except Good Friday, 4-7 p.m., Founders Hall, 116 Thorndale Drive. Dinners: baked or fried fish dinner, $10, includes cole slaw and one side choice (macaroni and cheese or french fries); shrimp dinner, $10, includes cole slaw, one side; kids meal, $5; fish sandwich, $7; french fries, cole slaw, macaroni and cheese, pizza, $2. Takeout is available. For more information, call 724-846-7540 or visit www.saintmonica.us.]]></description>
+			<Point>
+				<coordinates>-80.3559088,40.7662661,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Peter
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Fridays of Lent, excluding Good Friday, 4-7:30 p.m., St. Peter Church hall, 670 S. Main St. Menu: fried or baked cod, french fries, macaroni and cheese, pierogies, cole slaw, salad, beverage and dessert. Cost is $10 for adult dinner, $5 for child 12 and under, $7 for student. Also, $15 for all-you-can-eat (no carry out). Takeout is available, except for all-you-can-eat deal. For more information, call 724-794-2880.]]></description>
+			<Point>
+				<coordinates>-80.05069300000002,41.0564279,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Damien of Molokai
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., Father Abbate Hall, 225 Park Ave. For more information, call 724-258-7742. Takeout is available, call 724-258-9276.]]></description>
+			<Point>
+				<coordinates>-79.92381999999998,40.19974,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>St. Hilary
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays of Lent, including Good Friday, 4-7 p.m. (11 a.m.-1 p.m. sandwich takeout only), social hall, 320 Henderson Ave. Menu: fried hand-breaded haddock fish sandwiches, fried shrimp, cabbage and noodles, pierogies and more. Takeout available, call 724-222-1381.]]></description>
+			<Point>
+				<coordinates>-80.2667295,40.1890869,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Harrison City VFD
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Ash Wednesday and Fridays during lent. ... 4p-8p. ... 1010 Mill St., Harrison City, PA 15636 ... 724-744-9980.]]></description>
+			<Point>
+				<coordinates>-79.65042499999998,40.35340500000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Trafford EMS
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Don't forget! Next week starting on Ash Wednesday, help support Trafford EMS by joining us for our first annual fish fry!<br>Located in the Manchester Room, 412 Brinton Ave. in Trafford from 4-8 pm.<br>Can't wait to see you there!]]></description>
+			<Point>
+				<coordinates>-79.76077299999997,40.385267,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>AW Beattie Career Center
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[12-3 and 4-7 <br>February 20, 2015<br>February 27, 2015<br>March 6, 2015<br>March 13, 2015<br>March 27, 2015<br>menu: http://beattietech.com/BeattieEvents/FishFry2015.pdf<br>8 oz Fried Battered Fish Sandwich            $7.50<br>8 Crunchy Fried Shrimp                             $8.50<br>Grilled Cheese Platter                                $4.50<br>Please Choose 1 side:<br>FreshCut Fries<br>FreshCut Chips<br>MacnCheese<br>Extras:<br>Fish on a Dish<br>$5.00<br>Sandwich <br>$5.50<br>8 Shrimp<br>$6.50 <br>Fries<br>$2.25 <br>Potato Chips<br>$2.25 <br>Cole Slaw <br>$1.25<br>Stewed Tomatoes<br>$1.25 <br>Beverages:<br>$1.25<br>Fountain Drinks<br>Coke<br>Diet Coke<br>Dr Pepper<br>Lemonade<br>Power Ade<br>Sprite<br>Iced Tea<br>$1.25<br>Coffee<br>$1.25]]></description>
+			<Point>
+				<coordinates>-80.00582059999999,40.579311,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Whole Foods Wexford
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Join us every Friday in Lent for our annual fish fry in the seafood department! Stop by for a fresh, made-to-order fish sandwich for only $7! Each sandwich is served with a side of coleslaw and features two breaded filets of fish! Available from 11 am - 7 pm every Friday until Easter. ]]></description>
+			<Point>
+				<coordinates>-80.05291879999999,40.6123876,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Nied's</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Menu: http://niedshotel.myfastsite.com/menu/]]></description>
+			<Point>
+				<coordinates>-79.94988990000002,40.483428,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-1</styleUrl>
+			<name>Calvary United Presbyterian Church
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Calvary United Presbyterian Church 800 Thompson Avenue, Donora, PA 15033; 724-379-8285<br><br>Fish fry 11am-6pm Ash Wednesday and each Friday of lent through Good Friday<br><br>Menu: Homemade pierogies, soups, fish sandwiches, baked fish, crab cakes dinner, shrimp dinner, fish and chips, macaroni and cheese, halushki, fries, fried dough, assorted homemade desserts. Eaten in or takeouts available and local delivery.]]></description>
+			<Point>
+				<coordinates>-79.85690850000003,40.1807525,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Rural Ridge VFD
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[The Annual Rural Ridge Volunteer Fire Company Fish Fry begins on Friday February 20, 2015 and runs every Friday during Lent except Good Friday. Please stop by and support your fire company. As a reminder, we will not be hosting our Fish Fry on Good Friday this year. Thank you.<br>724.265.4000]]></description>
+			<Point>
+				<coordinates>-79.828348,40.585567,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Beloved Disciple (Knights of Columbus Hall)</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Grove City knights of Columbus #3658 and<br>rosary altar Society<br>knights of Columbus hall<br>1342 S. Center St. Ext. (Rt. 208), Grove City<br>February 20, 27 / March 6, 13, 20, 27<br>4:30-7:00 pm<br>all-YoU-Can-eaT-FiSh<br>adult $10; Child 5-12 $5 (under 5 Free)<br>immediate families: no more than $40.<br>Includes fried fish, 1 piece baked fish, mac<br>and cheese, scalloped potatoes, green<br>beans, salad, coleslaw, applesauce, roll, beverage and dessert.<br>*Dine in or take out]]></description>
+			<Point>
+				<coordinates>-80.11233149999998,41.1551301,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Immaculate Heart of Mary
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[gallagher hall,<br>Mercer<br>February 20, 27 / March 6, 13, 20, 27<br>and<br>april 3; 5:00-7:00 pm<br>Fried FiSh:<br>adult $9; Child 12 and under $4; 3 and under Free<br>Includes French fries, mac and cheese,<br>coleslaw, bread and butter, coffee, tea,<br>lemonade and cake. *Takeout available.<br>(724) 662-2999]]></description>
+			<Point>
+				<coordinates>-80.24080879999997,41.232293,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Ss. Peter &amp; Paul Byzantine
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[3415 Wallace Street, Erie<br>February 20 / March 6, 20; 4:30-7:00 pm<br>FiSh and/or pierogi<br>adult $10; Child 6-12 $5; Child under 6 FreeIncludes choice of baked fish, potato/cheese pierogi or combo. *Takeout available.nut roll bake sale too!(814) 825-8140]]></description>
+			<Point>
+				<coordinates>-80.05789249999998,42.108815,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>ASH WEDNESDAY Saint John the Baptist </name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[pastors’ hall<br>26th and Wallace Streets, Erie<br>ash Wed., February 18 4:30-7:00 pm (distribution of ashes 5:00 pm)<br>deep Fried perCh or Baked Cod <br>adult $9; Senior $8; Child under 12 $5<br>Includes potatoes, mac and cheese, green beans, salad and homemade desserts.(814) 454-2873]]></description>
+			<Point>
+				<coordinates>-80.06116800000001,42.115612,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Saint Severin
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Social hall, 6786 Kylertown-Drifting Hwy.,Drifting (Exit 133 on I-80, 5 mi. N. on Rt. 53)<br>February 20, 27 / March 6, 13, 20, 27 4:00-6:30 pm<br>Baked or Fried FiSh adult $9, Small $6.Includes parsley potatoes, vegetable, slaw or applesauce, mac and cheese, stewed tomatoes, roll and butter, dessert and beverage. *Eat in or take out. (814) 345-6665]]></description>
+			<Point>
+				<coordinates>-78.10750200000001,41.029474,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Warriors Mark United Methodist Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday, February 20, 2015<br>4:30 pm - 6:30 pm<br>Additional Dates<br>Friday, February 27, 2015 4:30 pm - 6:30 pm<br>Friday, March 06, 2015 4:30 pm - 6:30 pm<br>Friday, March 13, 2015 4:30 pm - 6:30 pm<br>Friday, March 20, 2015 4:30 pm - 6:30 pm<br>Warriors Mark United Methodist Church<br>1840 Centre Line Rd.<br>Warriors Mark, PA<br>Directions<br><br>Price: $9/Adults, $4/Age 5 - 10, Free/Age 4 & Under<br><br>FISH FRY DINNERS<br><br>at Warriors Mark United Methodist Church<br><br>1840 Centre Line Rd., Warriors Mark, PA<br><br>4:30 – 6:30 PM on the following Fridays….<br><br>February 20, 27, March 6, 13, 20, 27<br><br>Cost: $9/Adults, $4/Age 5 – 10, Free/Age 4 & under<br><br>The Warriors Mark UM Church is handicapped accessible.<br><br>Questions, call the church office at 814-632-6906.]]></description>
+			<Point>
+				<coordinates>-78.126869,40.704448,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Trauger VFD
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11am-8pm Ash Wednesday and every Friday of Lent<br><br>https://www.facebook.com/pages/Trauger-Volunteer-Firemens-Club-and-Fire-Department/110323011274]]></description>
+			<Point>
+				<coordinates>-79.4634274,40.2298817,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Moon Twp. VFC
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.moontwpfire.com/news.php<br><br>The annual Moon Twp. VFC Lenten Fish Frys will be held on Friday's during lent from February 20th to April 3rd at the Public Safety Building. Fish Fry Hours are 11:00 AM-8:00PM. All food on menu can be for take out service or sit down meals.<br>Take out Phone Number 412-262-5006<br>Menu items (all dinners include Fries and our special firehouse recipe Coleslaw)<br>Fish Dinner<br>Chicken Dinner<br>Shrimp Dinner<br>Fish Sandwich<br><br>Homemade Desserts for sale by Moon Twp VFC Ladies Aux.]]></description>
+			<Point>
+				<coordinates>-80.2080494,40.5045711,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Double Wide Grill
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Double Wide Grill<br>DoubleWideGrill is Serving up Everybody's Favorite Seafood Delights for Lent.<br><br>Try our Sauteed Tilapia, Fresh Tilapia Lightly Sauteed and Topped with our Cajun Honey Garlic Sauce served with 2 Sides, A House Specialty! Come 'N Git It.<br><br>100 Adams Shoppes Mars, Pa & 2339 E. Carson St. In The South Side. www.doublewidegrill.com<br><br>Menu: https://scontent-iad.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1010490_10155228538205402_1672336736937157009_n.jpg?oh=439257b53e871336e9807938a97285ff&oe=55948F7F]]></description>
+			<Point>
+				<coordinates>-80.05642699999999,40.6874174,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>SpitfireZ Catering &amp; Sandwich Shop</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Spitfirez Haddock Fish Fry! 316 Airbrake Avenue Wilmerding, PA 15148 412-824-3922 www.spitfirez.com]]></description>
+			<Point>
+				<coordinates>-79.80607399999997,40.395472,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Pizzarita</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Hand Beer Battered Cod!! Available on Fridays during lent. Quantities are limited, get 'em early.]]></description>
+			<Point>
+				<coordinates>-79.96289100000001,40.544546,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Highland Hose Fire Company
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Highland Hose Volunteer Fire Company 401 East 8th Avenue Tarentum, Pa 15084 Ash Wednesday and every Friday during Lent 4-7 PM Eat in, take out, or delivery 724-224-0999 Fish sandwich with cole slaw and choice of fries or mac & cheese $7.50 Fried shrimp with cole slaw and choice of fries or mac & cheese $7.50 Fish sandwich only $5.00 Shrimp only $5.00]]></description>
+			<Point>
+				<coordinates>-79.7531659,40.60455600000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Saint Bartholomew School</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://www.stbartsschool.com/]]></description>
+			<Point>
+				<coordinates>-79.84045500000002,40.465002,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Wattsburg Hose Co Social Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Wattsburg Hose Co. Social Hall, 9617 North St., Wattsburg, will host all-you-can-eat fish-fry dinners Friday and March 6 and 20 as well as April 3, from 4:30 to 7 p.m.<br><br>Cost: $12 per adult; $6 each for children 5 to 12; free for children younger than 5; $10 for seniors<br><br>Info: 323-5143]]></description>
+			<Point>
+				<coordinates>-79.809302,42.001698,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Holy Cross Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Holy Cross Catholic Church, 7100 West Ridge Road, Fairview, will hold fish dinners including choice of fish, shrimp or a combo; includes coleslaw, potato salad, roll and butter, or macaroni and cheese, roll and butter, beverage and dessert. Dinners will take place Friday and Feb. 27, as well as March 6, 13, 20 and 27, from 4:30 to 7 p.m. Takeouts available.<br><br>Cost: $9 for adults and $5 for children for fish/shrimp; $5 for macaroni and cheese.<br><br>Info: 474-2605]]></description>
+			<Point>
+				<coordinates>-80.24532099999999,42.039261,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Assumption Greek Orthodox Church
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Assumption Greek Orthodox Church, 4376 West Lake Road, will hold Lenten dinners every Friday, Feb. 27 to April 3, from 5 to 7 p.m. Dinners will include a traditional Greek fasting meal, dessert and beverage. Fish dinners are also available.<br><br>Cost: $7, adults; $5, children; $10 for fish dinners.<br><br>Info: 838-8808]]></description>
+			<Point>
+				<coordinates>-80.18497200000002,42.091658,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Mark Episcopal
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[St. Mark Episcopal Church, 4701 Old French Road, will serve Lenten dinners on Feb. 27, March 6, 13, 20 and 27, from 5 to 7 p.m. On the menu: baked or broiled fish, or macaroni and cheese.<br><br>Cost: $10 for adults and $5 for children<br><br>Info: 868-9704]]></description>
+			<Point>
+				<coordinates>-80.05812300000002,42.0963769,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-2</styleUrl>
+			<name>Bioni-Yeckel VFW Post 8308
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[446 Georgetown Rd.<br>Lawrence, PA 15055<br>Where: VFW Social Hall<br>When: Ash Wednesday & every Friday throughout Lent ending on April 3<br>Times: 11am-7pm<br>Menu:<br>Fried Fish Sandwich<br>Fried Fish Dinner (includes fries and cole slaw)<br>Baked Fish Dinner (inc. Fries and cole slaw)<br>Shrimp Dinner<br>Chicken Tenders<br>Mac n Cheese<br>Takeout Phone Number: (724) 941-6440]]></description>
+			<Point>
+				<coordinates>-80.1207109,40.3046551,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-3</styleUrl>
+			<name>Christ United Methodist Church (Bethel Park)</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[44 Highland Road<br>Bethel Park, Pa. 15102<br>Where: Christian Life Center<br>When: Friday February 20 – April 3, 2015<br>Times: Lunch: 11 a.m. to 2 p.m., Dinner: 4 p.m. to 7 p.m.<br>Menu: Fish Sandwich $7.00<br>Served with Potato Chips and slaw<br>Fish Dinner $7.75<br>Served w/ choice of Mac & cheese, rice, salad, or French fries and slaw<br>Baked Fish Dinner $8.75<br>Served w/ choice of Mac & cheese, rice, salad, or French fries and slaw<br>“Boom-Boom” Shrimp Dinner $9.00<br>Served w/ choice of Mac & cheese, rice, salad, or French fries and slaw<br>Adult Chicken (3) Finger Dinner $6.75<br>Served w/ choice of Mac & cheese, rice, salad, or French fries and slaw<br>Kids Chicken (2) Fingers $4.25<br>Served with Mac and Cheese or Fries<br>Ala Carte<br>Soup (2 each Week) Pint $4.00, Quart $7.00<br>Side Salad $2.75<br>Mac and Cheese $2.75<br>Side Rice Pilaf $2.25<br>French Fries $2.50<br>Fresh Fruit Salad $3.50<br>Coke Products $1.00<br>Coke, Diet Coke, Sprite, Caffeine Free Diet Coke, Coke Zero<br>Pie of the Week Prices Vary<br>Cake of the Week Prices Vary<br>Large Brownie $2.50<br>Takeout Phone Number: (412) 835-6621<br>Website: www.christumc.net]]></description>
+			<Point>
+				<coordinates>-80.04837800000001,40.348231,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>East Huntingdon Volunteer Fire Dept.
+
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[120 fire dept road<br>Tarrs, pa 15688<br>Where: firehall<br>When: Every Friday during lent<br>Times: Lunch 11 a.m. to 2 p.m., Dinner 5 p.m. to 8 p.m.<br>Cost & Menu: Fish sandwich, fish dinner, chicken tenders, fries, mac n cheese, haluski, pierogies, whaler sandwich, coleslaw, shrimp, claim strips, grilled cheese, homemade tarter and cocktail sauce, soup of the week.<br>Takeout Phone Number: (724) 696-9811<br>Website: easthuntingdonvfd.com]]></description>
+			<Point>
+				<coordinates>-79.59278990000001,40.170831,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-7</styleUrl>
+			<name>Monroeville MVFD #3</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Monroeville MVFD #3<br><br>2602 Third Street<br>Monroeville, PA 15146<br>When: Ash Wednesday and Every Friday during Lent, including Good Friday<br>Times: 11 a.m. to 8 p.m.<br>Menu: Beer batter cod sandwich 7.50. Fish sandwich platter (2 sides) 9.00. Other items include cajun clam chowder, breaded shrimp, clam strips and smeltz. seating is limited and advance calling for to go orders is recommended.<br>Takeout Phone Number: (412) 824-1563]]></description>
+			<Point>
+				<coordinates>-79.80260099999998,40.3975732,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>New Kensington V.F.D. #4
+
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[New Kensington V.F.D. #4<br><br>1710 7th Street<br>New Kensington, Pa. 15068<br>When: Ash Wednesday & every Friday throughout Lent including Good Friday<br>Times: 3:00 P.M. – 7:00 P.M., Good Friday: 11:00 A.M. – 7:00 P.M.<br>Menu & Cost:<br>12pc shrimp dinner: includes roll, coleslaw & one side $9.50<br>baked fish dinner: includes roll, coleslaw & one side $9.00<br>fried fish dinner: includes roll, coleslaw & one side $8.50<br>regular fried fish sandwich $7.25<br>baked fish sandwich $7.50<br>regular fried fish (fish only) $6.50<br>baked fish (fish only) $6.75<br>Sides: macaroni & cheese $3.00; French fries $3.00; halushki $3.00; clam chowder $3.00; cole slaw $2.00; hoagie bun $2.00; pop/water $1.00<br>Takeout Phone Number: (724) 335-4400]]></description>
+			<Point>
+				<coordinates>-79.744977,40.561587,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Agnes Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11400 St. Agnes Lane<br>N. Huntingdon, PA 15642<br>Where: Resurrection Hall (across from church)<br>When: Feb. 20, 27 and March 6 (3 weeks only)<br>Times: 4 p.m. to 7 p.m.<br>Cost & Menu: Chef-seasoned Panko hand-breaded Cod Dinner $8.00<br>Parmesan Encrusted Baked Cod Dinner $8.00<br>Fish Sandwich $5.50<br>Baked Fish $5.00<br>Fried Fish $5.00<br>Haluski $2.00<br>Homemade Potato Soup (cup) $2.00<br>Homemade Gourmet Tomato-Basil Soup $2.00<br>Homemade (3-cheese) Macaroni’N Cheese $2.00<br>French Fries $2.00<br>Pierogi $2.00 / three, $3.75 / six, $7.00 / doz<br>Coleslaw $.75<br>Homemade Applesauce .75<br>Dessert 1.00<br>Complete Dinner includes Baked or Fried Cod, choice of one side dish (French Fries, haluski, macaroni’N cheese, or pierogis), choice of coleslaw or homemade applesauce, dinner roll, dessert and choice of coffee, hot tea, or pop. All other items are ala carte as priced above.<br>Drink Choices Are: Coffee, hot tea for .50, Pepsi, Diet Pepsi, Sierra Mist for .75, (one of these choices included with complete dinner), or you may purchase them separately along with bottled water for $1.00, Kerber’s Orange Drink for .50, or Kerber’s Ice Tea for 1.00.<br>Takeout Phone Number: (724) 863-7392]]></description>
+			<Point>
+				<coordinates>-79.73208840000001,40.3139522,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Saint Mark Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[1125 Romine Avenue<br>McKeesport, Pa. 15133<br>Where: Parish Hall<br>When:Ash Wednesday, Fridays throughout Lent<br>Times: 3 p.m. to 7 p.m.<br>Menu: Fried fish, baked fish, French fries, cole slaw, haluski, desserts, drinks.<br>Takeout Phone Number:412-678-3443<br>Website: www.saintmarkdiopitt.org]]></description>
+			<Point>
+				<coordinates>-79.87107200000004,40.343404,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Patrick Parish, Brady's Bend
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[915 State Route 68<br>East Brady, PA 16028<br>Where: Parish Hall<br>When: Every Friday during Lent starting February 20 through March 27<br>Times: 4 p.m. to 6:30 p.m.<br>Menu: Baked or Fried Fish, choice of Macaroni & Cheese, French Fries, or Baked Potato, Cole Slaw, Bread, Beverage, and Dessert for $9.00 for Adult, $4.50 for Children 4-12; Free to children 3 and under.Takeout Phone Number:(724) 526-5180<br>Website: www.stpatrickbradysbend.org]]></description>
+			<Point>
+				<coordinates>-79.63016390000001,40.992416,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Peter Parish
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[720 Arch St.<br>Pittsburgh, PA 15212<br>Where: Church Hall<br>When: Fridays during Lent, starting February 20 through March 27<br>Times: 4 p.m. to 6:30 p.m.<br>Menu: Choice of Baked cod, Fried cod, Salmon cakes or Crab cakes, Macaroni and Cheese, Stewed Tomatoes or Haluski. Vegetable of the day, Coleslaw or pickled beets, Roll, butter, Desert included. Coffee or Tea. Cost is $9 for dinner.<br>Takeout Phone Number: (412) 321-2499<br>Website: http://www.stpeterparish.org/]]></description>
+			<Point>
+				<coordinates>-80.00861800000001,40.4524582,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Avalon Volunteer Fire Company</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Avalon Volunteer Fire Company will hold a fish fry each Friday in Lent, 4-8 p.m., at the fire hall, 629 New Brighton Rd., Avalon.<br><br>Eat-in dinners are $9 and include a fish sandwich, cole slaw, choice of one side and a drink.<br><br>Take-out dinners are $8. and include a fish sandwich, cole slaw and choice of one side.<br><br>Sides include French fries, macaroni and cheese, haluski and pierogies.<br><br>A $10, special, all-you-can-eat fish dinner will be held on Friday, Feb. 20, only.]]></description>
+			<Point>
+				<coordinates>-80.06522819999998,40.5028792,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Armand's Bar</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Confirm hours before visiting.<br><br>http://www.yelp.com/biz/armands-bar-pittsburgh]]></description>
+			<Point>
+				<coordinates>-79.94821200000001,40.461415,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-22</styleUrl>
+			<name>West Newton Moose
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[102 S Water st<br>West Newton, Pa. 1089<br>Where: Social Hall<br>When: Fridays throughout Lent, including Good Friday<br>Times: 5 p.m. to 8 p.m.<br>Menu: Fish Shrimp and chicken strip dinners with 2 sides Hot- Haluski, French Fries or Mac & cheese Cold- Applesauce or coleslaw.<br>Takeout Phone Number: (724) 872-7264]]></description>
+			<Point>
+				<coordinates>-79.768056,40.210123,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Ali's Marketplace
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Gluten-free fish sandwiches: http://alismarketplace.com/]]></description>
+			<Point>
+				<coordinates>-79.7008528,40.42731920000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Logans Ferry Heighs VFD
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[1001 Summit Street, New Kensington (Plum), PA 15068 Fridays 4-8 PM. https://www.facebook.com/lfhvfd235]]></description>
+			<Point>
+				<coordinates>-79.7490856,40.5604951,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-10</styleUrl>
+			<name>Pittsburgh Pierogie Truck SEE DATES BELOW</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[12 pm - 6 pm<br>March 6, 20, and April 3]]></description>
+			<Point>
+				<coordinates>-79.964293,40.52829,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-10</styleUrl>
+			<name>Pittsburgh Pierogie Truck SEE DATES BELOW
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[12pm-6pm<br>February 27, March 13 and 27]]></description>
+			<Point>
+				<coordinates>-79.80215599999997,40.541396,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Bernard School</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4-7pm]]></description>
+			<Point>
+				<coordinates>-79.130582,40.629524,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Al's Fish &amp; Chicken 2
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[10 am- 10pm<br><br>http://www.alsfishandchicken.com/]]></description>
+			<Point>
+				<coordinates>-79.86001220000003,40.3836673,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Franktuary (Lawrenceville)</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[11:30 am - 1 am<br><br>Franktuary is frying fish on Fridays too! Hand battered wild caught cod on our potato roll with house tartar sauce, or choose any crazy frank style. The Pittsburgh Fish is topped with slaw, a fried house pierogi, and ranch!]]></description>
+			<Point>
+				<coordinates>-79.96403800000002,40.466917,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>American Legion</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[American Legion Post 760 in Bethel Park. Address is 2409 Bethel Church Rd. Bethel Park Pa, 15102 We are open to the public from 4-8 every Friday including Good Friday. Cash Only. Guests should enter through the Front Porch entrance. Menu: Platters (include cole slaw and choice of homemade chips or fries): Baked or Fried Fish Sandwiches $9.00 Shrimp Basket $7.00 Entrees: Fish Sandwich (Fried or baked) $7.50 Shrimp Basket $6.00 Pierogies $6.00 Sides: Homemade Chips $2.00 Fresh Cut Fries $2.00 Macaroni & Cheese $2.50 Homemade Haluski $2.50 Homemade Cole Slaw $1.00 If I am missing any information, please let me know and I will be happy to send. Proceeds are to benefit the local veterans.]]></description>
+			<Point>
+				<coordinates>-80.03048000000001,40.344581,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Church of the Resurrection
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Call for details]]></description>
+			<Point>
+				<coordinates>-79.761257,40.453849,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>Legends of the North Shore</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Confirm details before visiting.]]></description>
+			<Point>
+				<coordinates>-80.00146699999999,40.45656000000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>APRIL 3 ONLY: Special Event: Keep Pittsburgh Fishy: A Fish Fry Benefiting PERSAD Center
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Friday, April 3, 5-10pm<br>Spirit, 242 51st Street<br><br>For the 3rd year in a row...<br>Come join us for a secular Fish Fry to benefit the PERSAD CENTER, a local non-profit strengthening the region's LGBTQ communities and their allies.<br><br>Enjoy the splendor of the Lenten Fish Fry season while supporting equality and empathy. Plus, this is your opportunity to check out Spirit Hall in Lawrenceville.<br><br>More information will be rolling in over the next few weeks, including DJs/entertainment (Fishcothèque after-party?).<br><br>$10 gets you...<br><br>-A spiced cornmeal crusted FISH SANDWICH on a hearty bun with a tasty Sriracha-mayo "tartar" sauce (veg-friendly zucchini "fish" sandwich also available).<br><br>-JALAPEÑO-APPLE SLAW, dressed in a light, yet totally delish honey-lime vinaigrette.<br><br>-Lou's famous MAC N CHEESE made with xxxtra cheese and love.<br><br>Plus, for a few bucks more...<br><br>-Indulgent desserts prepared by Becca Hegarty of Bluebird Kitchen!<br><br>See you there!<br><br>https://twitter.com/fishfrypgh]]></description>
+			<Point>
+				<coordinates>-79.95570079999999,40.4783121,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-8</styleUrl>
+			<name>The Pub Chip Shop</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://thepubchipshop.com/]]></description>
+			<Point>
+				<coordinates>-79.97934399999997,40.428562,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Option Independent Fire Co
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[http://optionfire.co/]]></description>
+			<Point>
+				<coordinates>-79.97182500000002,40.348215,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Most Holy Trinity Church</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4-6:30. Dinners are $9 and include two sides, a roll, and dessert.]]></description>
+			<Point>
+				<coordinates>-78.01297699999998,40.486061,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-9</styleUrl>
+			<name>Phoenix Volunteer Fire Company
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4-7 pm. $10 for eat-in or takeout dinner]]></description>
+			<Point>
+				<coordinates>-78.39219100000003,40.4278799,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Mark's Church
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4-6:30pm. $9 for adults, $4.50 for kids 11 and younger.]]></description>
+			<Point>
+				<coordinates>-78.39020920000002,40.5189744,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Mary's Memorial Hall
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[Lenten Seafood Buffet. 4:30-7pm. $11 for adults, $5 for kids ages 4-12, free for kids 3 and younger. Takeouts $8.]]></description>
+			<Point>
+				<coordinates>-78.39639750000002,40.5091813,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Our Lady of Lourdes Hall
+</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4:30-7pm. $9.50 for adults, $6.50 for kids under 12. Takeouts available at 3:30pm.]]></description>
+			<Point>
+				<coordinates>-78.4129441,40.5016239,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>St. Patrick's School Hall</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[All you can eat seafood buffet. 4-7 pm. $11.25 for ages 13-55, $10.25 for ages 56 and older, $6 for ages 5-12, free for ages 4 and younger, $12 for takeouts.]]></description>
+			<Point>
+				<coordinates>-78.4390952,40.392395,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-6</styleUrl>
+			<name>Unter Uns Society</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4:30-7:30. Coffee and homemade desserts 50 cents, dinners $8.50 for adults, $5 for children ages 4-12, free for children 3 and younger.]]></description>
+			<Point>
+				<coordinates>-78.38279899999998,40.501933,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-ci-4</styleUrl>
+			<name>Queen of Peace Parish</name>
+			<ExtendedData>
+			</ExtendedData>
+			<description><![CDATA[4-7 pm. Pierogies available at additional charge. $10 for adults, $4 for children 5-12, free for children 4 and younger. Takeouts will be available in the lower level.]]></description>
+			<Point>
+				<coordinates>-78.65263400000003,40.635567,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Style id='icon-22'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-1'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-1.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-10'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-10.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-2'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-2.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-3'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-3.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-4'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-4.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-5'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-5.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-6'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-6.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-7'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-7.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-8'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-8.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-ci-9'>
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>images/icon-9.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+	</Document>
+</kml>
