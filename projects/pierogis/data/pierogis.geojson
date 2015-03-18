@@ -7,7 +7,8 @@
         "type":"Point",
         "coordinates": [
           -80.0604303,
-          40.4689203
+          40.4689203,
+          0
         ]
       },
       "properties":{
@@ -15,8 +16,8 @@
         "styleUrl": "#icon-503-DB4436",
         "styleHash": "-12a4d528",
         "description":"342 Island Ave, McKees Rocks, PA 15136",
-        "website":"http://pierogiesplus.com/",
-      },
+        "website":"http://pierogiesplus.com/"
+      }
     },
     {
       "type": "Feature",
@@ -46,7 +47,7 @@
         ]
       },
       "properties": {
-        "name": "St. Anne Church ",
+        "name": "St. Anne Church",
         "styleUrl": "#icon-503-DB4436",
         "styleHash": "-12a4d528",
         "description": "Ash Wednesday and Fridays of Lent, except Good Friday, 4-7 p.m., school gym, 4040 Willow Ave. Menu: baked or fried fish dinner; fried seafood platter dinner; shrimp dinner; baked fish Florentine dinner; crab cake dinner; jumbo fish sandwiches; cole slaw; french fries; onion rings; baked potatoes; homemade pierogies (potato-cheese or sauerkraut); macaroni and cheese; haluski; pizza. Takeout available, call 412-561-0101 after 3:30 p.m. on day of fish fry. For more information, call 412-531-5964 or visit www.stanneparish.com. Sponsored by St. Anne fair committee."
