@@ -36,7 +36,7 @@
   p, em, strong, a, hr, li, ul {
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.25rem;
     text-align: left;
@@ -148,6 +148,10 @@
       <li><a href="https://pages.github.com/">Github Pages</a>, for web hosting (optional)
     </ul>
   </p>
+
+  <hr>
+  <h3>An HTML Template</h3>
+  <p>Never created a web page before? No sweat. There's not much to this one. Just download our template from <a>here</a>, save it somewhere useful, and open it in a text editor.</p>
   
 	<hr/>
   <h3>Where are all the Pierogies?</h3>
@@ -158,9 +162,10 @@
   <hr/>
   <h3>Black n' Gold Basemap with MapStack</a></h3>
   <p>The second element of this project is the basemap. To keep it simple, we are going to use a service provider rather than worry about building our own database and server. <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a> by Stamen Design is an awesome project that will allow us to create a free basemap using OpenStreetMap data styled to our liking. The image filters and effects offer a wide variety of customization.</p>
-	<p>When you're happy with what you've created, copy the tile url of any image on the live map you see (right click the map and follow your browser dialog to copy the link). The url will be rather long. Our map will use the url to generate and load map tiles just like the ones you've styled on MapStack. For the live Pie example, our url is:<br>
-	<em>'http://<strong>{s}</strong>.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/<strong>{z}/{x}/{y}</strong>.png'</em></p>
-  <p>Paste the url text into a text editor - we need to make some tweaks to get it ready for use in our map. The bracketed pieces of the url example above -- {s},{z},{x}, and {y} --- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map. Find the parts of the url from your link and replace them in the same manner as the example, with the same brackets and variables.</p>
+	<p>When you're happy with what you've created, copy the tile url of the live map by right clicking the map and follow your browser dialog to copy the link. The url will be rather long. Our map will use the url to generate and load map tiles just like the ones you've styled on MapStack.</p>
+	<p>Paste the url text from your MapStack map ino a text editor - we need to make some tweaks to get it ready for use in our map. In order to load all tiles, we need to substitute some of the url with generic variables. For example, our MapStack url is:</p>
+	<p><em>'http://<strong>{s}</strong>.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/<strong>{z}/{x}/{y}</strong>.png'</em></p>
+	<p>The bracketed pieces of the url example above -- {s},{z},{x}, and {y} --- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map. Find the parts of the url from your link and replace them in the same manner as the example, with the same brackets and variables.</p>	
  
   <hr/>
   <h3>Generate the map with Leaflet</h3>
@@ -173,7 +178,7 @@
 	<p>The result is a web map that displays your MapStack basemap in the browser, with the ability to pan and zoom around.</p>
   <hr>
 
-	<h2>Add the data points</h2>
+	<h3>Display the data</h3>
   <p>We have a pretty great map so far. Let's use Leaflet to add our .geojson file we made earlier.</p>
   <p>Leaflet display GeoJSON data, but does not load an externally-stored GeoJSON file - there are other JavaScript libraries that already do this sort of thing. The most common is <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a>, which we'll use. It requires just an extra couple snippets of code:</p>
 	<ul>
@@ -184,7 +189,7 @@
 	<p>The result is a web map that shows your data points!</p>
   
   <hr>
-  <h3>Pierogies!</h3>
+  <h3>Pierogie Icons</h3>
   <p>The standard map marker is nice, but our map needs something a little more custom. We can use almost any image file for a marker, and we've got <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that looks delicious</a>! Only one step:</p>
 	<ul>
 		<li>a) reference the icon file in our Leaflet code
