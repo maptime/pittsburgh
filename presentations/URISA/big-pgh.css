@@ -17,11 +17,13 @@ body {
   line-height:80%;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
   font-weight: 600;
   color:#fdb930;
   line-height:80%;
 }
+
+p {color:#fff;}
 
 strong {
   font-style: normal;
@@ -40,8 +42,8 @@ a {
   background: rgba(138,211,244,1.0);
   color:#231f20;
   text-decoration:none;
-  font-size: 80%;
-  line-height:100%;
+  font-size: 100%;
+  line-height:80%;
 }
 a.t {
   background-color:rgba(138,211,244,0.5)
