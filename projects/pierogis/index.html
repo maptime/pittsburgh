@@ -9,7 +9,6 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="L.Control.Sidebar.js"></script>
-<script src="jquery-2.1.1.min.js"></script>
 
 <style>
   #map {
@@ -20,6 +19,7 @@
 
 <body>
 <style>
+  
   /*font styles*/
   body {
     background: #fff;
@@ -114,6 +114,7 @@
 
 </style>
 
+
 <div id="sidebar">
   
   <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
@@ -124,7 +125,7 @@
       "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystem.<br>
       The <strong>Pittsburgh PieroGIS Map</strong> is a GIS for the places you get your Pierogies.
   </p>
-  <!-- Temporary call to arms -->
+  
   <h2>We need your help!</h2>
   <p>
     Have a favorite local Pierogie spot? Know where a secret kitchen with the best dough and potatoes and/or other thing is combined into a scrumptious comfort food item? Tweet the location to <a style="font-size: 1.2em" href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a> (bonus points for geotagged photographs)! We'll use the data points to show you how to make this map in the upcoming Maptime tutorial on Web-mapping Leaflet (of course, we know we could just search <em>The Internet</em> for this info ourselves, but we also plan to show you how to take the data you've captured and turn it into <strong>geodata</strong>).
@@ -182,7 +183,7 @@
 
 	<h3>Display the data</h3>
   <p>We have a pretty great map so far. Let's use Leaflet to add our .geojson file we made earlier.</p>
-  <p>Leaflet display GeoJSON data, but does not load an externally-stored GeoJSON file - there are other JavaScript libraries that already do this sort of thing. The most common is <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a>, which we'll use. It requires just an extra couple snippets of code:</p>
+  <p>Leaflet displays GeoJSON data, but does not load an externally-stored GeoJSON file - there are other JavaScript libraries that already do this sort of thing. The most common is <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a>, which we'll use. It requires just an extra couple snippets of code:</p>
 	<ul>
 		<li>a) Reference jQuery in the html header
 		<li>b) use a jQuery function to load our data from the GeoJSON file
@@ -210,14 +211,20 @@
 	<p>
 		Now you've built a web map from scratch using some freely available tools. 
 	</p>
-	-->
+-->	
 </div>
 
+
 <!--LEAFLET MAP-->
-<div class='custom-popup' id="map"></div>
+<div id="map" class='custom-popup'></div>
 
 
-<!--LEAFLET SCRIPT-->
+<!-- -----------------------
+LEAFLET SCRIPT -------------
+------------------------ -->
+
+<script src="./data/pierogie_data.js">//get a reference to the geojson object "pierogie_geojson" contained within a javascript file</script>
+
 <script>
   // initialize the map
   var map = L.map('map').setView([40.4452, -79.9866], 10);
@@ -234,22 +241,22 @@
     }
 	).addTo(map);
 	
-  // load GeoJSON from an external file using jquery
-  $.getJSON("./data/pierogis.geojson", function(data) {
-		
-		// create icon for point data
-    var ratIcon = L.icon({iconUrl: 'pierogie-01.png', iconSize: [75, 75], popupAnchor: [0,-18]});
-    
-		// add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data, {
-      pointToLayer: function(feature, latlng) {
-        var marker = L.marker(latlng, {icon: ratIcon});
-        marker.bindPopup('<h3>' + feature.properties.name + '</h3><p>' + feature.properties.description + '<p/>');
-        return marker;
+  //define the icon for the data points. This will be referenced later.
+  var pierogie_icon = L.icon({
+    iconUrl: 'pierogie-01.png',
+    iconSize: [75, 75],
+    popupAnchor: [0,-18]
+    });
+  
+  //
+  L.geoJson(pierogie_geojson, {
+    pointToLayer: function(feature, latlng) {
+      var marker = L.marker(latlng, {icon: pierogie_icon});
+      marker.bindPopup('<h3>'+feature.properties.name+'</h3><p>'+feature.properties.description+'<p/>');
+      return marker;
       }
     }).addTo(map);
-  });
-	
+  
 	// create sidebar and add to map (not required for maptime demonstration)
   var sidebar = L.control.sidebar('sidebar', {
     closeButton: false,
@@ -261,6 +268,7 @@
   setTimeout(function() {
     sidebar.show();
   }, 500);
+  
 	
 </script>
 
