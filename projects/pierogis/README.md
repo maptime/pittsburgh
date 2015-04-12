@@ -1,1 +1,0 @@
-This is the Pittsburgh Pierogie Map Tutorial created by Maptime Pittsburgh. For those wondering why we spelled pierogies incorrectly, "PieroGIS" is a play on {G}eographic {I}nformation {S}ystems. See the map and tutorial here: [PieroGIS Map](http://maptime.io/pittsburgh/projects/pierogis) 
