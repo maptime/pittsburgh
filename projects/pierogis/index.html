@@ -1,0 +1,279 @@
+
+
+<html>
+
+<head>
+<title>Pittsburgh "PieroGIS" Map</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="L.Control.Sidebar.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="L.Control.Sidebar.js"></script>
+
+<script src="pierogie_data.js">//get a reference to the geojson object "pierogie_geojson" contained within a javascript file</script>
+
+<style>
+  #map {
+    height: 100%
+  }
+</style>
+</head>
+
+<body>
+<style>
+  
+  /*font styles*/
+  body {
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    position: relative;
+    cursor: auto; }
+    
+  p, em, strong, a, hr, li, ul {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    text-rendering: optimizeLegibility; }
+  
+  h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fdb930;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4; }
+  
+  h1 {
+    font-size: 2.125rem;
+    text-shadow:
+      4px 4px 4px #000; }
+  
+  h2 {
+    font-size: 1.6875rem; }
+  
+  h3 {
+    font-size: 1.375rem; }
+
+   
+  /*leaflet styles*/
+  .leaflet-sidebar > .leaflet-control h1, h2, h3 {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control strong {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control  em {
+    color: #fdb930;
+  }
+  .leaflet-sidebar > .leaflet-control a {
+    color: #8ad3f4;
+  }
+  .leaflet-sidebar > .leaflet-control hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(138,211,244,0.5);
+    margin: 1em 0;
+    padding: 0;
+  }
+  .custom-popup .leaflet-popup-content-wrapper {
+    background: rgba(35,31,32,0.9);
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
+
+  .custom-popup .leaflet-popup-tip-container {
+    margin: 0 auto;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .custom-popup .leaflet-popup-tip {
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    margin: -8px auto 0;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: rgba(35,31,32, 0.7);
+  }
+
+</style>
+
+
+<div id="sidebar">
+  
+  <h1><b>Pittsburgh "PieroGIS" Map!</b></h1>
+  <p style="text-align:center"><img src='./pierogie-01.png'/></p>
+  <h3><em>A Maptime Pittsburgh (<a href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a>) Project for Teaching Web-Mapping with Leaflet</em></h3> 
+  <p>
+      Pierogies are a delicious food.<br>
+      "Piero<strong>GIS</strong>" are like Pierogies, but are a play on [<strong>G</strong>]eographic [<strong>I</strong>]nformation [<strong>S</strong>]ystem.<br>
+      The <strong>Pittsburgh PieroGIS Map</strong> is a GIS for the places you get your Pierogies.
+  </p>
+  
+  <h2>We need your help!</h2>
+  <p>
+    Have a favorite local Pierogie spot? Know where a secret kitchen with the best dough and potatoes and/or other thing is combined into a scrumptious comfort food item? Tweet the location to <a style="font-size: 1.2em" href="https://twitter.com/maptimePGH" target="_blank">@maptimePGH</a> (bonus points for geotagged photographs)! We'll use the data points to show you how to make this map in the upcoming Maptime tutorial on Web-mapping Leaflet (of course, we know we could just search <em>The Internet</em> for this info ourselves, but we also plan to show you how to take the data you've captured and turn it into <strong>geodata</strong>).
+  </p>
+  
+  <hr>
+  <h3>Some Well-Deserved Acknowledgements</h3>
+  <p>Special Thanks to <a href="https://twitter.com/jonahadkins" target="_blank">Jonah Adkins</a> at Maptime Hampton Roads Virginia (<a href="https://twitter.com/maptimehrva" target="_newtab">@maptimehrva</a>) for creating the original <a href="http://maptime.io/hrva/ghosts/hauntedHRVA.html">Haunted tutorial</a>, which we used to create this map. By extension, thanks to <a href="https://twitter.com/awoodruff" target="_newtab">Andy Woodruff</a> who created this <a href="http://awoodruff.github.io/leaflet-intro/" target="_newtab">Leaflet tutorial</a> for MaptimeBoston, as well as <a href="https://twitter.com/ungoldman" target="_newtab">Nate Goldman</a> for his cool <a href="http://ngoldman.github.io/burger-week-challenge-2014/" target="_blank">burger map</a>, which inspired the UI for Maptime HRVA's tutorial.</p>
+  <p>Many thanks to <a href="https://twitter.com/hollenbarmer" target="_newtab">Hollen Barmer</a> and her meticulous work on the <a href="https://www.google.com/maps/d/u/0/viewer?mid=zuAqrt81MrW8.kn7uqN9fYojI&msa=0&ll=41.013066,-77.893066&spn=5.014649,8.635254">2015 Pittsburgh Lenten Fish Fry Map</a>! She has generously provided some of her relevant data for display here.</p>
+  <p>And of course, thanks to the <a href="http://www.maptime.io/" target="_newtab">Maptime!</a> community!</p>
+	<hr>
+	<h2>Tutorial</h2>
+	<p>More to come!</p>
+	<!-- 
+  <hr>
+  <h3>Tech We'll Use</h3>
+  <p>
+    <ul>
+      <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> for creating, editing, viewing data.
+			<li><a href="http://mapstack.stamen.com/" target="_newtab">MapStack</a>, for making a basemap.
+			<li><a href="http://leafletjs.com" target="_newtab">Leaflet</a>, for generating the map
+      <li>A text editor, for writing some HTML and assembling the Leaflet script
+      <li><a href="https://pages.github.com/">Github Pages</a>, for web hosting (optional)
+    </ul>
+  </p>
+
+  <hr>
+  <h3>An HTML Template</h3>
+  <p>Never created a web page before? No sweat. There's not much to this one. Just download our template from <a>here</a>, save it somewhere useful, and open it in a text editor.</p>
+  
+	<hr/>
+  <h3>Where are all the Pierogies?</h3>
+  <p>First thing is first: we need data before we can make a map. We've collected some pierogie geodata in a file format called <strong>GeoJSON</strong>, which is an extension of <strong>JSON</strong>, or "JavaScript Object Notation", which is a JavaScript-based format for storing tabular data. GeoJSON adds a standard attribute format for including geolocation information (latitude and longitude) in a JSON file.</p>
+  <p><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> provides a simple interface for creating GeoJSON files, adding attributes (e.g., Name, Description, and Website), and managing the dataset as a table (which is easier to read than the native javascript text format of GeoJSON). It can also be used for converting between other common vector geodata formats, including <strong>KML</strong> (used by Google Map products) and <strong>CSV</strong> files, which you can create in a spreadsheet program like Excel.</p>
+	<p>Our <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a>, located in our project repo, contains some of the pierogie sources from the region. You can load up this file in GeoJSON.io to add more data in an easy-to-read tabular format, or edit the GeoJSON text directly.</p>
+  
+  <hr/>
+  <h3>Black n' Gold Basemap with MapStack</a></h3>
+  <p>The second element of this project is the basemap. To keep it simple, we are going to use a service provider rather than worry about building our own database and server. <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a> by Stamen Design is an awesome project that will allow us to create a free basemap using OpenStreetMap data styled to our liking. The image filters and effects offer a wide variety of customization.</p>
+	<p>When you're happy with what you've created, copy the tile url of the live map by right clicking the map and follow your browser dialog to copy the link. The url will be rather long. Our map will use the url to generate and load map tiles just like the ones you've styled on MapStack.</p>
+	<p>Paste the url text from your MapStack map ino a text editor - we need to make some tweaks to get it ready for use in our map. In order to load all tiles, we need to substitute some of the url with generic variables. For example, our MapStack url is:</p>
+	<p><em>'http://<strong>{s}</strong>.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/<strong>{z}/{x}/{y}</strong>.png'</em></p>
+	<p>The bracketed pieces of the url example above -- {s},{z},{x}, and {y} --- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map. Find the parts of the url from your link and replace them in the same manner as the example, with the same brackets and variables.</p>	
+ 
+  <hr/>
+  <h3>Generate the map with Leaflet</h3>
+  <p><a href="http://leafletjs.com" target="_blank">Leaflet</a> is a JavasScript library that does the work of pulling our data and basemap together within HTML. It provides an extensive library of functions supported by a dedicated team of contributors. Using the documentation from the Leaflet.js website, we are going to start with the most basic components needed for a map:</p>
+  <ul>
+		<li>a) Add Leaflet starter code 
+		<li>b) Specify the lat/long of our map's focus. 
+		<li>c) Add our tile layer URL from MapStack
+	</ul>
+	<p>The result is a web map that displays your MapStack basemap in the browser, with the ability to pan and zoom around.</p>
+  <hr>
+
+	<h3>Display the data</h3>
+  <p>We have a pretty great map so far. Let's use Leaflet to add our .geojson file we made earlier.</p>
+  <p>Leaflet displays GeoJSON data, but does not load an externally-stored GeoJSON file - there are other JavaScript libraries that already do this sort of thing. The most common is <a href="http://code.jquery.com/jquery-2.1.1.min.js" target="_blank">jQuery</a>, which we'll use. It requires just an extra couple snippets of code:</p>
+	<ul>
+		<li>a) Reference jQuery in the html header
+		<li>b) use a jQuery function to load our data from the GeoJSON file
+		<li>c) use Leaflet to add the data to the map
+	</ul>
+	<p>The result is a web map that shows your data points!</p>
+  
+  <hr>
+  <h3>Pierogie Icons</h3>
+  <p>The standard map marker is nice, but our map needs something a little more custom. We can use almost any image file for a marker, and we've got <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that looks delicious</a>! Only one step:</p>
+	<ul>
+		<li>a) reference the icon file in our Leaflet code
+	</ul>
+  
+  <hr>
+  <h3>Information pop-ups</h3>
+	<p>We have locations and icons, but we really need to know what each points is. Let's add some pop-ups to describe each location. We will use Leaflet to dynamically generate a pop-up for each point from the point's attributes:</p>
+	<ul>
+		<li>a) 'bind' a pop-up to the marker
+		<li>b) create the text and attribute references
+		<li>c) optionally style the text using HTML/CSS
+	</ul>
+
+  <h3>Done!</h3>
+	<p>
+		Now you've built a web map from scratch using some freely available tools. 
+	</p>
+-->	
+</div>
+
+
+<!--LEAFLET MAP-->
+<div id="map" class='custom-popup'></div>
+
+
+<!-- -----------------------
+LEAFLET SCRIPT -------------
+------------------------ -->
+
+
+
+<script>
+  // initialize the map
+  var map = L.map('map').setView([40.4452, -79.9866], 10);
+	
+	// create mapstack tile layer and add to map
+  L.tileLayer(
+  //'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png',
+    'http://{s}.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/{z}/{x}/{y}.png',
+    
+		{
+			attribution:'<p style="font-size:0.6rem">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> license. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a> license.</p>',
+      maxZoom: 18,
+      minZoom: 8,
+    }
+	).addTo(map);
+	
+  //define the icon for the data points. This will be referenced later.
+  var pierogie_icon = L.icon({
+    iconUrl: 'pierogie-01.png',
+    iconSize: [75, 75],
+    popupAnchor: [0,-18]
+    });
+  
+  //
+  L.geoJson(pierogie_geojson, {
+    pointToLayer: function(feature, latlng) {
+      var marker = L.marker(latlng, {icon: pierogie_icon});
+      marker.bindPopup('<h3>'+feature.properties.name+'</h3><p>'+feature.properties.description+'<p/>');
+      return marker;
+      }
+    }).addTo(map);
+  
+	// create sidebar and add to map (not required for maptime demonstration)
+  var sidebar = L.control.sidebar('sidebar', {
+    closeButton: false,
+    position: 'left'
+  });
+
+  map.addControl(sidebar);
+
+  setTimeout(function() {
+    sidebar.show();
+  }, 500);
+  
+	
+</script>
+
+</body>
+
+</html>
