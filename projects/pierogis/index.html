@@ -243,14 +243,14 @@ LEAFLET SCRIPT -------------
     }
 	).addTo(map);
 	
-  //define the icon for the data points. This will be referenced later.
+  //define the icon variable for the data points. This variable will be referenced later.
   var pierogie_icon = L.icon({
     iconUrl: 'pierogie-01.png',
     iconSize: [75, 75],
     popupAnchor: [0,-18]
     });
   
-  //
+  // load the geojson data and create a marker w/ a data-driven pop-up"
   L.geoJson(pierogie_geojson, {
     pointToLayer: function(feature, latlng) {
       var marker = L.marker(latlng, {icon: pierogie_icon});
