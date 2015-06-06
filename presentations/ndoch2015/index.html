@@ -415,30 +415,27 @@
 
 <section style="padding: 15%; text-align: center">
 	<h2>Build your own PieroGIS</h2>
+	<p><a href="http://maptime.io/pittsburgh/projects/pierogis">See the project here</a></p>
+	
+		<p><a href=file:///D:/web/site/maptime/pittsburgh/presentations/ndoch2015/pierogis_example.html">See a clean version of the map you can hack from (sans sidebar)</a></p>
 </section>
 
 <section style="padding-top: 3em">
   <h3>Tech We'll Use</h3>
   <p>
     <ul>
-      <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> for creating, editing, viewing data.
+			<li>A text editor, for writing some HTML and assembling the Leaflet script
 			<li><a href="http://mapstack.stamen.com/" target="_newtab">MapStack</a>, for making a basemap.
+      <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> for creating, editing, viewing data.
 			<li><a href="http://leafletjs.com" target="_newtab">Leaflet</a>, for generating the map
-      <li>A text editor, for writing some HTML and assembling the Leaflet script
       <li><a href="https://pages.github.com/">Github Pages</a>, for web hosting (optional)
     </ul>
   </p>
  </section>
 
 <section style="padding-top: 3em">
-  <h3>Where are all the Pierogies?</h3>
-  <p>First thing is first: we need data before we can make a map. We've collected some pierogie geodata as <strong>GeoJSON</strong>.</p>
-The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a> contains some of the pierogie sources from the region. You can load up this file in  <a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> to add more data in an easy-to-read tabular format, or edit the GeoJSON text directly.</p>
-</section>
-
-<section style="padding-top: 3em">
 	<h3>Black n' Gold Basemap with MapStack</a></h3>
-  <p>The second element of this project is the basemap. To keep it simple, we are going to use <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a>. The image filters and effects offer a wide variety of customization.</p>
+  <p>The base element of this project is the basemap. To keep it simple, we are going to use <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a>. The image filters and effects offer a wide variety of customization.</p>
 </section>
 
 <section style="padding-top: 3em">
@@ -451,25 +448,32 @@ The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierog
 	<p><em>http://<strong>d</strong>.sm.mapstack.stamen.com/toner/<strong>11</strong>/<strong>568</strong>/<strong>771</strong>.png</em></p>
 	<p>(Note that depending on how custom you made your map, it may be very long)</p>
 	<p>We need to tweak this to make it generic and useful for Leaflet. The portions highlighted in <strong>red</strong> need to change.</p>
-	</section>
+</section>
+
 <section style="padding-top: 3em">
 	<p>Change the variables in url like this:</p>
 	<p><em>http://<strong>{s}</strong>.sm.mapstack.stamen.com/toner/<strong>{z}</strong>/<strong>{x}</strong>/<strong>{y}</strong>.png</em></p>
 	<p>The bracketed pieces of the url example above -- {s},{z},{x}, and {y} -- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map.</p>
-	</section>
+</section>
+
+<section style="padding-top: 3em">
+  <h3>Where are all the Pierogies?</h3>
+  <p>We've collected some pierogie geodata as <strong>GeoJSON</strong>.</p>
+The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a> contains some of the pierogie sources from the region. You can load up this file in  <a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> to add more data in an easy-to-read tabular format, or edit the GeoJSON text directly.</p>
+</section>
  
 <section style="padding-top: 3em">
   <h3>Generate the map with Leaflet</h3>
   <p><a href="http://leafletjs.com" target="_blank">Leaflet</a> is a JavasScript library that does the work of pulling our data and basemap together within HTML.</p><p>Using the documentation from the starter tutorial on <a href="http://leafletjs.com/examples/quick-start.html" target="_blank">Leafletjs.com</a>, we are going to start with the most basic components needed for a map:</p>
-	</section>
-	<section>
+</section>
+<section>
   <ol>
 		<li>Add Leaflet starter code</li>
 		<li>Create the Map element</li>
 		<li>Add our tile layer URL from MapStack</li>
 	</ol>
 	<p>The result will be a web map that displays your MapStack basemap in the browser, with the ability to pan and zoom around.</p>
-  </section>
+</section>
 
 <section style="padding-top: 3em">
 	<h2>Add Leaflet starter code</h2>
@@ -482,31 +486,42 @@ The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierog
 <section style="padding-top: 3em">
 	<h2>Create the Map element</h2>
 	<p>Within the script tags:</p>
-	<p style="font-size: 0.9rem"><em>var map = L.map('map').setView([40.4452, -79.9866], 10);</em></p>
+	<code style="font-size: 0.9rem">var map = L.map('map').setView([40.4452, -79.9866], 10);</code>
 	<p>Note that <em>SetView</em> sets the longitude, latitude, and zoom</p>
 </section>
 
 <section style="padding-top: 3em">
 	<h2>Add our tile layer URL from MapStack</h2>
 	<p>Within the script tags:</p>
-	<p style="font-size: 0.9rem"><em>
+	<code style="font-size: 0.9rem">
 	L.tileLayer(
     'http://{s}.sm.mapstack.stamen.com/toner/{z}/{x}/{y}.png',
 		{attribution:'credit where credit is due', maxZoom: 18, minZoom: 8,}
-		).addTo(map);</em></p>
+		).addTo(map);</code>
 	
 	<p>Note that we use the generic Map Stack url here.</p>
 </section>
 
 <section style="padding-top: 3em">
 	<h3>Display the data</h3>
-  <p>We have a pretty great map so far. Let's use Leaflet to add our .geojson file we made earlier.</p>
-  <p>Leaflet displays GeoJSON data, but does not load an externally-stored GeoJSON file. You have a few options to load it, including using JQuery. But one simple way is to save the geojson object as a <strong>var</strong> in an external .js file.
+  Use Leaflet to add our .geojson file.
+	<pre><code style="font-size: 0.9rem">L.geoJson(pierogie_geojson, {
+	pointToLayer: function(feature, latlng) {
+		var marker = L.marker(latlng, {icon: pierogie_icon});
+		marker.bindPopup(feature.properties.name);
+		return marker;}
+}).addTo(map);
+	</code></pre>
+</section>
+
+	<section>
+		<h3>L.geoJson(pierogie_geojson...</h3>
+  <p>Leaflet displays GeoJSON data, but does not load an externally-stored GeoJSON file. You have a few options to load it, including using JQuery.</p> <p>But one simple way is to save the geojson object as a <strong>var</strong> in an <a href= "https://raw.githubusercontent.com/maptime/pittsburgh/gh-pages/projects/pierogis/pierogie_data.js" target="_blank">external .js file</a>.</p>
   </section>
 
 <section style="padding-top: 3em">
-  <h3>Pierogie Icons</h3>
-  <p>The standard map marker is nice, but our map needs something a little more custom. We can use almost any image file for a marker, and we've got <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that looks delicious</a>! Only one step:</p>
+  <h3>var marker = L.marker(latlng, {icon: pierogie_icon});</h3>
+  <p>We can use almost any image file for a marker, and we've got <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that looks delicious</a>! Only one step:</p>
 	<ul>
 		<li>a) reference the icon file in our Leaflet code
 	</ul>
