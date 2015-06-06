@@ -2,204 +2,388 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <head>
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
 <style>
-
-@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
-
-section {
-  background: #fff;
-  color: #000;
-  padding: 5em;
-  font-family: sans-serif;
-}
-
-#follow {
-  background: none;
-}
-
-.grey {
-  color: #777;
-}
-
-a:link,
-a:visited {
-  color: orange;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
+	/*
+	@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+	*/
+	
+	@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+	
+	section {
+	  background: #fff;
+	  color:#555;
+	  padding: 4em;
+		font-family: 'Special Elite', sans-serif;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-color:#fff;
+	}
+	
+	
+	
+	strong, b {
+		color: rgb(230,43,25)
+	}
+	
+	em, i {
+		color: rgb(32,137,203)
+	}
+	
+	
+	#follow {
+	  background: none;
+	}
+	
+	.grey {
+	  color: #777;
+	}
+	
+	.red {
+		color: rgb(230,43,25)
+	}
+		
+	.blue {
+		color: rgb(32,137,203)
+	}
+	
+	a:link,
+	a:visited {
+	  color: gray;
+	  text-decoration: none;
+	}
+	
+	a:hover {
+	  text-decoration: underline;
+	}
+	
+	td {
+		padding:1em;
+		vertical-align:top;
+	}
+	
 </style>
+<section style="text-align:center;padding-top:5em;background:url(img/joesaiditwould.png);background-size:75%;	background-position: center;background-repeat: no-repeat;background-color:#fff;"></section>
+<section style="padding:4em;">
+		<h1>A Crash Course in Map-Making</h1>
+		<p>for the National Day of Civic Hacking</p>
+		<p>June 6, 2015</p>
 
-<section style="text-align:center;padding-top:5em;">
-  <h2>National Day of Civic Hacking</h2>
+		<h3><em>courtesy of <a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a></em></h3>
+</section>
+
+<section>		
+<h2>What is Maptime?</h2>
+		<ul>
+			<li>A time for learning about maps
+			<li>Hands-on
+			<li>Beginner-focused
+			<li>Emphasis on open source, programming, and web-mapping</ul>
+	</section>
+
+<section>
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
 </section>
 
 <section>
-  <h2 style="color: blue;">Open Data</h2>
-    <p>
-      <br>data is an asset
-      <br>supports business flexibility and adaptability
-      <br>extensibile
-      <br>ability to open API to public
-    </p>
+		<h1>For today, think about a <strong>map</strong> as a combination of four <strong>components</strong>:</h1>
+</section>
+
+<section style="padding:15em 4em 1em; background:url(img/c0.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c1.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c2.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data</h3>
+</section>
+<section style="padding:15em 4em 1em; background:url(img/c3.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data + Platform</h3>
+</section>
+<section style="text-align:left;padding-top:5em;">
+	<table>
+		<tr>
+			<td style="padding-right:10px">
+				<p>Components</p>
+				<ol>
+					<li>Geography</li>
+					<li>Base Map</li>
+					<li>Data</li>
+					<li>Platform</li>
+				</ol>
+			</td>
+			<td style="padding-left:30px;border-left: solid">
+				<p>This list is:</p>
+				<ul>
+					<li>the way you conceptually organize a mapping product</li>
+					<li>your map-making workflow</li>
+					<li>your technology stack</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
 </section>
 
 <section style="text-align:center;padding-top:5em;">
-  <h2 style="color: orange;">Volunteerism and public engagement</h2>
-  <p>
-    <br>our region is characterized by people who want to contribute
-    <br>crowd-sourcing is a viable data collection solution
-  </p>
-</section>
-
-<section style="text-align:left;padding:5em;">
-  <h2 style="color: orange;">"3 Rivers Wet Weather Open Sewer Atlas"</h2>
-  <ul>
-    <li>MS4 infrastructure map
-    <li>geodata is the key part of the system
-    <li>licensing agreements for data usage
-    <li>
- </ul>
-
-</section>
-
-<section id="follow" style="padding-top:5em;background:url("img/joesaiditwould.png");background-size:cover;">
-  <p style="text-align:center;color:#000;font-size:200%;line-height:1.35em;">INSPIRATIONAL IMAGE<br>ACCOMPANIED BY<br>INSIGHTFUL COMMENTARY
-  <p id="follow-anchor" style="position:fixed;text-indent:-1.25em;">&larr; When this bar reaches the top,<br>the next slide will fade in.
-</section>
-
-<section style="text-align:center;padding-top:5em;">
-  <p>If you resize the window,
-    <br>slide content will scale up or down
-    <br>to fit automatically.
-</section>
-
-<section id="lorenz" style="text-align:center;padding-top:0;">
-  <canvas></canvas>
-  <p style="position:absolute;z-index:1;padding-top:5em;left:0;width:100%;text-shadow:0 1px 0 #000;">Use <i>activate</i> and <i>deactivate</i> events
-    <br>to enable complex animations
-    <br>only when visible.
+	<h1>Part 1: <strong>Geography</strong></h1>
+	<h2>~</h2>
+	<h3>from Greek <em>geographia</em>, <br>
+	literally "earth description"</h3>
+	<p><a href="http://en.wikipedia.org/wiki/Geography">(source)</a></p>
 </section>
 
 <section>
-  <div id="map" style="width:800px;height:600px;padding:5em 13em;">
-  </div>
+	<h2>Resources</h2>
+	<p><a href="http://mapschool.io" target="_blank">mapschool.io</a></p>
+	<p><a href="http://lyzidiamond.com/geodesy" target="_blank">maptime: the wild world of geodesy [coordinate systems and projections]</a></p>
 </section>
 
-<section style="padding:5em 13em;">
-  <p>Stack is made by <a href="http://bost.ocks.org/mike/" rel="author">Mike Bostock</a>
-    <br>and is available on <a href="https://github.com/mbostock/stack">GitHub</a>
-    <br>under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE">BSD license</a>.
-  <p class="grey">View source to get started.
+<section style="padding-top:5em;">
+	<h2>Maps describe Earth.</h2>
+	<h2><strong>Maps</strong> are a <em>visualization</em> of <strong>data</strong> in <strong>geographic space</strong>.</h2>
 </section>
 
-<script src="d3.v3.min.js"></script>
-<script src="stack.v1.min.js"></script>
+<section style="padding-top:3em;">
+	<h2>data -> visualization</h2>
+	<p>places on Earth are represented as places on usually flat surfaces, like print-outs or computer screens</p>
+	<p>doing this requires a:</p>
+	<ol>
+		<li>a <strong>system</strong> for describing locations</li>
+		<li>a <strong>method</strong> for projecting a location on Earth to a location on a flat map</li>
+	</ol>
+</section>
+
+<section style="padding-right:40%;background:url(img/latlon.png);background-size:125%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2>A <strong>coordinate system</strong> describes locations.</h2>
+	<p>Locations are identified using <strong>latitude / longitude</strong> (lat/lon) <em>decimal degrees</em>.</p>
+</section>
+<section style="padding:1em 1em">
+  <table>
+		
+		<tr>
+      <td></td>
+      <td><em>maps location:</em></td>
+      <td><em>represented with:</em></td>
+      <td><em>units:</em></td>
+    </tr>
+		
+    <tr>
+      <td><strong>LATITUDE</strong></td>
+      <td>north-south</td>
+      <td>horizontal lines, different circumferences</td>
+      <td>-90 to +90 decimal degrees</td>
+    </tr>
+    <tr>
+      <td><strong>LONGITUDE</strong></td>
+      <td>east-west </td>
+      <td>vertical lines, same circumferences</td>
+      <td>0 to 180 decimal degrees</td>
+    </tr>
+  </table>
+</section>
+
+
+<section style="padding: 6em">
+	<h3><strong>Lat/Lon</strong> is used to represent location on both the Earth as a <em>globe</em> (a sphere-like 3-D object) and Earth as a <em>map</em> (a planar, 2-D object)</h3>
+</section>
+
+<section style="padding-right:40%;background:url(img/globe.png);background-size:110%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2 style="color:#fff">To go from a globe, which looks like this...</h2>
+</section>
+
+<section style="padding-right:40%;background:url(img/osm_globe_webmercator.png);background-size:110%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2>...to a map like this...</h2>
+</section>
+
+<section>
+	<h2>...we need a <strong>map projection</strong></h2>
+	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas" target="_newtab">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
+</section>
+
+<section style="padding-right:80%;background:url(img/xkcd_map_projections.jpg);background-size:70%;	background-position: right;background-repeat: no-repeat;background-color:#fff;">
+	<p>There are lots of ways to project the globe</p>
+</section>
+
+<section>
+	<p>But there is no way to project the globe without <em>distorting</em> it.</p>
+	<p><strong>Distortion</strong> is typically worst at the edges of the map, affecting <em>relative scale</em>.
+	</p>
+</section>
+
+<section>
+	<p>To avoid distortion, many projections are <strong>purpose-built</strong>:<br> they are specific to an area, or are designed for functionality (e.g., measuring distances from a certain point).</p>
+</section>
+
+<section style="padding-right:40%;background:url(img/osm_spastateplane.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h1>Pennsylvania State Plane (South)</h1>
+	<h3>EPSG: 2272</h3>
+</section>
+
+<section>
+	<p>A few projections provide a decent balance between relative scale, visually-pleasing proportions, and straighforward measure-ability on global scale.</p>
+</section>
+
+<section>
+	<img src="./img/osm_globe_webmercator.png"/>
+	<h2>Web Mercator</h2>
+	<a class="t" href="http://www.epsg.org/" target="_newtab">EPSG (European Petroleum Survey Group) code: 3857</a>
+</section>
+
+<section>
+	<strong>Web Mercator</strong> is pretty good, for most of the world. East-West distance is constant. North-south distance is distorted close to the poles. <a href="http://www.openstreetmap.org/?edit_help=1#map=2/46.8/-65.0">
+	See the distortion for yourself on OSM (just zoom out!).</a>
+</section>
+
+<section>
+	This distortion at the map edge is why <em>map projections</em> are typically specific to a certain <strong>geographic extent</strong>.
+</section>
+
+<section>
+	<img src="./img/osm_globe_pastateplanesouth.png"/>
+	
+</section>
+
+<section>
+	<img src="./img/osm_globe_pastateplanesouth.png">
+	LOOKS RIDICULOUS
+</section>
+
+<section>
+	<img src="./img/osm_spastateplane.png"/>
+</section>
+
+<section>
+	<img src="./img/osm_spastateplane.png"/>Looks (and functions) well here!
+</section>
+
+<section>
+	<img src="./img/vector_footprints6b.png">These buildings use EPSG 2272.<br><br>But the coordinates shown aren't decimal degrees!
+</section>
+
+<section>
+	A <em>map projection</em> often also has a built-in conversion to a <em>local unit of distance</em>.
+</section>
+
+<section>
+	<strong>Decimal degrees</strong> are not useful for communicating: <em>distances between things</em>, <em>the width of a building facade</em>, or <em>calculating the area of a parcel</em>, etc.
+</section>
+
+<section>
+	<img src="./img/vector_footprints6b.png">Data in the local PA State Plane projection is stored using <strong>feet</strong>.
+</section>
+
+<section>
+	<img src="./img/whatdoesitmean.jpg"/>WHAT DOES IT ALL MEAN
+</section>
+
+<section>
+	If you have some <strong>geodata</strong> from a local source (say the Allegheny County GIS data available on <a href="http://www.pasda.psu.edu/uci/SearchResults.aspx?originator=&Keyword=Allegheny%20County&sessionID=3917188802015216233019&searchType=keyword&entry=PASDA&condition=AND" target="_newtab">PASDA</a>) that you want to put on a <em>web map</em>, or use to contribute to <strong>OSM</strong>...
+</section>
+
+<section>
+	<h1>Re-project the data first.</h1>
+	(to <strong>Web Mercator</strong> or whichever system the web map is using).
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 2: <strong>Base map</strong></h1>
+	<h2>~</h2>
+	<h3>not worrying about setting up all the contextual data you need for your map<br> because you can reference another map(s)</h3>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://maptime.io/geodata">maptime: introduction to geographic data formats</a></p>
+</section>
+<!--
+<section>
+	<img src="./img/osm_pgh.png">What is <strong>Open Street Map</strong>?
+	<br><a class="t" href="http://www.openstreetmap.org">www.openstreetmap.org</a>
+</section>
+<section>
+	<img src="./img/osm_pgh.png">Open Street Map (<strong>OSM</strong>)is the <a class="t" href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_newtab">"Wikipedia of maps"</a>
+</section>
+<section>
+	<img src="./img/osm_globe_robinson.png">OSM is an editable database with global coverage
+<strong>OSM</strong> is licensed under the Open Database License: <a href="http://opendatacommons.org/licenses/odbl/" target="_newtab">ODbL</a>
+</section>
+
+<section>
+	<img src="./img/osm_pgh.png">Anyone can edit OSM
+	<img src="./img/signup.png">So, let's sign up <a class="t" href="https://www.openstreetmap.org/user/new" target="_newtab">now!</a>
+</section>
+<section>
+While everyone is doing that...here are some resources for later:
+	<ul>
+		<li><a href="http://learnosm.org" target="_newtab">learnosm.org</a>
+		<li><a href="http://wiki.openstreetmap.org" target="_newtab">wiki.osm.org</a>
+		<li><a href="http://help.openstreetmap.org" target="_newtab">help.osm.org</a>
+	</ul>
+</section>
+<section></section>
+	To learn how to add any kind of thing to the map:
+	<br>
+	<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_newtab">wiki.osm.org / wiki / Map_Features</a>
+Am I doing it the <em>right way?</em>
+
+	<br>
+	<br>Read about <a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_newtab">wiki.osm.org / wiki / Good_practice</a>
+
+	Let's get started! Two ways to view/edit OSM:
+	<ul>
+		<li>web (basic): <a href="https://www.openstreetmap.org" target="_newtab">iD</a>
+
+			<li>desktop (advanced): <a href="https://josm.openstreetmap.de/" target="_newtab">JOSM</a>
+
+	</ul>Today we'll use <a href="https://www.openstreetmap.org" target="_newtab">iD</a>
+
+	<section>
+		<img src="./img/osm_pgh.png">Go to <a class="t" href="https://www.openstreetmap.org">OSM</a> and, assuming you've signed in, click <strong>edit</strong> in top left corner Are you able to scroll around and zoom in (i.e., is our wifi fast enough here)?
+		<br>
+		<br>If so, find the <a href=https://www.openstreetmap.org/edit?editor=id#map=18/40.44316/-79.94985 target="_newtab">Carnegie Museum</a> in Oakland</section>
+-->	
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 3: <strong>Data</strong></h1>
+	<h2>~</h2>
+	<h3>the stuff you are interested<br> in putting on a map</h3>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://maptime.io/geodata">maptime: introduction to geographic data formats</a></p>
+</section>
+
+
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 4: <strong>Platform</strong></h1>
+	<h2>~</h2>
+	<h3>the things you use to display and share your data with the world</h3>
+</section>
+		
+
+<section style="text-align:center; padding:5em 8em;">
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/" rel="author">Mike Bostock</a> and is available on <a href="https://github.com/mbostock/stack">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE">BSD license</a>.
+		<p class="grey">
+</section>
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js"></script>
+<script src="js/stack.v1.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
-
 <script>
-// create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([40.44316, -79.94985], 12);
-
-// add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+	$(document).foundation();
 </script>
-
+<!--OSM Map w/ Leaflet------------------------->
 <script>
-var mystack = stack()
-    .on("activate", activate)
-    .on("deactivate", deactivate);
-
-var section = d3.selectAll("section"),
-    follow = d3.select("#follow"),
-    followAnchor = d3.select("#follow-anchor"),
-    lorenz = d3.select("#lorenz"),
-    followIndex = section[0].indexOf(follow.node()),
-    lorenzIndex = section[0].indexOf(lorenz.node());
-
-function refollow() {
-  followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
-}
-
-function activate(d, i) {
-  if (i === followIndex) mystack.on("scroll.follow", refollow);
-  if (i === lorenzIndex) startLorenz();
-}
-
-function deactivate(d, i) {
-  if (i === followIndex) mystack.on("scroll.follow", null);
-  if (i === lorenzIndex) stopLorenz();
-}
-
-var lorenzInterval;
-
-function startLorenz() {
-  var δτ = 0.003,
-      ρ = 28,
-      σ = 10,
-      β = 8 / 3,
-      x = .5,
-      y = .5,
-      z = 10,
-      n = 30;
-
-  var width = 1280,
-      height = 720;
-
-  var canvas = d3.select("canvas")
-      .style("position", "absolute")
-      .style("top", 0)
-      .style("left", 0)
-      .style("width", "100%")
-      .style("height", "100%")
-      .attr("width", width)
-      .attr("height", height);
-
-  var color = d3.scale.linear()
-      .domain([0, 20, 30, 50])
-      .range(["yellow", "orange", "brown", "purple"])
-      .interpolate(d3.interpolateHcl);
-
-  var context = canvas.node().getContext("2d");
-
-  context.lineWidth = .2;
-  context.fillStyle = "rgba(0,0,0,.03)";
-
-  d3.timer(function() {
-    context.save();
-    context.globalCompositeOperation = "lighter";
-    context.translate(width / 2, height / 2);
-    context.scale(12, 14);
-    context.rotate(30);
-    for (var i = 0; i < n; ++i) {
-      context.strokeStyle = color(z);
-      context.beginPath();
-      context.moveTo(x, y);
-      x += δτ * σ * (y - x);
-      y += δτ * (x * (ρ - z) - y);
-      z += δτ * (x * y - β * z);
-      context.lineTo(x, y);
-      context.stroke();
-    }
-    context.restore();
-    return !lorenzInterval;
-  });
-
-  lorenzInterval = setInterval(function() {
-    context.fillRect(0, 0, width, height);
-  }, 100);
-}
-
-function stopLorenz() {
-  lorenzInterval = clearInterval(lorenzInterval);
-}
-
+	// create a map in the "map" div, set the view to a given place and zoom
+	var map = L.map('map').setView([40.44316, -79.94985], 12);
+	
+	// add an OpenStreetMap tile layer
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
 </script>
