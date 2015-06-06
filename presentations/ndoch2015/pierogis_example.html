@@ -6,25 +6,38 @@
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 		<script src="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie_data.js"></script>
+
+<style>
+  #map {
+    height: 100%
+  }
+</style>
+
 </head>
 
 <body>
+	
+<div id="map"></div>
+	
 
 <script>
   // initialize the map
   var map = L.map('map').setView([40.4452, -79.9866], 10);
+	
    // create mapstack tile layer and add to map
   L.tileLayer('http://{s}.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/{z}/{x}/{y}.png', {
   	attribution: '<p style="font-size:0.6rem">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> license. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a> license.</p>',
   	maxZoom: 18,
   	minZoom: 8,
   }).addTo(map);
+	
    //define the icon variable for the data points. This variable will be referenced later.
   var pierogie_icon = L.icon({
   	iconUrl: 'https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png',
   	iconSize: [75, 75],
   	popupAnchor: [0, -18]
   });
+	
    // load the geojson data and create a marker w/ a data-driven pop-up"
   L.geoJson(pierogie_geojson, {
   	pointToLayer: function(feature, latlng) {
