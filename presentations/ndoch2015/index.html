@@ -234,7 +234,7 @@
 	<p>East-West distance is constant. North-south distance is distorted close to the poles.</p>
 	</section>
 	
-<section>
+<section style="padding-top: 3em">
 	<h1>Why you need to know this:</h1>
 	<p><strong>Web Mercator</strong> is the projection commonly used for <strong>web maps</strong> and typical web map-making software/tools/libraries.</p>
 	<p>Local data in southwestern Pennsylvania is typically stored in <strong>PA State Plane (South) / EPSG 2272</strong>. It uses <strong>feet</strong>, not decimal degrees, and must be <em>re-projected</em> to use in a web map.</p>
@@ -445,14 +445,14 @@
 
 <section style="padding-top: 3em">
 	<p>The url should look something like:</p>
-	<p><em>http://<strong>d</strong>.sm.mapstack.stamen.com/toner/<strong>11</strong>/<strong>568</strong>/<strong>771</strong>.png</em></p>
+	<code>http://<strong>d</strong>.sm.mapstack.stamen.com/toner/<strong>11</strong>/<strong>568</strong>/<strong>771</strong>.png</code>
 	<p>(Note that depending on how custom you made your map, it may be very long)</p>
 	<p>We need to tweak this to make it generic and useful for Leaflet. The portions highlighted in <strong>red</strong> need to change.</p>
 </section>
 
 <section style="padding-top: 3em">
 	<p>Change the variables in url like this:</p>
-	<p><em>http://<strong>{s}</strong>.sm.mapstack.stamen.com/toner/<strong>{z}</strong>/<strong>{x}</strong>/<strong>{y}</strong>.png</em></p>
+	<code>http://<strong>{s}</strong>.sm.mapstack.stamen.com/toner/<strong>{z}</strong>/<strong>{x}</strong>/<strong>{y}</strong>.png</code>
 	<p>The bracketed pieces of the url example above -- {s},{z},{x}, and {y} -- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map.</p>
 </section>
 
@@ -521,24 +521,25 @@ The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierog
 
 <section style="padding-top: 3em">
   <h3>var marker = L.marker(latlng, {icon: pierogie_icon});</h3>
-  <p>We can use almost any image file for a marker, and we've got <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/pierogie.png" target="_blank">one that looks delicious</a>! Only one step:</p>
-	<ul>
-		<li>a) reference the icon file in our Leaflet code
-	</ul>
+  <p>We can use almost any image file for a marker, and we've got <a href="https://raw.githubusercontent.com/maptime/pittsburgh/gh-pages/projects/pierogis/pierogie.png" target="_blank">one suitable for pierogies</a>. 
   </section>
 	
 <section style="padding-top: 3em">
-  <h3>Information pop-ups</h3>
-	<p>We have locations and icons, but we really need to know what each points is. Let's add some pop-ups to describe each location. We will use Leaflet to dynamically generate a pop-up for each point from the point's attributes:</p>
-	<ul>
-		<li>a) 'bind' a pop-up to the marker
-		<li>b) create the text and attribute references
-		<li>c) optionally style the text using HTML/CSS
-	</ul>
+  <h3>marker.bindPopup(feature.properties.name);</h3>
+	<p>Use Leaflet to dynamically generate a pop-up for each pierogie from the point's attributes:</p>
+	<ol>
+		<li>'bind' a pop-up to the marker
+		<li>create the text and attribute references (using GeoJSON keys)
+		<li>optionally style the text using HTML/CSS
+	</ol>
 </section>
+<section>
   <h3>Done!</h3>
 	<p>
-		Now you've built a web map from scratch using some freely available tools. 
+		Now you've built a web map from scratch using some freely available tools.
+		
+	<p><a href=file:///D:/web/site/maptime/pittsburgh/presentations/ndoch2015/pierogis_example.html">See the working example</p>
+	</section>
 
 <!------------------------------->
 
