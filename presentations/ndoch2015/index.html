@@ -199,7 +199,7 @@
 
 <section>
 	<h2>...we need a <strong>map projection</strong></h2>
-	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas" target="_newtab">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
+	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas" target="_blank">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
 </section>
 
 <section style="padding-right:80%;background:url(img/xkcd_map_projections.jpg);background-size:70%;	background-position: right;background-repeat: no-repeat;background-color:#fff;">
@@ -218,132 +218,80 @@
 
 <section style="padding-right:40%;background:url(img/osm_spastateplane.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
 	<h1>Pennsylvania State Plane (South)</h1>
-	<h3>EPSG: 2272</h3>
+	<h3><a class="t" href="http://www.epsg.org/" target="_blank">EPSG (European Petroleum Survey Group) code 2272</a></h3>
 </section>
 
 <section>
-	<p>A few projections provide a decent balance between relative scale, visually-pleasing proportions, and straighforward measure-ability on global scale.</p>
+	<p>A few projections provide a decent balance between</p>
+	<ul>
+		<li>relative scale,</li> <li>visually-pleasing proportions,</li> <li>and straighforward measure-ability</li></ul>
+	<p>on a global scale.</p>
 </section>
 
+<section style="padding-top:2.5em; background:url(img/osm_globe_webmercator.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h1>Web Mercator</h1>
+	<h3>EPSG code: 3857</h3>
+	<p>East-West distance is constant. North-south distance is distorted close to the poles.</p>
+	</section>
+	
 <section>
-	<img src="./img/osm_globe_webmercator.png"/>
-	<h2>Web Mercator</h2>
-	<a class="t" href="http://www.epsg.org/" target="_newtab">EPSG (European Petroleum Survey Group) code: 3857</a>
+	<h1>Why you need to know this:</h1>
+	<p><strong>Web Mercator</strong> is the projection commonly used for <strong>web maps</strong> and typical web map-making software/tools/libraries.</p>
+	<p>Local data in southwestern Pennsylvania is typically stored in <strong>PA State Plane (South) / EPSG 2272</strong>. It uses <strong>feet</strong>, not decimal degrees, and must be <em>re-projected</em> to use in a web map.</p>
 </section>
 
-<section>
-	<strong>Web Mercator</strong> is pretty good, for most of the world. East-West distance is constant. North-south distance is distorted close to the poles. <a href="http://www.openstreetmap.org/?edit_help=1#map=2/46.8/-65.0">
-	See the distortion for yourself on OSM (just zoom out!).</a>
-</section>
+<!--Part 2---------->
 
-<section>
-	This distortion at the map edge is why <em>map projections</em> are typically specific to a certain <strong>geographic extent</strong>.
-</section>
-
-<section>
-	<img src="./img/osm_globe_pastateplanesouth.png"/>
+<section style="text-align:center;padding-top:5em;">
+	
+	<h1>Part 2: <strong>Base map</strong></h1>
+	<h2>~</h2>
+	<h3>Your map needs contextual data: <br>roads, rivers, points of interest, etc. <br><em>Fear not.</em> Someone else has already pulled all of this this together for you in<Br><a href="https://www.openstreetmap.org" target="_blank">Open Street Map</a></h3>
 	
 </section>
 
 <section>
-	<img src="./img/osm_globe_pastateplanesouth.png">
-	LOOKS RIDICULOUS
-</section>
-
-<section>
-	<img src="./img/osm_spastateplane.png"/>
-</section>
-
-<section>
-	<img src="./img/osm_spastateplane.png"/>Looks (and functions) well here!
-</section>
-
-<section>
-	<img src="./img/vector_footprints6b.png">These buildings use EPSG 2272.<br><br>But the coordinates shown aren't decimal degrees!
-</section>
-
-<section>
-	A <em>map projection</em> often also has a built-in conversion to a <em>local unit of distance</em>.
-</section>
-
-<section>
-	<strong>Decimal degrees</strong> are not useful for communicating: <em>distances between things</em>, <em>the width of a building facade</em>, or <em>calculating the area of a parcel</em>, etc.
-</section>
-
-<section>
-	<img src="./img/vector_footprints6b.png">Data in the local PA State Plane projection is stored using <strong>feet</strong>.
-</section>
-
-<section>
-	<img src="./img/whatdoesitmean.jpg"/>WHAT DOES IT ALL MEAN
-</section>
-
-<section>
-	If you have some <strong>geodata</strong> from a local source (say the Allegheny County GIS data available on <a href="http://www.pasda.psu.edu/uci/SearchResults.aspx?originator=&Keyword=Allegheny%20County&sessionID=3917188802015216233019&searchType=keyword&entry=PASDA&condition=AND" target="_newtab">PASDA</a>) that you want to put on a <em>web map</em>, or use to contribute to <strong>OSM</strong>...
-</section>
-
-<section>
-	<h1>Re-project the data first.</h1>
-	(to <strong>Web Mercator</strong> or whichever system the web map is using).
-</section>
-
-<section style="text-align:center;padding-top:5em;">
-	<h1>Part 2: <strong>Base map</strong></h1>
-	<h2>~</h2>
-	<h3>not worrying about setting up all the contextual data you need for your map<br> because you can reference another map(s)</h3>
-</section>
-
-<section>
 	<h2>Resources</h2>
-	<p><a href="http://maptime.io/geodata">maptime: introduction to geographic data formats</a></p>
+	<p><a href="http://beamapper.com/">Be A Mapper: How to contribute to OpenStreetMap</a></p>
+	<p><a href="http://wiki.openstreetmap.org/wiki/Beginners%27_guide">Beginners Guide to OSM</a></p>
+	<p><a href="http://maptime.github.io/osm-101/">maptime: OpenStreetMap 101</a></p>
+	<p><a href="http://learnosm.org/en">LearnOSM.com</a></p>
 </section>
-<!--
+
+
 <section>
-	<img src="./img/osm_pgh.png">What is <strong>Open Street Map</strong>?
-	<br><a class="t" href="http://www.openstreetmap.org">www.openstreetmap.org</a>
-</section>
-<section>
-	<img src="./img/osm_pgh.png">Open Street Map (<strong>OSM</strong>)is the <a class="t" href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_newtab">"Wikipedia of maps"</a>
-</section>
-<section>
-	<img src="./img/osm_globe_robinson.png">OSM is an editable database with global coverage
-<strong>OSM</strong> is licensed under the Open Database License: <a href="http://opendatacommons.org/licenses/odbl/" target="_newtab">ODbL</a>
+	<p>What is <strong>Open Street Map</strong>?
+	<br><a class="t" href="http://www.openstreetmap.org">www.openstreetmap.org</a></p>
+	<p>It is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank">"Wikipedia of maps"</a>: a publicy editable global base map that you can use in your mapping project.</p>
+	<p>OSM is is licensed under the <a href="http://opendatacommons.org/licenses/odbl/" target="_blank"> Open Database License (ODbL)</a></p>
 </section>
 
 <section>
-	<img src="./img/osm_pgh.png">Anyone can edit OSM
-	<img src="./img/signup.png">So, let's sign up <a class="t" href="https://www.openstreetmap.org/user/new" target="_newtab">now!</a>
+	<h1>If you haven't already, <a href="https://www.openstreetmap.org/user/new" target="_blank">sign up now!</a></h1>
 </section>
-<section>
-While everyone is doing that...here are some resources for later:
-	<ul>
-		<li><a href="http://learnosm.org" target="_newtab">learnosm.org</a>
-		<li><a href="http://wiki.openstreetmap.org" target="_newtab">wiki.osm.org</a>
-		<li><a href="http://help.openstreetmap.org" target="_newtab">help.osm.org</a>
-	</ul>
-</section>
-<section></section>
-	To learn how to add any kind of thing to the map:
-	<br>
-	<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_newtab">wiki.osm.org / wiki / Map_Features</a>
-Am I doing it the <em>right way?</em>
 
-	<br>
-	<br>Read about <a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_newtab">wiki.osm.org / wiki / Good_practice</a>
+<section>
+	<p>To learn how to add any kind of thing to the map:
+	<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank">wiki.osm.org / wiki / Map_Features</a></p>
+
+<p>Am I doing it the <em>right way?</em>
+<br>Read about <a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_blank">wiki.osm.org / wiki / Good_practice</a></p>
+	
+</section>
+
+<section>
+
+
+</section>
 
 	Let's get started! Two ways to view/edit OSM:
 	<ul>
-		<li>web (basic): <a href="https://www.openstreetmap.org" target="_newtab">iD</a>
+		<li>web (basic): <a href="https://www.openstreetmap.org" target="_blank">iD</a>
 
-			<li>desktop (advanced): <a href="https://josm.openstreetmap.de/" target="_newtab">JOSM</a>
+			<li>desktop (advanced): <a href="https://josm.openstreetmap.de/" target="_blank">JOSM</a>
 
-	</ul>Today we'll use <a href="https://www.openstreetmap.org" target="_newtab">iD</a>
-
-	<section>
-		<img src="./img/osm_pgh.png">Go to <a class="t" href="https://www.openstreetmap.org">OSM</a> and, assuming you've signed in, click <strong>edit</strong> in top left corner Are you able to scroll around and zoom in (i.e., is our wifi fast enough here)?
-		<br>
-		<br>If so, find the <a href=https://www.openstreetmap.org/edit?editor=id#map=18/40.44316/-79.94985 target="_newtab">Carnegie Museum</a> in Oakland</section>
--->	
+	</ul>Today we'll use <a href="https://www.openstreetmap.org" target="_blank">iD</a>
+	
 <section style="text-align:center;padding-top:5em;">
 	<h1>Part 3: <strong>Data</strong></h1>
 	<h2>~</h2>
@@ -353,8 +301,17 @@ Am I doing it the <em>right way?</em>
 <section>
 	<h2>Resources</h2>
 	<p><a href="http://maptime.io/geodata">maptime: introduction to geographic data formats</a></p>
+	<p><a href="http://mappingmashups.net/2012/11/29/mapping-with-google-fusion-tables/">mapping with Google Fusion Tables</a></p>
 </section>
 
+<section>
+	If you have some <strong>geodata</strong> from a local source (say the Allegheny County GIS data available on <a href="http://www.pasda.psu.edu/uci/SearchResults.aspx?originator=&Keyword=Allegheny%20County&sessionID=3917188802015216233019&searchType=keyword&entry=PASDA&condition=AND" target="_blank">PASDA</a>) that you want to put on a <em>web map</em>, or use to contribute to <strong>OSM</strong>...
+</section>
+
+<section>
+	<h1>Re-project the data first.</h1>
+	(to <strong>Web Mercator</strong> or whichever system the web map is using).
+</section>
 
 <section style="text-align:center;padding-top:5em;">
 	<h1>Part 4: <strong>Platform</strong></h1>
