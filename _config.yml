@@ -4,6 +4,8 @@ markdown: kramdown
 paginate: 5
 repo: starter
 github_org: maptime
+future: true
+gems: [jekyll-paginate]
 maptime:
   chapter: Maptime Pittsburgh
   twitter: MaptimePGH

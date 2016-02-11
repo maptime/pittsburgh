@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<head>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<style>
+	/*
+	@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+	*/
+	
+	@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+	
+	section {
+	  background: #fff;
+	  color:#555;
+	  padding: 4em;
+		font-family: 'Special Elite', sans-serif;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-color:#fff;
+	}
+	
+	
+	
+	strong, b {
+		color: rgb(230,43,25)
+	}
+	
+	em, i {
+		color: rgb(32,137,203)
+	}
+	
+	
+	#follow {
+	  background: none;
+	}
+	
+	.grey {
+	  color: #777;
+	}
+	
+	.red {
+		color: rgb(230,43,25)
+	}
+		
+	.blue {
+		color: rgb(32,137,203)
+	}
+	
+	a:link,
+	a:visited {
+	  color: gray;
+	  text-decoration: none;
+	}
+	
+	a:hover {
+	  text-decoration: underline;
+	}
+	
+	td {
+		padding:1em;
+		vertical-align:top;
+	}
+	
+</style>
+<section style="text-align:center;padding-top:5em;background:url(img/joesaiditwould.png);background-size:75%;	background-position: center;background-repeat: no-repeat;background-color:#fff;"></section>
+<section style="padding:4em;">
+		<h1>A Crash Course in Map-Making</h1>
+		<p>for the National Day of Civic Hacking</p>
+		<p>June 6, 2015</p>
+		<h3><a href="http://maptime.io/pittsburgh/presentations/ndoch2015/">Follow along at http://maptime.io/pittsburgh/presentations/ndoch2015/</a></h3>
+		<p><em>courtesy of <a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a></em></p>
+</section>
+
+<section>		
+<h2>What is Maptime?</h2>
+		<ul>
+			<li>A time for learning about maps
+			<li>Hands-on
+			<li>Beginner-focused
+			<li>Emphasis on open source, programming, and web-mapping</ul>
+	</section>
+
+<section>
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
+</section>
+
+<section>
+		<h1>For today, think about a <strong>map</strong> as a combination of four <strong>components</strong>:</h1>
+</section>
+
+<section style="padding:15em 4em 1em; background:url(img/c0.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c1.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c2.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data</h3>
+</section>
+<section style="padding:15em 4em 1em; background:url(img/c3.png);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h3 style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data + Platform</h3>
+</section>
+<section style="text-align:left;padding-top:5em;">
+	<table>
+		<tr>
+			<td style="padding-right:10px">
+				<p>Components</p>
+				<ol>
+					<li>Geography</li>
+					<li>Base Map</li>
+					<li>Data</li>
+					<li>Platform</li>
+				</ol>
+			</td>
+			<td style="padding-left:30px;border-left: solid">
+				<p>This list is:</p>
+				<ul>
+					<li>the way you conceptually organize a mapping product</li>
+					<li>your map-making workflow</li>
+					<li>your technology stack</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 1: <strong>Geography</strong></h1>
+	<h2>~</h2>
+	<h3>from Greek <em>geographia</em>, <br>
+	literally "earth description"</h3>
+	<p><a href="http://en.wikipedia.org/wiki/Geography">(source)</a></p>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://mapschool.io" target="_blank">mapschool.io</a></p>
+	<p><a href="http://lyzidiamond.com/geodesy" target="_blank">maptime: the wild world of geodesy [coordinate systems and projections]</a></p>
+</section>
+
+<section style="padding-top:5em;">
+	<h2>Maps describe Earth.</h2>
+	<h2><strong>Maps</strong> are a <em>visualization</em> of <strong>data</strong> in <strong>geographic space</strong>.</h2>
+</section>
+
+<section style="padding-top:3em;">
+	<h2>data -> visualization</h2>
+	<p>places on Earth are represented as places on usually flat surfaces, like print-outs or computer screens</p>
+	<p>doing this requires a:</p>
+	<ol>
+		<li>a <strong>system</strong> for describing locations</li>
+		<li>a <strong>method</strong> for projecting a location on Earth to a location on a flat map</li>
+	</ol>
+</section>
+
+<section style="padding-right:40%;background:url(img/latlon.png);background-size:125%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2>A <strong>coordinate system</strong> describes locations.</h2>
+	<p>Locations are identified using <strong>latitude / longitude</strong> (lat/lon) <em>decimal degrees</em>.</p>
+</section>
+<section style="padding:1em 1em">
+  <table>
+		
+		<tr>
+      <td></td>
+      <td><em>maps location:</em></td>
+      <td><em>represented with:</em></td>
+      <td><em>units:</em></td>
+    </tr>
+		
+    <tr>
+      <td><strong>LATITUDE</strong></td>
+      <td>north-south</td>
+      <td>horizontal lines, different circumferences</td>
+      <td>-90 to +90 decimal degrees</td>
+    </tr>
+    <tr>
+      <td><strong>LONGITUDE</strong></td>
+      <td>east-west </td>
+      <td>vertical lines, same circumferences</td>
+      <td>0 to 180 decimal degrees</td>
+    </tr>
+  </table>
+</section>
+
+
+<section style="padding: 6em">
+	<h3><strong>Lat/Lon</strong> is used to represent location on both the Earth as a <em>globe</em> (a sphere-like 3-D object) and Earth as a <em>map</em> (a planar, 2-D object)</h3>
+</section>
+
+<section style="padding-right:40%;background:url(img/globe.png);background-size:110%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2 style="color:#fff">To go from a globe, which looks like this...</h2>
+</section>
+
+<section style="padding-right:40%;background:url(img/osm_globe_webmercator.png);background-size:110%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h2>...to a map like this...</h2>
+</section>
+
+<section>
+	<h2>...we need a <strong>map projection</strong></h2>
+	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas" target="_blank">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
+</section>
+
+<section style="padding-right:80%;background:url(img/xkcd_map_projections.jpg);background-size:70%;	background-position: right;background-repeat: no-repeat;background-color:#fff;">
+	<p>There are lots of ways to project the globe</p>
+</section>
+
+<section>
+	<p>But there is no way to project the globe without <em>distorting</em> it.</p>
+	<p><strong>Distortion</strong> is typically worst at the edges of the map, affecting <em>relative scale</em>.
+	</p>
+</section>
+
+<section>
+	<p>To avoid distortion, many projections are <strong>purpose-built</strong>:<br> they are specific to an area, or are designed for functionality (e.g., measuring distances from a certain point).</p>
+</section>
+
+<section style="padding-right:40%;background:url(img/osm_spastateplane.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h1>Pennsylvania State Plane (South)</h1>
+	<h3><a class="t" href="http://www.epsg.org/" target="_blank">EPSG (European Petroleum Survey Group) code 2272</a></h3>
+</section>
+
+<section>
+	<p>A few projections provide a decent balance between</p>
+	<ul>
+		<li>relative scale,</li> <li>visually-pleasing proportions,</li> <li>and straighforward measure-ability</li></ul>
+	<p>on a global scale.</p>
+</section>
+
+<section style="padding-top:2.5em; background:url(img/osm_globe_webmercator.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h1>Web Mercator</h1>
+	<h3>EPSG code: 3857</h3>
+	<p>East-West distance is constant. North-south distance is distorted close to the poles.</p>
+	</section>
+	
+<section style="padding-top: 3em">
+	<h1>Why you need to know this:</h1>
+	<p><strong>Web Mercator</strong> is the projection commonly used for <strong>web maps</strong> and typical web map-making software/tools/libraries.</p>
+	<p>Local data in southwestern Pennsylvania is typically stored in <strong>PA State Plane (South) / EPSG 2272</strong>. It uses <strong>feet</strong>, not decimal degrees, and must be <em>re-projected</em> to use in a web map.</p>
+</section>
+
+<!--Part 2---------->
+
+<section style="text-align:center;padding-top:5em;">
+	
+	<h1>Part 2: <strong>Base map</strong></h1>
+	<h2>~</h2>
+	<h3>Your map needs contextual data: <br>roads, rivers, points of interest, etc. <br><em>Fear not.</em> Someone else has already pulled all of this this together for you in<Br><a href="https://www.openstreetmap.org" target="_blank">Open Street Map</a></h3>
+	
+</section>
+
+<section>
+	<h1>What is <strong>Open Street Map</strong>?</h1>
+	<p><a class="t" href="http://www.openstreetmap.org">www.openstreetmap.org</a></p>
+	<p>It is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank">"Wikipedia of maps"</a>: a publicy editable global base map that you can use in your mapping project.</p>
+	<p>OSM is is licensed under the <a href="http://opendatacommons.org/licenses/odbl/" target="_blank"> Open Database License (ODbL)</a></p>
+</section>
+
+<section style="padding: 7em; text-align: center; background:url(img/osm_pgh.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;">
+	<h1>If you haven't already, <a href="https://www.openstreetmap.org/user/new" target="_blank">sign up now!</a></h1>
+</section>
+
+<section style="padding-top: 1em">
+	<h2>Resources</h2>
+	<p><em>overviews </em>
+	<br><a href="http://beamapper.com/">Be A Mapper: How to contribute to OpenStreetMap</a>
+	<br><a href="http://wiki.openstreetmap.org/wiki/Beginners%27_guide">Beginners Guide to OSM</a>
+	<br><a href="http://maptime.github.io/osm-101/">maptime: OpenStreetMap 101</a>
+	<br><a href="http://learnosm.org/en">LearnOSM.com</a></p>
+	<p><em>some specific tasks</em>
+	<br>To learn how to add any kind of thing to the map:
+	<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank">wiki.osm.org / wiki / Map_Features</a>
+<br>Am I doing it the <em>right way?</em>
+<br><a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_blank">wiki.osm.org / wiki / Good_practice</a></p>
+</section>
+
+<section>
+	<h2><strong>Two ways to view/edit OSM:</strong></h2>
+	<h2>web (basic): <a href="https://www.openstreetmap.org" target="_blank">iD</a></h2>
+			<h2>desktop (advanced): <a href="https://josm.openstreetmap.de/" target="_blank">JOSM</a></h2>
+</section>
+
+<section>What can I do with OSM? <em>Suggestions:</em>
+<ul>
+<li>Use one of the editors to trace some buildings, add some POIs (points of interest), identify local place names</li>
+<li>Play <a href="http://maproulette.org">MapRoulette</a></li>
+<li>Do some <a href="http://tasks.hotosm.org/">HOT tasks</a> (Humanitarian OSM Team)</li>
+<li>Go outside and map with <a href="http://fieldpapers.org/">Field Papers</a></li>
+<li>Export some data for use in desktop GIS software</li>
+</ul>
+</section>
+
+<section>
+	<h2>"I'm not interested in contributing to OSM right now, but I need a basemap."</h2>
+<ul>
+	<li>Quickly create and reference a custom-styled basemap with <a href="http://mapstack.stamen.com/edit.html#toner/11/40.4469/-79.9722">Map Stack</a><br>(We will use this later!)</li>
+	<li>Create and host a custom web map with <br>
+	<a href="http://www.mapbox.com">MapBox Studio</a> or
+	<a href="http://www.cartodb.com">CartoDB</a></li>
+</ul>
+</section>
+
+<section>
+	<h1>Why you need to know this:</h1>
+	<p>Base maps provide context. Using the right base map can make your data <strong>POP</strong>.</p>
+	<p>The benefit of using a base map like OSM is that if you find a discrepancy, it is within your power to fix - and everyone wins.</p>
+</section>
+
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 3: <strong>Data</strong></h1>
+	<h2>~</h2>
+	<h3>the stuff you are interested<br> in putting on a map</h3>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://maptime.io/geodata">maptime: introduction to geographic data formats</a></p>
+	<p><a href="http://mappingmashups.net/2012/11/29/mapping-with-google-fusion-tables/">geocode addressed data en-masse with Google Fusion Tables.</a></p>
+</section>
+
+<section style="padding-top: 3em">
+	<p>Data that has geographic attributes is <strong>Geodata</strong>. It represents <em>things that have a location</em>.</p>
+	<p>This can include <strong>defined physical or abstract features</strong> like <ul><li>roads<li>buildings<li>census boundaries</ul></p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Data can be either be <strong>Raster</strong> or <strong>Vector</strong>.</h2>
+	<p><strong>Raster</strong> data stores its geographic information in pixels.</p>
+	<p><strong>Vector</strong> data stores geometry, attributes, and location information as points, lines, or polygons</p>
+</section>
+
+<section style="padding:35%;text-align:center;background:url(img/pitt_vector.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;"><h1 style="background-color:#fff;line-height:110%">Vector</h1></section>
+<section style="padding:35%;text-align:center;background:url(img/pitt_slope.png);background-size:105%;	background-position: center;background-repeat: no-repeat;background-color:#fff;"><h1 style="background-color:#fff;line-height:110%">Raster</h1></section>
+
+<section style="padding-top: 1em">
+<h2>Vecotr file formats</h2>
+<p>Vector geodata comes in a lot of formats. The most common are:</p>
+<ul>
+	<li><a href="http://en.wikipedia.org/wiki/Shapefile">Shapefile</a>: actually collection of (usually) four files: .shp, .dbf, .shx, and .prj. Very common, but cannot be used for web-maps</li>
+	<li><a href="http://geojson.org/">GeoJSON</a>: a geographic implementation of Javascript Standard Objection Notation (JSON)</li>
+	<li><a href="https://developers.google.com/kml/">KML</a>: a geographic XML implementation. the zipped version is KMZ.</li>
+</ul>
+</section>
+
+<section>
+<p>A spreadsheet saved as <strong>CSV</strong> file is a common way to store data. If it contains <em>coordinates</em> or <em>addresses</em>, it can be converted to a geodata.</p>
+
+<p>	 <a href="https://github.com/openpgh/NationalDayofCivicHacking/blob/master/DataFiles/property/vacancies.csv">Here is a CSV table of vacant properties</a> for use today.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Geodata sources for today</h2>
+	<p>Head to the <a href="https://github.com/openpgh/NationalDayofCivicHacking/tree/master/DataFiles">OpenPGH NDOCH GitHub page</a> or the <a href="http://pittsburghpa.gov/dcp/gis/gis-data-new">City of Pittsburgh GIS page</a> to download some vector data to work with today.</p>
+	<p><a href="http://www.pasda.psu.edu/uci/SearchResults.aspx?originator=&Keyword=Allegheny%20County&sessionID=3917188802015216233019&searchType=keyword&entry=PASDA&condition=AND" target="_blank">PASDA</a> hosts Allegheny County data.</p>
+</section>
+
+<section style="padding-top: 3em">
+		<p>Most of these files are <strong>shapefile</strong> formant. To use on the web, you'll need to <em>reproject</em> them to <strong>Web Mercator</strong> and then <em>convert</em> them to either GeoJSON or KML.</p>
+		<p>For converting and reprojecting, you'll need to use desktop <strong>Geographic Information Systems (GIS) software</strong> like <a href="http://www.qgis.org/en/site">QGIS</a> (free) or <a href="http://desktop.arcgis.com/en/">ArcGIS</a> (not free, but is the industry standard).</p>
+		</section>
+	
+<section style="padding-top: 3em">
+	<h2>Use <strong><a href="http://www.qgis.org/en/site">QGIS</a></strong> to convert and reproject shapefiles and othe vector data</h2>
+	<p>First, a <a href="http://mappingmashups.net/2012/11/30/a-very-short-introduction-to-qgis/">Very short introduction to QGIS</a>. More detailed QGIS resources include <a href="https://github.com/maptimeBoston/qgis-101">QGIS 101</a> and a <a href="http://maps.cga.harvard.edu/qgis/">this comprehensive QGIS walk-through</a>.</p>
+	<p>Then read about <a href="
+		http://qgis.spatialthoughts.com/2012/04/tutorial-working-with-projections-in.html">Working with Projections in QGIS</a> and <a href="http://maps.cga.harvard.edu/qgis/wkshop/export_GIS.php">saving data to another format in QGIS</a>.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>A few other Geodata resources</h2>
+	<p><a href="http://geojson.io">geojson.io</a> supports creation, editing and conversion of geodata in common formats. It also has an API.</p>
+	<p>Learn how to <a href="https://support.google.com/mymaps/answer/3024836?hl=en">Import data to Google Maps (My Maps)</a></p>
+</section>
+	
+<section style="padding-top: 3em">
+	<h2>"I have some data with addresses in a table, but I don't have coordinates."</h2>
+	<p>You're in luck. You can take that spreadsheet of things you want to map and turn it into geodata through a process called <strong>Geocoding</strong>.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Geocoding</h2>
+		<p><strong>Geocoding</strong> is the conversion of a human-readable location name (usually addresses) into a numeric location such as a latitude and longitude.</p>
+<p><a href="http://schoolofdata.org/handbook/courses/geocoding/">Read an overview of Online Geocoding here</a>.</p>
+<p>Learn how to <a href="http://mappingmashups.net/2012/11/29/mapping-with-google-fusion-tables/">geocode addressed data en-masse with Google Fusion Tables.</a></p>
+</section>
+
+<section style="background:url(http://jniemuth.hubns.net/gis520/files/2013/01/Diagram.jpg);background-size:100%;	background-position: center;background-repeat: no-repeat;background-color:#fff;"></section>
+	
+<!------------------------------->
+
+<section style="text-align:center;padding-top:5em;">
+	<h1>Part 4: <strong>Platform</strong></h1>
+	<h2>~</h2>
+	<h3>use a web map to display and share your data </h3>
+</section>
+<section>
+	<h2>Resources</h2>
+	<p><a href="https://www.mapbox.com/guides/how-web-maps-work/">How Web Maps Work</a></p>
+	<p><a href="http://maptime.io/anatomy-of-a-web-map">Anatomy of a Web Map</a></p>
+</section>
+<section style="padding-top: 3em">
+	<h2>First: there are some great off-the-shelf tools for building web maps out there.</h2>
+	<h3><a href="http://www.mapbox.com">Mapbox</a></h3>
+	<h3><a href="http://cartodb.com/">CartoDB</a></h3>
+	<h3><a href="http://www.arcgis.com/">ArcGIS Online</a>
+	<h3><a href="http://maps.google.com/">Google Maps</a></h3>
+</section>
+
+<section style="padding: 15%">
+	<h2>Consider using one of those if you're a beginner.</h2>
+</section>
+
+<section style="padding: 15%">
+	<h2>If you're comfortable with html, css, and javascript, then you can try your hand at something custom using some of the tools we've highlighted today.</h2>
+</section>
+
+<section style="padding: 15%; text-align: center">
+	<h2>Build your own PieroGIS</h2>
+	<p><a href="http://maptime.io/pittsburgh/projects/pierogis">See the project here</a></p>
+	<p><a href="http://maptime.io/pittsburgh/presentations/ndoch2015/pierogis_example">See a clean version of the map you can hack from (sans sidebar)</a></p>
+	<p><a href="http://gassc.github.io/pcbwmap/">A more advanced example made for Pittsburgh Craft Beer Week</a></p>
+</section>
+
+<section style="padding-top: 3em">
+  <h3>Tech We'll Use</h3>
+  <p>
+    <ul>
+			<li>A text editor, for writing some HTML and assembling the Leaflet script
+			<li><a href="http://mapstack.stamen.com/" target="_newtab">MapStack</a>, for making a basemap.
+      <li><a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> for creating, editing, viewing data.
+			<li><a href="http://leafletjs.com" target="_newtab">Leaflet</a>, for generating the map
+      <li><a href="https://pages.github.com/">Github Pages</a>, for web hosting (optional)
+    </ul>
+  </p>
+ </section>
+
+<section style="padding-top: 3em">
+	<h3>Black n' Gold Basemap with MapStack</a></h3>
+  <p>The base element of this project is the basemap. To keep it simple, we are going to use <a href="http://mapstack.stamen.com/" target="_blank">MapStack</a>. The image filters and effects offer a wide variety of customization.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<p>When you're happy with what you've created, <em>copy the tile url of the live map</em> by right clicking the map and follow your browser dialog to copy the link. </p>
+	<p>Paste the url text from your MapStack map ino a text editor - we need to make some tweaks to get it ready for use in our map.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<p>The url should look something like:</p>
+	<code>http://<strong>d</strong>.sm.mapstack.stamen.com/toner/<strong>11</strong>/<strong>568</strong>/<strong>771</strong>.png</code>
+	<p>(Note that depending on how custom you made your map, it may be very long)</p>
+	<p>We need to tweak this to make it generic and useful for Leaflet. The portions highlighted in <strong>red</strong> need to change.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<p>Change the variables in url like this:</p>
+	<code>http://<strong>{s}</strong>.sm.mapstack.stamen.com/toner/<strong>{z}</strong>/<strong>{x}</strong>/<strong>{y}</strong>.png</code>
+	<p>The bracketed pieces of the url example above -- {s},{z},{x}, and {y} -- are placeholders that allow for the correct tiles to be loaded by Leaflet into our web map.</p>
+</section>
+
+<section style="padding-top: 3em">
+  <h3>Where are all the Pierogies?</h3>
+  <p>We've collected some pierogie geodata as <strong>GeoJSON</strong>.</p>
+The <a href="https://github.com/maptime/pittsburgh/blob/gh-pages/projects/pierogis/data/pierogis.geojson" target="_newtab">.geojson file</a> contains some of the pierogie sources from the region. You can load up this file in  <a href="http://geojson.io/" target="_newtab">GeoJSON.io</a> to add more data in an easy-to-read tabular format, or edit the GeoJSON text directly.</p>
+</section>
+ 
+<section style="padding-top: 3em">
+  <h3>Generate the map with Leaflet</h3>
+  <p><a href="http://leafletjs.com" target="_blank">Leaflet</a> is a JavasScript library that does the work of pulling our data and basemap together within HTML.</p><p>Using the documentation from the starter tutorial on <a href="http://leafletjs.com/examples/quick-start.html" target="_blank">Leafletjs.com</a>, we are going to start with the most basic components needed for a map:</p>
+</section>
+<section>
+  <ol>
+		<li>Add Leaflet starter code</li>
+		<li>Create the Map element</li>
+		<li>Add our tile layer URL from MapStack</li>
+	</ol>
+	<p>The result will be a web map that displays your MapStack basemap in the browser, with the ability to pan and zoom around.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Add Leaflet starter code</h2>
+	<p><a href="http://leafletjs.com/examples/quick-start.html">See the leaflet tutorial</a>.</p>
+	<p>References to Leaflet javascript and css must be included in the HTML header.</p>
+	<p>A <em>div</em> tag in the body must refer to the "map" element</p>
+	<p>css must specify the size of the "map" element</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Create the Map element</h2>
+	<p>Within the script tags:</p>
+	<code style="font-size: 0.9rem">var map = L.map('map').setView([40.4452, -79.9866], 10);</code>
+	<p>Note that <em>SetView</em> sets the longitude, latitude, and zoom</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h2>Add our tile layer URL from MapStack</h2>
+	<p>Within the script tags:</p>
+	<code style="font-size: 0.9rem">
+	L.tileLayer(
+    'http://{s}.sm.mapstack.stamen.com/toner/{z}/{x}/{y}.png',
+		{attribution:'credit where credit is due', maxZoom: 18, minZoom: 8,}
+		).addTo(map);</code>
+	
+	<p>Note that we use the generic Map Stack url here.</p>
+</section>
+
+<section style="padding-top: 3em">
+	<h3>Display the data</h3>
+  Use Leaflet to add our .geojson file.
+	<pre><code style="font-size: 0.9rem">L.geoJson(pierogie_geojson, {
+	pointToLayer: function(feature, latlng) {
+		var marker = L.marker(latlng, {icon: pierogie_icon});
+		marker.bindPopup(feature.properties.name);
+		return marker;}
+}).addTo(map);
+	</code></pre>
+</section>
+
+	<section>
+		<h3>L.geoJson(pierogie_geojson...</h3>
+  <p>Leaflet displays GeoJSON data, but does not load an externally-stored GeoJSON file. You have a few options to load it, including using JQuery.</p> <p>But one simple way is to save the geojson object as a <strong>var</strong> in an <a href= "https://raw.githubusercontent.com/maptime/pittsburgh/gh-pages/projects/pierogis/pierogie_data.js" target="_blank">external .js file</a>.</p>
+  </section>
+
+<section style="padding-top: 3em">
+  <h3>var marker = L.marker(latlng, {icon: pierogie_icon});</h3>
+  <p>We can use almost any image file for a marker, and we've got <a href="https://raw.githubusercontent.com/maptime/pittsburgh/gh-pages/projects/pierogis/pierogie.png" target="_blank">one suitable for pierogies</a>. 
+  </section>
+	
+<section style="padding-top: 3em">
+  <h3>marker.bindPopup(feature.properties.name);</h3>
+	<p>Use Leaflet to dynamically generate a pop-up for each pierogie from the point's attributes:</p>
+	<ol>
+		<li>'bind' a pop-up to the marker
+		<li>create the text and attribute references (using GeoJSON keys)
+		<li>optionally style the text using HTML/CSS
+	</ol>
+</section>
+<section>
+  <h3>Done!</h3>
+	<p>
+		Now you've built a web map from scratch using some freely available tools.
+	<p><a href="http://maptime.io/pittsburgh/presentations/ndoch2015/pierogis_example">See the working example</p>
+	</section>
+
+<section>
+	<h2>additional resources</h2>
+	<p><a href="http://maptime.io/pittsburgh/presentations/geo101">maptimePGH: geo 101</a></p>
+	<p><a href="http://maptime.io/lessons-resources/">maptime HQ resources page</a></p>
+</section>
+
+<section>
+	<h1>Thanks!</h1>
+	<p><a href="http://www.opgh.org">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<p><a href="http://maptime.io/pittsburgh">MaptimePGH</a></p>
+	<a href="http://maptime.io">Maptime HQ</a> and the other Maptime chapters for providing some great source material</p>
+</section>
+
+<!------------------------------->
+
+<section style="text-align:center; padding:9em;font-size:0.7em">
+		<p>Presentation by <a href="http://www.twitter.com/@GassChristianB"> @GassChristianB</a></p>
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/" rel="author">Mike Bostock</a> and is available <br>on <a href="https://github.com/mbostock/stack">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE">BSD license</a>.
+		<p class="grey">
+</section>
+
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js"></script>
+<script src="js/stack.v1.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script>
+	$(document).foundation();
+</script>
+<!--OSM Map w/ Leaflet------------------------->
+<script>
+	// create a map in the "map" div, set the view to a given place and zoom
+	var map = L.map('map').setView([40.44316, -79.94985], 12);
+	
+	// add an OpenStreetMap tile layer
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+</script>
