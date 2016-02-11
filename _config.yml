@@ -2,11 +2,13 @@ baseurl: /pittsburgh
 permalink: pretty
 markdown: kramdown
 paginate: 5
-repo: starter
+repo: pittsburgh
 github_org: maptime
 future: true
-gems: [jekyll-paginate]
 maptime:
   chapter: Maptime Pittsburgh
   twitter: MaptimePGH
   #disqus: YOUR DISQUS USERNAME
+gems:
+  - jekyll-paginate
+  - jekyll-feed
