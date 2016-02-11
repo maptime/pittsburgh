@@ -1,1 +1,1 @@
-** folder for Maptime Pittsburgh presentations **
+# Maptime Pittsburgh presentations
