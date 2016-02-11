@@ -227,3 +227,4 @@ pip-log.txt
 # project working folders
 _src/
 _old/
+*.komodoproject
