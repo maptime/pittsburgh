@@ -1,10 +1,18 @@
 ---
+layout: post
+title: MapWarper
+author: gassc
+---
+
+<!--
+---
 layout: event
 category: event
 title: MapWarper
 rsvp: "http://www.meetup.com/Open-Pittsburgh-our-Regions-Code-for-America-Brigade/"
 published: true
 ---
+-->
 
 When | April, 27 2016, from 6-8 PM
 Where | [Carnegie Library of Pittsburgh, East Liberty](http://carnegielibrary.org/locations/eastliberty/)
