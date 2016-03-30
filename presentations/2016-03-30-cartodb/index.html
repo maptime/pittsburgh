@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+</head>
+<style>
+	/*
+	@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+	@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+	*/
+
+	@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
+	@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+	html,
+	body,
+	section {
+		background-color: #231f20;
+		color: #fff;
+		padding: 3em;
+		font-family: 'Titillium Web', Arial, sans-serif;
+		font-weight: 400;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	strong,
+	b,
+	em,
+	i {
+		color: #fdb930
+	}
+
+	strong,
+	b {
+		font-weight: 700;
+	}
+
+	em,
+	i {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.gold {
+		color: #fdb930
+	}
+
+	.gray {
+		color: #231f20;
+	}
+
+	.small-text {
+		font-size: 0.75em;
+		line-height: 1em;
+	}
+
+	.front-and-center {
+		text-align: center;
+		padding-top: 3em;
+	}
+
+	a:link,
+	a:visited {
+		color: #8ad3f4;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	td {
+		padding: 1em;
+		vertical-align: top;
+	}
+
+	code {
+		background-color: #555;
+		color: #fff;
+		font-family: 'Share Tech Mono', mono, sans-serif;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+</style>
+<section class="front-and-center">
+	<h1 class="gold">Dropping Pins</h1>
+	<h3>an introduction to making maps on the internet w/ OSM, FOSS4G tools, esp. <strong>CartoDB</strong></h3>
+	<p>SUDS // 30 March 2016</p>
+	<p>Follow along at <a href="http://maptime.io/pittsburgh/presentations/2016-03-30-cartodb/"> maptime.io /pittsburgh /presentations /2016-03-30-cartodb</a></p>
+	<p><em>courtesy of <a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a></em></p>
+</section>
+
+<section>
+	<h2>What is <b>Maptime</b>?</h2>
+	<ul>
+		<li>A time for learning about maps</li>
+		<li>Hands-on</li>
+		<li>Beginner-focused <span class="small-text">(though at times I may stray from that, please call me on it)</span></li>
+		<li>Emphasis on open source, programming, and web-mapping
+		</li>
+	</ul>
+	<p><a href="http://maptime.io/pittsburgh">maptime.io/pittsburgh</a></p>
+	<p><a href="http://github.com/maptime/pittsburgh">github.com/maptime/pittsburgh</a></p>
+</section>
+
+<section>
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
+</section>
+
+<!--
+<section>
+	<h1>For today, think about a <strong>map</strong> as a combination of four <strong>components</strong>:</h1>
+</section>
+
+<section style="padding:15em 4em 1em; background:url(img/c0.png);background-size:100%;	background-position: center;background-repeat: no-repeat;">
+	<h3 class="gray" style="background:rgba(255,255,255,0.7);">Geography</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c1.png);background-size:100%;	background-position: center;background-repeat: no-repeat;">
+	<h3 class="gray" style="background:rgba(255,255,255,0.7);">Geography + Base Map</h3>
+</section>
+<section style="padding:15em 4em 1em;;background:url(img/c2.png);background-size:100%;	background-position: center;background-repeat: no-repeat;">
+	<h3 class="gray" style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data</h3>
+</section>
+<section style="padding:15em 4em 1em; background:url(img/c3.png);background-size:100%;	background-position: center;background-repeat: no-repeat;">
+	<h3 class="gray" style="background:rgba(255,255,255,0.7);">Geography + Base Map + Data + User Experience</h3>
+</section>
+<section>
+	<table>
+		<tr>
+			<td>
+				<p>Components</p>
+				<ol>
+					<li>Geography</li>
+					<li>Base Map</li>
+					<li>Data</li>
+					<li>UX</li>
+				</ol>
+			</td>
+			<td style="border-left: solid">
+				<p>This list is:</p>
+				<ul>
+					<li>the way you conceptually organize a mapping product</li>
+					<li>your map-making workflow</li>
+					<li>your technology stack</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</section>
+-->
+<section class="front-and-center">
+	<h1>Part 1/3: <strong>Geography and GeoData</strong></h1>
+	<h2>~</h2>
+	<h3>some fundamentals for making maps</h3>
+</section>
+
+<!--
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://mapschool.io" target="_blank">mapschool.io</a></p>
+	<p><a href="http://lyzidiamond.com/geodesy" target="_blank">maptime: the wild world of geodesy [coordinate systems and projections]</a></p>
+</section>
+
+<section style="padding-top:5em;">
+	<h2>Maps describe Earth.</h2>
+	<h2><strong>Maps</strong> are a <em>visualization</em> of <strong>data</strong> in <strong>geographic space</strong>.</h2>
+</section>
+-->
+
+<section>
+	<h2>round -> flat</h2>
+	<p>places on Earth are represented as places on flat surfaces, like print-outs or computer screens</p>
+	<p>doing this requires a:</p>
+	<ol>
+		<li>a <strong>system</strong> for describing locations</li>
+		<li>a <strong>method</strong> for projecting a location from the round thing to a location on the flat thing</li>
+	</ol>
+</section>
+
+<section>
+	<h2>A <strong>coordinate system</strong> describes locations.</h2>
+	<h3><strong>Lat/Lon</strong> is used to represent location on both the Earth as a <em>globe</em> (a sphere-like 3-D object) and Earth as a <em>map</em> (a planar, 2-D object)</h3>
+</section>
+
+<!--
+<section>
+	<p>Locations are identified using <strong>latitude / longitude</strong> (lat/lon) <em>decimal degrees</em>.</p>
+	<table style="font-size:0.75em;line-height:1em;">
+		<tr>
+			<td></td>
+			<td><em>shows:</em></td>
+			<td><em>represented with:</em></td>
+			<td><em>units:</em></td>
+		</tr>
+		<tr>
+			<td><strong>LATITUDE (Y)</strong></td>
+			<td>north-south</td>
+			<td>horizontal lines, different circumferences</td>
+			<td>-90 to +90 decimal degrees</td>
+		</tr>
+		<tr>
+			<td><strong>LONGITUDE (X)</strong></td>
+			<td>east-west</td>
+			<td>vertical lines, same circumferences</td>
+			<td>0 to 180 decimal degrees</td>
+		</tr>
+	</table>
+</section>
+<section style="padding:0.5em 0.5em;background:url(img/latlon.png);background-size:125%;	background-position: 50%65%; background-repeat: no-repeat;background-color: #231f20;" ">
+</section>
+-->
+
+<section style="text-align:center;background:url(img/globe.png);background-size:110%; background-position: center;background-repeat: no-repeat;">
+	<h2 style="color:#fff">To go from a globe like this...</h2>
+</section>
+
+<section style="text-align:center;background:url(img/osm_globe_webmercator.png);background-size:110%; background-position: center;background-repeat: no-repeat;">
+	<h2 class="gray">...to a map like this...</h2>
+</section>
+
+<section style="text-align:center;">
+	<h2>...we need a <strong>map projection</strong>.</h2>
+	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas " target="_blank ">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
+</section>
+
+<section style="padding-right:80%;background:url(img/xkcd_map_projections.jpg);background-size:70%; background-position: right;background-repeat: no-repeat;background-color: #231f20; ">
+	<p>There are <a href="http://xkcd.com/977/" target="blank_">lots of ways</a> to project the globe</p>
+</section>
+
+<section>
+	<p>But there is no way to project the globe without <em>distorting</em> it.</p>
+	<p><strong>Distortion</strong> is typically worst at the edges of the map, affecting <em>relative scale</em>.
+	</p>
+	<p>To avoid distortion, many projections are <strong>purpose-built</strong>:
+		<br> they are specific to an area, or are designed for functionality (e.g., measuring distances from a certain point).</p>
+</section>
+
+<section style="text-align:center;background:url(img/osm_spastateplane.png);background-size:105%; background-position: center;background-repeat: no-repeat;background-color: #231f20; ">
+	<h1 class="gray">Pennsylvania State Plane (South)</h1>
+	<h3 class="gray">EPSG (European Petroleum Survey Group) code 2272</a></h3>
+</section>
+
+<section>
+	<p>A few projections provide a decent balance between</p>
+	<ul>
+		<li>relative scale,</li>
+		<li>visually-pleasing proportions,</li>
+		<li>and straighforward measure-ability</li>
+	</ul>
+	<p>on a global scale.</p>
+</section>
+
+<section class="gray front-and-center" style="background:url(img/osm_globe_webmercator.png);background-size:105%; background-position: center;background-repeat: no-repeat;">
+	<h1>Web Mercator</h1>
+	<h3>EPSG code: 3857</h3>
+	<p>East-West distance is constant.
+		<br>North-south distance is distorted close to the poles.</p>
+</section>
+
+<section style="padding-top:2em">
+	<h1>Why you need to know this:</h1>
+	<p><strong>Web Mercator</strong> is the projection commonly used for <strong>web maps</strong> and typical web map-making software/tools/libraries.</p>
+	<p>Local data in southwestern Pennsylvania is typically stored in <strong>PA State Plane (South) / EPSG 2272</strong>. It uses <strong>feet</strong>, not decimal degrees, and must be <em>re-projected</em> to use in a web map.</p>
+	<h2><a href="http://epsg.io"  target="blank_">espg.io</a> is a coordinate system search engine with an API. Really cool.</h2>
+</section>
+
+<section>
+	<h1><a href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON</a></h1>
+	<p>GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes, based on <strong>JavaScript Object Notation</strong> (JSON). src:<a href="https://en.wikipedia.org/wiki/GeoJSON">wikipedia</a></p>
+	<p>You can interactively make a geojson file with <a href="http://geojson.io/" target="_blank">geojson.io</a>.</p>
+	<p>Let's give that a try, and save a GeoJSON of our own.</p>
+	<p class="small-text">also grab <a href="maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson"target="_blank">fishfries2016.geojson</a> demo data for later</p>
+</section>
+
+<!--Part 2---------->
+
+<section class="front-and-center">
+
+	<h1>Part 2/3: <strong>Open Street Map + FOSS geo tools</strong></h1>
+	<h2>~</h2>
+	<h3>Your map needs contextual data: roads, rivers, points of interest, etc.</h3>
+	<h3>Someone else has already pulled all of this this together for you in <a href="https://www.openstreetmap.org" target="_blank ">Open Street Map (OSM)</a>, and a bunch of software is built to use OSM.</h3>
+
+</section>
+
+<section>
+	<h1>What is <strong>Open Street Map</strong>?</h1>
+	<p><a class="t " href="http://www.openstreetmap.org ">www.openstreetmap.org</a></p>
+	<p>It is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank ">"Wikipedia of maps"</a>: a publicy editable global base map that you can use in your mapping project.</p>
+	<p>OSM is is licensed under the <a href="http://opendatacommons.org/licenses/odbl/ " target="_blank "> Open Database License (ODbL)</a></p>
+</section>
+
+<section class="gray" style="padding: 7em; text-align: center; background:url(img/osm_pgh.png);background-size:105%; background-position: center;background-repeat: no-repeat;">
+	<h1><a href="https://www.openstreetmap.org/user/new " target="_blank" style="color:#231f20">If you haven't already, sign up now and contribute</a></h1>
+</section>
+
+<section style="padding-top:1em">
+	<h2>Resources</h2>
+	<p class="small-text"><em>overviews </em>
+		<br><a href="http://beamapper.com/" target="_blank">Be A Mapper: How to contribute to OpenStreetMap</a>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Beginners%27_guide" target="_blank">Beginners Guide to OSM</a>
+		<br><a href="http://maptime.github.io/osm-101/" target="_blank">maptime: OpenStreetMap 101</a>
+		<br><a href="http://learnosm.org/en" target="_blank">LearnOSM.com</a></p>
+	<p class="small-text"><em>some specific tasks</em>
+		<br>To learn how to add any kind of thing to the map:
+		<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features " target="_blank ">wiki.osm.org / wiki / Map_Features</a>
+		<br>Am I doing it the <em>right way?</em>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Good_practice " target="_blank ">wiki.osm.org / wiki / Good_practice</a></p>
+</section>
+
+<!--
+<section>
+	<h2><strong>Two ways to view/edit OSM:</strong></h2>
+	<h2>web (basic): <a href="https://www.openstreetmap.org " target="_blank ">iD</a></h2>
+	<h2>desktop (advanced): <a href="https://josm.openstreetmap.de/ " target="_blank ">JOSM</a></h2>
+</section>
+
+<section>What can I do with OSM? <em>Suggestions:</em>
+	<ul>
+		<li>Use one of the editors to trace some buildings, add some POIs (points of interest), identify local place names</li>
+		<li>Play <a href="http://maproulette.org ">MapRoulette</a></li>
+		<li>Do some <a href="http://tasks.hotosm.org/ ">HOT tasks</a> (Humanitarian OSM Team)</li>
+		<li>Go outside and map with <a href="http://fieldpapers.org/ ">Field Papers</a></li>
+		<li>Export some data for use in desktop GIS software</li>
+	</ul>
+</section>
+
+<section>
+	<h2>"I 'm not interested in contributing to OSM right now, but I need a basemap."</h2>
+	<ul>
+		<li>Quickly create and reference a custom-styled basemap with <a href="http://mapstack.stamen.com/edit.html#toner/11/40.4469/-79.9722">Map Stack</a>
+			<br>(We will use this later!)</li>
+		<li>Create and host a custom web map with
+			<br>
+			<a href="http://www.mapbox.com">MapBox Studio</a> or
+			<a href="http://www.cartodb.com">CartoDB</a></li>
+	</ul>
+</section>
+-->
+
+<section>
+	<h1>Why you need to know about <b>Open Street Map</b> and <b>basemaps</b>:</h1>
+	<p>Base maps provide context. Good cartography will make your data <strong>POP</strong> and help you tell a story with your data.</p>
+	<p>The benefit of using a base map like OSM is that if you find a discrepancy, it is within your power to fix quickly, and everyone wins.</p>
+	<p>and...</p>
+</section>
+
+<section style="padding-top: 1em">
+	<h1>OSM is relied upon by many <strong>free and open source software (FOSS) </strong> geo-tools.</h1>
+	<p>In rough order of "off-the-shelf-completeness" for those new to web map development:</p>
+	<ul>
+		<li><a href="http://mapnik.org/" target="_blank">Mapnik</a></li>
+		<li><a href="http://www.leafletjs.com" target="_blank">Leaflet</a></li>
+		<li><a href="http://openlayers.org" target="_blank">Open Layers</a></li>
+		<li><a href="http://www.mapzen.com" target="_blank">Mapzen</a></li>
+		<li><a href="http://www.mapbox.com" target="_blank">Mapbox</a></li>
+		<li><a href="http://www.cartodb.com" target="_blank">CartoDB</a></li>
+	</ul>
+</section>
+<section>
+	<h2>FOUNDATION: <a href="http://mapnik.org/" target="_blank">Mapnik</a></h2>
+	<p class="small-text"><em>"Mapnik is an open source toolkit for developing mapping applications...basically a collection of geographic objects like maps, layers, datasources, features, and geometries...It is intended to play fair in a multi-threaded environment and is aimed primarily, but not exclusively, at web-based development."</em> src: <a href="https://github.com/mapnik/mapnik/blob/master/README.md">Mapnik on Github</a></p>
+	<p>Mapnik powers Open Street Map and many other FOSS geo tools</p>
+</section>
+
+
+<section>
+	<h2>BUILDING BLOCKS: <a href="http://www.leafletjs.com" target="_blank">Leaflet</a></h2>
+	<p class="small-text"><em>"Leaflet is an open source JavaScript library for mobile-friendly interactive maps...it has all the features most developers ever need for online maps." </em>src: <a href="https://github.com/Leaflet/Leaflet/blob/master/README.md">Leaflet on Github</a></p>
+	<p>With some basic web-dev skills, make simple, functional, and great-looking web maps.</p>
+</section>
+
+<section>
+	<h2>BUILDING BLOCKS: <a href="http://openlayers.org" target="_blank">Open Layers</a></h2>
+	<p class="small-text"><em>"OpenLayers 3 is a high-performance, feature-packed library for creating interactive maps on the web." </em>src: <a href="https://github.com/openlayers/ol3/blob/master/README.md">Open Layers on Github</a></p>
+	<p>A full-featured web mapping library, with support for WebGL, 3D, many projections, lots of data types, animation, etc. Many <a href="http://openlayers.org/en/v3.14.2/examples/" target="_blank">examples </a> for creating your web map.</p>
+</section>
+
+<section>
+	<h2>BUILDING BLOCKS: <a href="http://www.mapzen.com" target="_blank">Mapzen</a></h2>
+	<p class="small-text"><em>"Mapzen builds open-source mapping tools and collaborates on open geodata initiatives. " </em>src: <a href="https://mapzen.com/">Mapzen.com</a></p>
+	<p>These folks build open-source tools focused on getting the most out of OSM. <a href="https://mapzen.com/projects/tangram" target="_blank">Tanagram</a> is a really awesome library for creating custom-styled, 2D and 3D basemaps using OSM data. <a href="https://mapzen.com/projects/turn-by-turn" target="_blank">Mapzen Turn-by-Turn</a> and <a href="https://mapzen.com/projects/search" target="_blank">Mapzen Search</a> are fast, free-to-use directions and geocoding tools, respectively.</p>
+</section>
+
+<section>
+	<p class="small-text"></p>
+	<h2>PLATFORM: <a href="http://www.mapbox.com" target="_blank">Mapbox</a></h2>
+	<p class="small-text"><em>"Mapbox is a mapping platform for developers. Our building blocks make it easy to integrate location into any mobile or online application." </em>src: <a href="https://www.mapbox.com/">Mapbox.com</a></p>
+	<p class="small-text">Mapbox provide open-source tools to build web maps from scratch, such as
+		<a href=https://github.com/mapbox/mapbox-gl-js "target="_blank ">MapboxGL</a>, and tools for, geocoding, directions, and some geospatial analysis with <a href="http://turfjs.org/ ">Turf</a>. They offer basic geodata hosting services that their tools are built to use. <a href="https://www.mapbox.com/studio/ "target="_blank ">Mapbox Studio</a> is an incredible cartographic design tool for creating custom <strong>basemaps</strong> using OSM and your own data.</p>
+	<p>Check out the <a href="https://www.mapbox.com/gallery/ " target="_blank ">Mapbox Studio Gallery</a>.</p>
+</section>
+
+<section>
+	<p class="small-text "></p>
+	<h2>PLATFORM: <a href="http://www.cartodb.com " target="_blank ">CartoDB</a></h2>
+	<p>Which brings us to...</p>
+</section>
+
+<!-- DATA
+
+<section style="text-align:center;padding-top:5em; ">
+	<h1>Part 3: <strong>Data</strong></h1>
+	<h2>~</h2>
+	<h3>the stuff you are interested<br> in putting on a map</h3>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<p><a href="http://maptime.io/geodata ">maptime: introduction to geographic data formats</a></p>
+	<p><a href="http://mappingmashups.net/2012/11/29/mapping-with-google-fusion-tables/ ">geocode addressed data en-masse with Google Fusion Tables.</a></p>
+</section>
+
+<section style="padding-top: 3em ">
+	<p>Data that has geographic attributes is <strong>Geodata</strong>. It represents <em>things that have a location</em>.</p>
+	<p>This can include <strong>defined physical or abstract features</strong> like
+		<ul>
+			<li>roads</li>
+			<li>buildings</li>
+			<li>census boundaries</li>
+		</ul>
+	</p>
+</section>
+
+<section style="padding-top: 3em ">
+	<h2>Data can be either be <strong>Raster</strong> or <strong>Vector</strong>.</h2>
+	<p><strong>Raster</strong> data stores its geographic information in pixels.</p>
+	<p><strong>Vector</strong> data stores geometry, attributes, and location information as points, lines, or polygons</p>
+</section>
+
+<section style="padding:35%;text-align:center;background:url(img/pitt_vector.png);background-size:105%; background-position: center;background-repeat: no-repeat;background-color: #231f20; ">
+	<h1 style="background-color: #231f20;line-height:110% ">Vector</h1></section>
+<section style="padding:35%;text-align:center;background:url(img/pitt_slope.png);background-size:105%; background-position: center;background-repeat: no-repeat;background-color: #231f20; ">
+	<h1 style="background-color: #231f20;line-height:110% ">Raster</h1></section>
+
+<section style="padding-top: 1em ">
+	<h2>Vector file formats</h2>
+	<p>Vector geodata comes in a lot of formats. The most common are:</p>
+	<ul>
+		<li><a href="http://en.wikipedia.org/wiki/Shapefile ">Shapefile</a>: actually collection of (usually) four files: .shp, .dbf, .shx, and .prj. Very common, but cannot be used for web-maps</li>
+		<li><a href="http://geojson.org/ ">GeoJSON</a>: a geographic implementation of Javascript Standard Objection Notation (JSON)</li>
+		<li><a href="https://developers.google.com/kml/ ">KML</a>: a geographic XML implementation. the zipped version is KMZ.</li>
+	</ul>
+</section>
+
+<section>
+	<h2></h2>
+	<p>A spreadsheet saved as a <strong>CSV</strong> file is a common way to store data. If it contains <em>coordinates</em> or <em>addresses</em>, it can be converted to a geodata.</p>
+</section>
+-->
+
+<!------------------------------->
+
+<section style="text-align:center;padding-top:5em; ">
+	<h1>Part 3/3: <strong>Build something with CartoDB</strong></h1>
+	<h2>~</h2>
+	<h3>use a web GIS to display, interact, and share your data </h3>
+	<p><a href="http://bit.ly/DCCarto " target="_blank ">(HUGE thanks to Maptime DC for pulling this part of the presentation together)</a></p>
+</section>
+
+<section>
+	<h1 class="gold ">To follow along, sign-up for CartoDB</h1>
+	<p>Go to <a href="http://www.cartodb.com " target="_blank ">CartoDB.com</a>
+		<ul>
+			<li>you can login with your <a href="https://www.google.com/ ">google account</a> or</li>
+			<li>select a <strong>username</strong>, <strong>email</strong>, and <strong>password</strong></li>
+		</ul>
+	</p>
+</section>
+
+<section>
+		<h1>What is <a href="https://cartodb.com/ ">CartoDB</a>?</h1>
+		<p>A Software as a Service (SaaS) cloud computing platform that <b>provides GIS and web mapping tools for display in a web browser</b>. CartoDB users can use the company's free platform or deploy their own instance of the open source software. CartoDB is offered as freemium service, where accounts are free up to a certain size. For larger accounts, a fee is applied. src: <a href="https://en.wikipedia.org/wiki/CartoDB ">wikipedia</a></p>
+</section>
+
+<section>
+	<h1>CartoDB is basically a full-stack web GIS</h1>
+	<ul>
+	<li><strong>PostGIS-enabled PostgreSQL database</strong> on the backend</li>
+	<li><strong>OSM</strong> basemaps, with custom-styles using CartoCSS</li>
+	<!--li>a basic web <strong>geoprocessing</strong> library</li-->
+	<li>geodata <strong>visualization tools</strong></li>
+	</ul>
+	<p>you can interact with each element in the stack through a web UI, or in some cases, programmatically via APIs</p>
+</section>
+
+<section style="padding-top:1em; ">
+	<h2>Create a new map!</h2>
+	<p class="small-text ">If you've just created your account, you'll get a nice prompt like this:</p>
+	<p><img alt=" " src="https://raw.githubusercontent.com/maptime/dc/gh-pages/img/newmap2.png " style="height:200px; "/></p>
+	<p class="small-text ">Or if you already had an account, go to your <strong>dashboard</strong> at <strong>https://{{username}}.cartodb.com/dashboard</strong></p>
+</section>
+
+<section>
+	<h1>Exploring the <strong>CartoDB Editor</strong>:</h1>
+	<p>There are two basic views when working in the CartoDB Editor:
+		<ul>
+			<li><strong>Profile</strong> <code>{{username}}.cartodb.com/me</code></li>
+			<li><strong>Dashboard</strong> <code>{{username}}.cartodb.com/dashboard</code>
+				<ul>
+					<li><strong>Datasets</strong> <code>{{username}}.cartodb.com/dashboard/datasets</code></li>
+					<li><strong>Maps</strong>: <code>{{username}}.cartodb.com/dashboard/maps</code></li>
+				</ul>
+				</li>
+		</ul>
+	</p>
+</section>
+
+<section>
+	<h1><strong>Datasets</strong><br> <code>{{username}}.cartodb.com/dashboard/datasets</code></h1>
+	<h3>Here is where you'll get a list of the <strong>datasets you have in your account</strong> as well as options to connect to <strong>public datasets from the Data Library</strong></h3>
+	<!--p>
+	<img alt=" " src="https://github.com/maptime/dc/blob/gh-pages/img/yourdatasets.png " />
+	</p-->
+</section>
+
+<section>
+	<h1><strong>Maps</strong><br> <code>{{username}}.cartodb.com/dashboard/maps</code></h1>
+	<h3>Here is where you'll find previous maps you've worked on and where you can create new maps</h3>
+	<!--p>
+	<img alt=" " src="https://github.com/maptime/dc/blob/gh-pages/img/yourmaps.png " />
+	</p-->
+</section>
+
+<section>
+	<h1><strong>Connect a dataset</strong></h1>
+	<h3>Let's get to it by by clicking on <code>New Dataset</code> to gather data for our map!</h3>
+	<p>You'll see numerous options to gather data for use in CartoDB.</p>
+	<p class="small-text ">For the free account, you can only upload static data from certain places. Paid acccounts upload data from more sources to CartoDB and also stay "linked " to the source, keeping things up-to-date.</p>
+	<!--p>
+		<img alt=" " src="https://github.com/maptime/dc/blob/gh-pages/img/newdataset.png " />
+	</p-->
+</section>
+
+<!--Interactive Data finding -->
+
+<section style="padding-top: 3em ">
+	<h1>Let's look at the <a href="https://www.wprdc.org/ " target="_blank ">Western Pennsylvania Regional Data Center</a> for some geodata</h1>
+	<ol>
+	<li>Navigate from <br> <em>data >>> dataset >>> lawyer page >>> list of datasets</em></li>
+	<li>Filter by <b>GeoJSON</b></li>
+	<li>Find something you like, and open it. Point data will be easiest for this demo.</li>
+	</ol>
+</section>
+
+<section style="padding-top: 3em ">
+	<h1>Get a link to the selected WPRDC dataset's GeoJSON</h1>
+	<ol>
+		<li>under <em>Data and Resources</em> click <em>GeoJSON</em></li>
+		<li>the url to the raw data source is at the top of the page</li>
+		<li><strong>copy the url</strong></li>
+
+	</ol>
+			<p class="small-text "><strong>SIDEBAR</strong>: You'll notice that the WPRDC dataset page already has a map with the data! It's built with <strong>Leaflet</strong> and uses an <strong>OSM</strong> basemap from <strong>MapQuest</strong></p>
+</section>
+
+<section>
+	<h1>Back in CartoDB...</h1>
+	<p>after you've clicked <code>New Dataset</code>:</p>
+	<ol>
+		<li>In the lower right text field, paste the WPRDC GeoJSON link and hit <code>Submit</code>.</li>
+		<li>Click <code>Connect Dataset</code> at the bottom of the screen. You might have to do this a few times, and it may take a little while with big datasets.</li>
+	</ol>
+</section>
+
+<section>
+	<h1><strong>Yoi!</strong> You should see a data table.</h1>
+	<p>At the top of the table, we see the field titles (e.g., <code>the_geom</code>)and the field types, (e.g., <code>geometry</code>).</p>
+	<p>Here, you can change the field name, sort the data, add new columns, and more.</p>
+	<p>Different field types will have different kind of visualization options when we get to the map.</p>
+</section>
+
+<section>
+		<h1>Fish Fries 2016</h1>
+		<p class="small-text">You can upload the Fish Fry Map <a href="maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson"target="_blank">fishfries2016.geojson</a> data for use here if you want</p>
+</section>
+
+<section>
+	<h1><strong>Wait...</strong> Don't I need to worry about the <strong>coordinate system?!</strong></h1>
+	<p>In this case, our data is in the <strong>Web Mercator</strong> projection, so no.</p>
+	<div class="small-text ">
+	<p><a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects " target="_blank ">Per the spec</a>, GeoJSON uses a <em> a geographic coordinate reference system, with a WGS84 datum</em>, by default - same as Web Mercator.
+	<p>And typically, you'll find that publishers of GeoJSON use Web Mercator, since the format primarily geared towards web maps.</p>
+</div>
+</section>
+
+<section>
+	<h1>Our data is good to go! Now let's move over to the <strong>map</strong>.</h1>
+	<ol>
+		<li>At the top of the screen, click on <code>Map View</code>. <em>This is just a view of the data on a map, not officially a map yet.</em></li>
+	<li>On the right hand side of the page we see a bunch of different options to make our map. Click around some and explore.
+	<ul class="small-text ">
+		<li>SQL</li>
+		<li>Wizards</li>
+		<li>InfoWindow</li>
+		<li>CartoCSS</li>
+		<li>Legends</li>
+		<li>Filters</li>
+	</ul>
+	</li>
+	</ol>
+
+</section>
+
+<section>
+	<h1>Styling Data: <strong>Wizards</strong></h1>
+	<p>The first thing we can do is look at how to style our data in different ways.</p>
+	<p>
+		On the right hand side, click on the <strong>paintbrush</strong> icon. This is the <strong>wizards</strong> panel. Play around with the different styles and suboptions -- <em>what wizard options display what kind of information? Which kinds of wizard options don't make sense for the kind of data we have?</em> This is where the field type comes into play -- some wizard options are only available for some field types.
+	</p>
+</section>
+
+<section>
+	<h1>Styling Data: <strong>CartoCSS</strong></h1>
+	<p>CartoCSS is a CSS-like language for cartographic styling of geodata</p>
+	<p class="small-text">It's good for complex styling for static visualization of data. It's a bit less intuitive for the animated styling available in the <strong>Wizard</strong>. Styles created with the <strong>Wizard</strong> will be automatically written in CartoCSS, which you can view here.</p>
+	<p class="small-text">Portions of the CartoCSS language used here are also used by <strong>Mapbox.js</strong> (though that has been superceded by the Mapbox Studio approach shown earlier)</p>
+</section>
+
+<section>
+	<h1>Filtering Data: <strong>Filters</strong> and <strong>SQL</strong></h1>
+	<p>Use the <strong>Filter</strong> tool to query and filter the data you want to show on the map, Using data in one or more columns. This auto-creates a <strong>SQL</strong> statement and applies it to your data.</p>
+	<p>Or, skip the GUI and use the <strong>SQL</strong> tool to write SQL yourself. Use this for complex filters: those that require a look at multiple columns and have many conditions (e.g.: these but not those, except for those).</p>
+</section>
+
+<section>
+	<h1><strong>Pop-ups</strong></h1>
+	<p>Customize what will happen when you click on or put your mouse over one of the points of your map using the <strong>InfoWindow</strong> tool.</p>
+	<ul>
+		<li>Decide what fields you want to appear in your popup, and if you want it to be an on-click popup or an on-hover popup.</li>
+	</ul>
+	<p>To get more advanced, you can switch to HTML and do some custom markup.</p>
+</section>
+
+<section>
+	<h1>Adding More Data and Making a Map</h1>
+	<p>If you'd like to add more data to your map, you can click the blue <strong>+</strong> button at the top of the side panel.</p>
+	<p>This will require you to make a map -- <strong>right now we are simply looking at a spatial representation of our dataset.</strong> A <strong>map</strong> is when we add another dataset to create a map layer, where we can do more styling.</p>
+</section>
+
+<section>
+	<h1>Creating Your Own Data</h1>
+	<p>You can also create data directly in CartoDB.</p>
+	<ol>
+		<li>In your map, on the upper right there's a plus sign. If the tab is expanded it says <code>Add New Layer</code>.</li>
+		<li>Click that to create a new layer.</li>
+		<li>Then pick <code>Add an empty layer.</code></li>
+	</ol>
+</section>
+
+<section>
+	<h1>Start drawing new data</h1>
+	<span class="small-text ">
+		<p>There's a <strong>circle with a plus on</strong> it at the bottom right. Click it.</p>
+	<p>It will ask you if you are adding a <strong>point, line or polygon</strong>. <em>Points are good for specific places (stores, restaurants, bike racks, etc.), lines are good for routes (maybe bike trails or something) and polygons are best for areas -- neighborhoods, for example.</em></p>
+			<p><strong>Pick which one you are adding</strong>. Remember that each layer can only be one type of data -- all points, all lines, or all polygons.</p>
+			<p><strong>Click to add your data</strong>. For points, click once. For lines and polygons, click once for each vertex. When you're done, click the <code>Done</code> button.</p>
+	</span>
+
+</section>
+
+<section>
+	<h1>Give your features some <strong>Attributes</strong></h1>
+	<p>We can also add attributes to our data.</p> <p>Click on your feature and click the three lines, which is <code>edit data</code>.</p>
+	<p>It will automatically have fields for <code>name</code> and <code>description</code>.</p> <p>You can also click <code>Add new column</code> to create more.</p>
+</section>
+
+<section>
+	<h1>Give your layer a <strong>name</strong></h1>
+	<p>Make sure you change the name of your new layer too! Otherwise it will just be <code>untitled_table</code> which isn't very helpful.</p>
+	<p>To do that, click the menu tab to bring it out, then double click on the name of the layer to change it.</p>
+	<p class="small-text ">(Note that this will only rename the layer in this map. If you want to change the name of the data itself, which will help you organize your data better, click where it says <code>View of untitled_table</code> and change it there. )</p>
+</section>
+
+<section class="front-and-center ">
+	<h1>Your new data will behave exactly like other data in CartoDB -- you can change symbology, add hover and click behavior, and more.</h1>
+</section>
+
+<section>
+	<h1>Adding <strong>Elements</strong></h1>
+	<p class="small-text "><em>If we haven't added extra data, we need to make this visual representation of the dataset into a map to add a title, legend, and other good map stuff. Click <code>Visualize</code>, and then <code>Create Map</code>.</em></p>
+	<p>If you followed along and added your own data, then you'll see the <strong>Add Element</strong> button. Use this title, description, annotation, etc.</p>
+	<p>The <strong>Options</strong> gear button at the bottom of the map lets you add other mappy-things, like a search box, fixed title bar, and map controls.</p>
+</section>
+
+<section>
+	<h1><strong>Publishing</strong> Your Map</h1>
+	<p>Now our map is ready to go! We can publish this out in a few different ways: sharing links with friends, embedding it onto a web page or blog post, or adding it to another app using <code>CartoDB.js</code>.</p>
+</section>
+
+<section style="padding-top:0.2em;">
+	<h2>Get Serious!</h2>
+	<p class="small-text " style="padding-right: 60%;line-height: 1.25em; ">
+		<ul>
+			<li><a href="http://bit.ly/DCCarto " target="_blank "><strong>Maptime DC CartoDB Wiki</strong></a> </li>
+			<li>Explore the <a href="https://cartodb.com/platform/ " target="_blank ">CartoDB platform APIs</a></li>
+			<li>The Map Academy: <a href="http://academy.cartodb.com/ " target="_blank ">academy.cartodb.com</a></li>
+			<li>CartoDB Documentation: <a href="http://docs.cartodb.com/ " target="_blank ">docs.cartodb.com</a></li>
+			<li>MaptimeNYC's favorite SQL Statements for CartoDB: <a href="http://blog.cartodb.com/maptime-entry " target="_blank " />blog.cartodb.com/maptime-entry</a>
+			</li>
+			<li>Free Your Maps from Web Mercator!: <a href=target="_blank " "http://blog.cartodb.com/free-your-maps-web-mercator "/>free-your-maps-web-mercator</a>
+			</li>
+			<li><a href="http://clhenrick.io/using-cartodb-and-datatables/ " target="_blank ">using CartoDB for creating data driven web pages</a>, by cartographer Chris Henrick</li>
+		</ul>
+	</p>
+</section>
+
+<section>
+	<h2>additional <strong>MaptimePGH</strong> resources</h2>
+	<p><a href="http://maptime.io/pittsburgh/presentations/geo101 ">Geo 101</a></p>
+	<p><a href="http://maptime.io/pittsburgh/presentations/geo101 ">Geo 102: Mapping for the 2015 National Day of Civic Hacking</a></p>
+	<p><a href="http://maptime.io/lessons-resources/ ">Maptime HQ resources page</a></p>
+</section>
+
+<section>
+	<h1><strong>Thanks!</strong></h1>
+	<p><a href="http://www.opgh.org ">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<p><a href="http://maptime.io/dc/ ">MaptimeDC</a> for creating the CartoDB tutorial!</p>
+	<p><a href="https://thebridge.cmu.edu/organization/SUDS ">CMU SUDS</a></p>
+	<a href="http://maptime.io ">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+</section>
+
+<!------------------------------->
+
+<section style="text-align:center; padding:9em;font-size:0.7em ">
+	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB "> @GassChristianB</a> with generous borrowing from the folks at <a href="http://maptime.io/dc/ ">MaptimeDC</a></p>
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/ " rel="author ">Mike Bostock</a> and is available
+		<br>on <a href="https://github.com/mbostock/stack ">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE ">BSD license</a>.
+		<p class="grey ">
+</section>
+
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js "></script>
+<script src="js/stack.v1.js "></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js "></script>
+<script>
+	$(document).foundation();
+</script>
