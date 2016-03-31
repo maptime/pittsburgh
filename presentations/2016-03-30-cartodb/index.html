@@ -270,7 +270,7 @@
 	<p>GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes, based on <strong>JavaScript Object Notation</strong> (JSON). src:<a href="https://en.wikipedia.org/wiki/GeoJSON">wikipedia</a></p>
 	<p>You can interactively make a geojson file with <a href="http://geojson.io/" target="_blank">geojson.io</a>.</p>
 	<p>Let's give that a try, and save a GeoJSON of our own.</p>
-	<p class="small-text">also grab <a href="maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson"target="_blank">fishfries2016.geojson</a> demo data for later</p>
+	<p class="small-text">and/or save <a href="http://maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson"target="_blank">fishfries2016.geojson</a> demo data for later</p>
 </section>
 
 <!--Part 2---------->
@@ -478,9 +478,9 @@
 	<h1>CartoDB is basically a full-stack web GIS</h1>
 	<ul>
 	<li><strong>PostGIS-enabled PostgreSQL database</strong> on the backend</li>
-	<li><strong>OSM</strong> basemaps, with custom-styles using CartoCSS</li>
+	<li><strong>OSM</strong> basemaps, with default styles available and the option to link to custom basemaps from other places (e.g., Mapbox)</li>
 	<!--li>a basic web <strong>geoprocessing</strong> library</li-->
-	<li>geodata <strong>visualization tools</strong></li>
+	<li>great off-the-shelf geodata <strong>visualization tools</strong></li>
 	</ul>
 	<p>you can interact with each element in the stack through a web UI, or in some cases, programmatically via APIs</p>
 </section>
@@ -572,16 +572,16 @@
 </section>
 
 <section>
-		<h1>Fish Fries 2016</h1>
-		<p class="small-text">You can upload the Fish Fry Map <a href="maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson"target="_blank">fishfries2016.geojson</a> data for use here if you want</p>
+		<h1><strong>Choose Your Own Adventure:</strong> Try data from OpenPGH's <a href="http://openpgh.github.io/fishfrymap/" target="_blank">2016 Lenten Fish Fry Map</a></h1>
+		<p>You can upload <a href=></a>2016 Pittsburgh Lenten Fish Fry Map's</a> <a href="http://maptime.io/pittsburgh/presentations/2016-03-30-cartodb/demo-data/fishfries2016.geojson" target="_blank">fishfries2016.geojson data</a> for use here if you want</p>
 </section>
 
 <section>
 	<h1><strong>Wait...</strong> Don't I need to worry about the <strong>coordinate system?!</strong></h1>
-	<p>In this case, our data is in the <strong>Web Mercator</strong> projection, so no.</p>
+	<p>Our GeoJSON data from the WPRDC is already in the <strong>Web Mercator</strong> projection, so no.</p>
 	<div class="small-text ">
 	<p><a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects " target="_blank ">Per the spec</a>, GeoJSON uses a <em> a geographic coordinate reference system, with a WGS84 datum</em>, by default - same as Web Mercator.
-	<p>And typically, you'll find that publishers of GeoJSON use Web Mercator, since the format primarily geared towards web maps.</p>
+	<p>And typically, you'll find that publishers of GeoJSON use Web Mercator, since the format is geared towards web maps.</p>
 </div>
 </section>
 
@@ -694,9 +694,9 @@
 	<p class="small-text " style="padding-right: 60%;line-height: 1.25em; ">
 		<ul>
 			<li><a href="http://bit.ly/DCCarto " target="_blank "><strong>Maptime DC CartoDB Wiki</strong></a> </li>
-			<li>Explore the <a href="https://cartodb.com/platform/ " target="_blank ">CartoDB platform APIs</a></li>
 			<li>The Map Academy: <a href="http://academy.cartodb.com/ " target="_blank ">academy.cartodb.com</a></li>
 			<li>CartoDB Documentation: <a href="http://docs.cartodb.com/ " target="_blank ">docs.cartodb.com</a></li>
+			<li>Explore the <a href="https://cartodb.com/platform/ " target="_blank ">CartoDB platform APIs</a></li>
 			<li>MaptimeNYC's favorite SQL Statements for CartoDB: <a href="http://blog.cartodb.com/maptime-entry " target="_blank " />blog.cartodb.com/maptime-entry</a>
 			</li>
 			<li>Free Your Maps from Web Mercator!: <a href=target="_blank " "http://blog.cartodb.com/free-your-maps-web-mercator "/>free-your-maps-web-mercator</a>
