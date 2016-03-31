@@ -217,7 +217,7 @@ pip-log.txt
 
 
 #############
-## CBG
+## Maptime Pittsburgh
 #############
 
 # Komodo Edit project files
@@ -228,3 +228,6 @@ pip-log.txt
 _src/
 _old/
 *.komodoproject
+
+# Jekyll
+_site
