@@ -3,7 +3,7 @@ function githubWatchers() {
     $.ajax({
         url: 'https://api.github.com/repos/' +
             'maptime' + '/' +
-            'starter' + '/subscribers',
+            'pittsburgh' + '/subscribers',
         dataType: 'jsonp',
         success: function(res) {
             if (!res.data.length) return;
