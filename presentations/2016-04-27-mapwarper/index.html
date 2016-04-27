@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+</head>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
+	@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+	html,
+	body,
+	section {
+		background-color: #231f20;
+		color: #fff;
+		padding: 3em;
+		font-family: 'Titillium Web', Arial, sans-serif;
+		font-weight: 400;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	strong,
+	b,
+	em,
+	i {
+		color: #fdb930
+	}
+
+	strong,
+	b {
+		font-weight: 700;
+	}
+
+	em,
+	i {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	a:link,
+	a:visited {
+		color: #8ad3f4;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	td {
+		padding: 1em;
+		vertical-align: top;
+	}
+
+	code {
+		background-color: #555;
+		color: #fff;
+		font-family: 'Share Tech Mono', mono, sans-serif;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+
+	.gold {
+		color: #fdb930
+	}
+
+	.gray {
+		color: #231f20;
+	}
+
+	.small-text {
+		font-size: 0.75em;
+		line-height: 1em;
+	}
+
+	.front-center {
+		text-align: center;
+		padding-top: 5em;
+		padding-bottom: 4em;
+	}
+
+	.big {
+		text-align: center;
+		font-size: 3em;
+		line-height: 1em;
+		padding: 1em;
+	}
+
+	.fgimg {
+		padding: 1em;
+	}
+
+	.bgimg {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#osm-bg {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/osm_pgh.png);
+	}
+
+	#historic-01 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/flood_in.200dpi.jpg);
+		background-size: 120% 120%;
+	}
+
+	#historic-02 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/digitallibrarypittedu.maps.png);
+		background-position: left;
+	}
+
+	#maps-as-files {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/maps-as-image-files.PNG);
+		background-position: left top;
+	}
+
+	#raster-world {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/geodata_raster_.png);
+		background-position: center;
+	}
+
+	#pixel-array {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(./img/pixel-array.png);
+		background-position: center;
+	}
+
+	#globe {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./img/globe.png);
+		background-position: center;
+	}
+
+	#upload {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/mapwarper-upload-map.PNG);
+		background-position: left;
+	}
+
+	#controlpoints1 {
+		background-image: url(./img/cp1.png);
+		background-position: right;
+	}
+
+	#controlpoints2 {
+		background-image: url(./img/cp2.png);
+		background-position: right;
+	}
+
+	#controlpoints3 {
+		background-image: url(./img/cp3.png);
+		background-position: right;
+	}
+
+</style>
+<section class="front-center">
+	<h1>Georeferencing Historic Images with <b>Map Warper</b></h1>
+	<h3><a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a> | 27 April 2016</h3>
+	<p>Follow along at
+		<br/> <a href="http://maptime.io/pittsburgh/presentations/2016-04-27-mapwarper/"> maptime.io /pittsburgh /presentations /2016-04-27-mapwarper</a></p>
+</section>
+
+<section>
+	<h1 class="gold">What is <a href="http://maptime.io">Maptime</a>?</h1>
+	<ul class=>
+		<li>A time for learning about maps</li>
+		<li>Hands-on</li>
+		<li>Beginner-focused <span class="small-text">(though at times I may stray from that, please call me on it)</span></li>
+		<li>Emphasis on open source, programming, and web-mapping
+		</li>
+	</ul>
+	<p>Events / blog n'at: <a href="http://maptime.io/pittsburgh">maptime.io/pittsburgh</a></p>
+	<p>Code: <a href="http://github.com/maptime/pittsburgh">github.com/maptime/pittsburgh</a></p>
+</section>
+
+<section>
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
+</section>
+<section id="historic-01" class="bgimg">
+	<h1>Find a map in the University of Pittsburgh's <b>Historic Pittsburgh Maps Collection</b></h1>
+	<h1><a href="http://digital.library.pitt.edu/maps/" target="_blank">digital.library.pitt.edu/maps</a></h1>
+	<p>Explore their catalog - very cool stuff!</p>
+</section>
+
+<section id="historic-02" class="bgimg">
+	<h1>Full-Image and Description</h1>
+	<p><a href="http://images.library.pitt.edu/cgi-bin/i/image/image-idx?view=entry;cc=maps;entryid=x-flood-und-in" target="_blank">See An Example</a></p>
+	<p><b>Full-Image</b> provides a little image-viewer. Zoom and pan around.</p>
+	<p><b>Description</b> provides important <b>metadata</b>: Title, Date, Creator, etc. Also, read the <b>Rights</b> and <b>download a copy</b>.</p>
+</section>
+
+<section id="maps-as-files" class="bgimg front-center">
+	<h3>These maps are stored as <b>image files.</b></h3>
+	<p>The files themselves contain <b>no machine-readable</b> geographic information.</p>
+	<p>If we want to view these maps in a geographic context, we need to <b>georeference</b> them</p>
+</section>
+
+<section class="front-center">
+	<h1>What does it mean to <b>georeference</b> an image?</h1>
+	<p>First, let's talk about the basics of images on computers and maps.</p>
+</section>
+<section id="raster-world" class="bgimg big">
+	<h1>RASTER</h1>
+</section>
+<section id="raster-world" class="bgimg front-center">
+	<h1>A raster stores data in <b>pixels</b></h1>
+</section>
+<section><img src="./img/mapschool.io_raster.png" /></section>
+<section>
+	<h1>On maps, pixels are powerful.</h1>
+	<p>In Geographic Information Systems (GIS) software, the pixels of a <b>raster</b> can represent <em>color</em>, <em>height</em>, <em>slope</em>, <em>direction</em>...and many other <em>classifications</em> or <em>gradients</em>.</p>
+</section>
+<section>
+	<img src="./img/mario3map.png" />
+</section>
+<section>
+	<h1>Geographically-referenced <b>raster</b> data is commonly encountered in:</h1>
+	<h3>
+	<ul>
+		<li><b>satellite imagery</b></li>
+		<li><b>weather data</b></li>
+		<li><b>digital elevation model</b></li>
+	</ul>
+	</h3>
+</section>
+
+<section id="globe" class="bgimg">
+	<h1>Such rasters contain <b>geographic reference information</b> that describes where the pixels exist on the globe.</h1>
+	<p>This info typically includes the <b>coordinate system</b> and some information about the raster's <b>dimensions</b>, in a standard format.</p>
+	<p>The historic images do not (yet) have this information.</p>
+</section>
+<section>
+	<h2>Some references on <b>coordinate systems:</b></h2>
+	<p><a href="http://lyzidiamond.com/geodesy" target="_blank">MaptimeHQ: The Wild World of Geodesy</a></p>
+	<p>
+		<a href="http://maptime.io/pittsburgh/presentations/geo101">MaptimePGH: Geo101</a>
+	</p>
+	<p><a href="http://mapschool.io" target="_blank">mapschool.io</a></p>
+</section>
+
+<section>
+	<p>Raster as a text file (<code>ascii</code>) with geo info:
+		<br>
+		<img src="./img/pixel-array.png" style="width:80%;">
+	</p>
+</section>
+
+<section>
+	<h1><b>Georeferencing</b></h1>
+	<p>the process of giving non-geographic data the geographic attributes it needs to be shown in the correct location on a digital map</p>
+	<p>Read Esri's <a href="http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/fundamentals-for-georeferencing-a-raster-dataset.htm" target="_blank"><em>Fundamentals for georeferencing a raster dataset</em></a> for a good conceptual overview</b>
+	</p>
+	<p class="small-text"></em>
+	</p>
+</section>
+
+<section id="historic-01" class="bgimg">
+	<h3>Download a map from the University of Pittsburgh's <b>Historic Pittsburgh Maps Collection</b> that you'd like to georeference</h3>
+	<h3><a href="http://digital.library.pitt.edu/maps/" target="_blank">digital.library.pitt.edu/maps</a></h3>
+	<p>Some maps will be easier to georeference than others.</p>
+	<p>Find one with a lot of detail. For your first map, try to avoid broad-scale or conceptual maps.</p>
+</section>
+<!--------------->
+<!--Map Warper--->
+<!--------------->
+
+<section class="front-center">
+	<h1 class="gold">Map Warper <br/><a href="http://mapwarper.net/" target="_blank">mapwarper.net</a></h1>
+	<p class="small-text">"It's a free to use, open source map warper / map georectifier, and image georeferencer tool. Developed, hosted and maintained by <a href="https://twitter.com/tim_waters">Tim Waters</a>. This project is supported by <a href="http://topomancy.com">Topomancy LLC</a> and the <a href="http://maps.nypl.org">New York Public Library</a>".
+	</p>
+</section>
+<section>
+	<h3>Examples</h3>
+	<p>
+		<ul>
+			<li>
+				<a href="http://mapwarper.net/maps/13871#Preview_Map_tab" target="_blank">1912 Flood Map, Pittsburgh South Side</a></li>
+			<li><a href="http://mapwarper.net/maps/8914" target="_blank">Pittsburgh HOLC Redlining Map</a></li>
+		</ul>
+	</p>
+</section>
+<section>
+	<h3 class="gold">How do I georeference an image use Map Warper?</h3>
+	<p>
+		<ol>
+			<li><a href="http://mapwarper.net/users/new" target="_blank">Sign-Up</a></li>
+			<li><a href="http://mapwarper.net/maps/new" target="_blank">Upload map</a> and enter metadata (really, really important!)</li>
+			<li>Georeference (Rectify, Crop, Align)</li>
+			<li>View!</li>
+			<li>Export to a <b>file</b> or reference as a <b>web service</b></li>
+			<li class="small-text">(make fixes)</li>
+		</ol>
+	</p>
+</section>
+
+<section id="upload" class="bgimg">
+	<h1 class="gold">Upload</h1>
+	<h1>Make sure to copy metadata from your source!!!</h1>
+	<p>Be thorough! Give credit!</p>
+	<p>(you can add more later if you need to)</p>
+</section>
+
+<section class="fgimg small-text">
+	<h3><b>Rectify</b> using <b>Control Points</b></h3>
+	<img src="./img/mapwarper-rectify-maps.PNG">
+</section>
+
+<section id="controlpoints1">
+	<h3 class="gold">Image Space, <br>Coordinate Space</h3>
+	<p class="small-text">our map image at left, <br>our web map at right</p>
+</section>
+
+<section id="controlpoints2">
+	<h3 class="gold">Identify Control Points</h3>
+	<p class="small-text">Find clearly-defined points of reference,<br> like building corners or intersections.<p>
+	<p class="small-text">Avoid using "soft" reference points,<br> like shorelines.
+	</p>
+	<p>A little bit of art<br> to the science...</p>
+</section>
+
+<section id="controlpoints3">
+	<h3 class="gold">Rectify</h3>
+	<p class="small-text">Save the image to coordinate space</p>
+</section>
+
+<section class="fgimg front-center">
+	<h3>Technically...</h3>
+	<p><img src="./img/esri-image-to-xy-space.png" style="width:40%"></p>
+</section>
+
+<section class="fgimg front-center">
+	<h3>Stretch that map!</h3>
+	<p><img src="./img/esri-transformations.gif" style="width:50%"></p>
+</section>
+
+<section>
+	<h1><b>Crop</b> and <b>Align</b></h1>
+	<p><b>Crop</b> lets you cut off portions of the image. Useful if you scan has extra white space. But <em>please</em> avoid cropping any info that might help identify the map.</p>
+	<p><b>Align</b> lets you specify other maps you've uploaded to Map Warper</p>
+</section>
+
+
+
+
+<section>
+
+	<h3 class="gold">Work Session!</h3>
+	<p>Then, Share Your Work! <b>(tag your maps with MaptimePGH)</b></p>
+	<p>Q/A + troubleshooting: did anyone have a map didn't work?</p>
+	<p>Extra credit: coordinate systems, what is this open street map thing?, raster vs. vector georeferencing</p>
+	<p>Next! OpenPGH "Things that aren't there anymore" + Urban Scratch-Off Map </p>
+
+</section>
+
+<!--------------->
+<!--FIN---------->
+<!--------------->
+
+<section>
+	<h2>additional <strong>MaptimePGH</strong> resources</h2>
+	<p><a href="http://maptime.io/pittsburgh/presentations/geo101 ">Geo 101</a></p>
+	<p><a href="http://maptime.io/pittsburgh/presentations/ndoch2015 ">Geo 102: Mapping for the 2015 National Day of Civic Hacking</a></p>
+	<p><a href="http://maptime.io/lessons-resources/ ">Maptime HQ resources page</a></p>
+</section>
+<section>
+	<h1><strong>Thanks!</strong></h1>
+	<p>Carnegie Library of Pittsburgh</p>
+	<p><a href="http://www.opgh.org ">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<p><a href="http://maptime.io ">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+
+</section>
+
+<section style="text-align:center; padding:9em;font-size:0.7em ">
+	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB"> @GassChristianB</a> and Eleanor Tutte</p>
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/ " rel="author ">Mike Bostock</a> and is available
+		<br>on <a href="https://github.com/mbostock/stack ">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE ">BSD license</a>.
+		<p class="grey ">
+</section>
+
+
+<!--------------->
+<!--EXTRAS------->
+<!--------------->
+
+<!--------------->
+<!--X&Y---------->
+<!--------------->
+
+<section class="front-center">
+	<h3>A Very Brief Overview of</h3>
+	<h1 class="gold">Coordinate Systems</h1>
+
+</section>
+
+<section>
+	<h2>round -> flat</h2>
+	<p>places on Earth are represented as places on flat surfaces, like print-outs or computer screens</p>
+	<p>doing this requires a:</p>
+	<ol>
+		<li>a <strong>system</strong> for describing locations</li>
+		<li>a <strong>method</strong> for projecting a location from the round thing to a location on the flat thing</li>
+	</ol>
+</section>
+<section>
+	<h2>A <strong>coordinate system</strong> describes locations.</h2>
+	<h3><strong>Lat/Lon</strong> is used to represent location on both the Earth as a <em>globe</em> (a sphere-like 3-D object) and Earth as a <em>map</em> (a planar, 2-D object)</h3>
+</section>
+
+<section>
+	<p>Locations are identified using <strong>latitude / longitude</strong> (lat/lon) <em>decimal degrees</em>.</p>
+	<table style="font-size:0.75em;line-height:1em;">
+		<tr>
+			<td></td>
+			<td><em>shows:</em></td>
+			<td><em>represented with:</em></td>
+			<td><em>units:</em></td>
+		</tr>
+		<tr>
+			<td><strong>LATITUDE (Y)</strong></td>
+			<td>north-south</td>
+			<td>horizontal lines, different circumferences</td>
+			<td>-90 to +90 decimal degrees</td>
+		</tr>
+		<tr>
+			<td><strong>LONGITUDE (X)</strong></td>
+			<td>east-west</td>
+			<td>vertical lines, same circumferences</td>
+			<td>0 to 180 decimal degrees</td>
+		</tr>
+	</table>
+</section>
+<section style="padding:0.5em 0.5em;background:url(img/latlon.png);background-size:125%;	background-position: 50%65%; background-repeat: no-repeat;background-color: #231f20;" ">
+</section>
+
+<section style="text-align:center;background:url(img/globe.png);background-size:110%; background-position: center;background-repeat: no-repeat;">
+	<h2 style="color:#fff">To go from a globe like this...</h2>
+</section>
+
+<section style="text-align:center;background:url(img/osm_globe_webmercator.png);background-size:110%; background-position: center;background-repeat: no-repeat;">
+	<h2 class="gray">...to a map like this...</h2>
+</section>
+
+<section style="text-align:center;">
+	<h2>...we need a <strong>map projection</strong>.</h2>
+	<p>a <strong>method</strong> in the form of <a href="http://en.wikipedia.org/wiki/Web_Mercator#Formulas " target="_blank ">a mathematical equation </a>for stretching and warping the <em>lat/long grid</em> of the globe to fit a planar map</p>
+</section>
+
+<section style="padding-right:80%;background:url(img/xkcd_map_projections.jpg);background-size:70%; background-position: right;background-repeat: no-repeat;background-color: #231f20; ">
+	<p>There are <a href="http://xkcd.com/977/" target="blank_">lots of ways</a> to project the globe</p>
+</section>
+
+<section>
+	<p>But there is no way to project the globe without <em>distorting</em> it.</p>
+	<p><strong>Distortion</strong> is typically worst at the edges of the map, affecting <em>relative scale</em>.
+	</p>
+	<p>To avoid distortion, many projections are <strong>purpose-built</strong>:
+		<br> they are specific to an area, or are designed for functionality (e.g., measuring distances from a certain point).</p>
+</section>
+<section style="text-align:center;background:url(img/osm_spastateplane.png);background-size:105%; background-position: center;background-repeat: no-repeat;background-color: #231f20; ">
+	<h1 class="gray">Pennsylvania State Plane (South)</h1>
+	<h3 class="gray">EPSG (European Petroleum Survey Group) code 2272</a></h3>
+</section>
+<section>
+	<p>A few projections provide a decent balance between</p>
+	<ul>
+		<li>relative scale,</li>
+		<li>visually-pleasing proportions,</li>
+		<li>and straighforward measure-ability</li>
+	</ul>
+	<p>on a global scale.</p>
+</section>
+<section class="gray front-center" style="background:url(img/osm_globe_webmercator.png);background-size:105%; background-position: center;background-repeat: no-repeat;">
+	<h1>Web Mercator</h1>
+	<h3>EPSG code: 3857</h3>
+	<p>East-West distance is constant.
+		<br>North-south distance is distorted close to the poles.</p>
+</section>
+<section style="padding-top:2em">
+	<h1>Why you need to know this:</h1>
+	<p><strong>Web Mercator</strong> is the projection commonly used for <strong>web maps</strong> and typical web map-making software/tools/libraries.</p>
+	<p>Local data in southwestern Pennsylvania is typically stored in <strong>PA State Plane (South) / EPSG 2272</strong>. It uses <strong>feet</strong>, not decimal degrees, and must be <em>re-projected</em> to use in a web map.</p>
+	<h2><a href="http://epsg.io"  target="blank_">espg.io</a> is a coordinate system search engine with an API. Really cool.</h2>
+</section>
+
+<!--------------->
+<!--OSM---------->
+<!--------------->
+
+<section id="osm-bg" class="bgimg big">
+	<h1 class="big-text"><a href="https://www.openstreetmap.org" target="_blank ">Open Street Map</a></h1>
+</section>
+
+<section id="osm-bg" class="bgimg">
+	<h1>What is <strong>Open Street Map</strong>?</h1>
+	<p><a class="t" href="http://www.openstreetmap.org ">www.openstreetmap.org</a></p>
+	<p>It is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank ">"Wikipedia of maps"</a>: a publicy editable global base map that you can use in your mapping project.</p>
+	<p>OSM is is licensed under the <a href="http://opendatacommons.org/licenses/odbl/ " target="_blank "> Open Database License (ODbL)</a></p>
+</section>
+
+<section>
+	<h2><strong>Two ways to view/edit OSM:</strong></h2>
+	<h2>web (basic): <a href="https://www.openstreetmap.org " target="_blank ">iD</a></h2>
+	<h2>desktop (advanced): <a href="https://josm.openstreetmap.de/ " target="_blank ">JOSM</a></h2>
+</section>
+
+<section style="padding-top:1em">
+	<h2>Resources</h2>
+	<p class="small-text"><em>overviews </em>
+		<br><a href="http://beamapper.com/" target="_blank">Be A Mapper: How to contribute to OpenStreetMap</a>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Beginners%27_guide" target="_blank">Beginners Guide to OSM</a>
+		<br><a href="http://maptime.github.io/osm-101/" target="_blank">maptime: OpenStreetMap 101</a>
+		<br><a href="http://learnosm.org/en" target="_blank">LearnOSM.com</a></p>
+	<p class="small-text"><em>some specific tasks</em>
+		<br>To learn how to add any kind of thing to the map:
+		<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features " target="_blank ">wiki.osm.org / wiki / Map_Features</a>
+		<br>Am I doing it the <em>right way?</em>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Good_practice " target="_blank ">wiki.osm.org / wiki / Good_practice</a></p>
+</section>
+
+
+<section>What can I do with OSM? <em>Suggestions:</em>
+	<ul>
+		<li>Use one of the editors to trace some buildings, add some POIs (points of interest), identify local place names</li>
+		<li>Play <a href="http://maproulette.org ">MapRoulette</a></li>
+		<li>Do some <a href="http://tasks.hotosm.org/ ">HOT tasks</a> (Humanitarian OSM Team)</li>
+		<li>Go outside and map with <a href="http://fieldpapers.org/ ">Field Papers</a></li>
+		<li>Export some data for use in desktop GIS software</li>
+	</ul>
+</section>
+
+<section>
+
+	<h1>Why you need to know about <b>Open Street Map</b>:</h1>
+	<p>Base maps provide context. In this case OSM is used by Map Warper to provide context for georefencing images.</p>
+	<p>If the reference info is incorrect, georeferencing will be tricky.</p>
+	<p>But the benefit of using a base map like OSM is that if you find a discrepancy, it is within your power to fix quickly, and everyone wins.</p>
+</section>
+
+
+
+
+<!--------------------------------------------->
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js "></script>
+<script src="js/stack.v1.js "></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js "></script>
