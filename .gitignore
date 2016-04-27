@@ -220,14 +220,12 @@ pip-log.txt
 ## Maptime Pittsburgh
 #############
 
-# Komodo Edit project files
-.komodoproject
-.kpf
+*.komodoproject
+*.kpf
+*.psd
 
-# project working folders
 _src/
 _old/
-*.komodoproject
 
 # Jekyll
-_site
+_site/
