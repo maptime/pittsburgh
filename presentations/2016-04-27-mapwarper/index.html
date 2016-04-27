@@ -114,6 +114,11 @@
 		background-position: left;
 	}
 
+	#historic-03 {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/Pittsburgh19051906_vol2_sheet126.jpg);
+		background-position: left;
+	}
+
 	#maps-as-files {
 		background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/maps-as-image-files.PNG);
 		background-position: left top;
@@ -156,10 +161,12 @@
 
 </style>
 <section class="front-center">
-	<h1>Georeferencing Historic Images with <b>Map Warper</b></h1>
+	<h1>Georeferencing Maps with <b>Map Warper</b></h1>
 	<h3><a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a> | 27 April 2016</h3>
 	<p>Follow along at
-		<br/> <a href="http://maptime.io/pittsburgh/presentations/2016-04-27-mapwarper/"> maptime.io /pittsburgh /presentations /2016-04-27-mapwarper</a></p>
+		<br/> <a href="http://maptime.io/pittsburgh/presentations/2016-04-27-mapwarper/"> maptime.io /pittsburgh /presentations /2016-04-27-mapwarper</a>
+	</p>
+	<p>Find that link at <a href="http://maptime.io/pittsburgh/presentations/2016-04-27-mapwarper/">maptime.io/pittsburgh</a> and find "Map Warper" under the "MaptimePGH Resources" sidebar.</p>
 </section>
 
 <section>
@@ -178,9 +185,13 @@
 <section>
 	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
 </section>
+
+<section class="front-center big">
+	<h1>Let's find some <b>maps!</b></h1>
+</section>
+
 <section id="historic-01" class="bgimg">
-	<h1>Find a map in the University of Pittsburgh's <b>Historic Pittsburgh Maps Collection</b></h1>
-	<h1><a href="http://digital.library.pitt.edu/maps/" target="_blank">digital.library.pitt.edu/maps</a></h1>
+	<h1 class="gold">University of Pittsburgh's Historic Pittsburgh Maps Collection: <a href="http://digital.library.pitt.edu/maps/" target="_blank">digital.library.pitt.edu/maps</a></h1>
 	<p>Explore their catalog - very cool stuff!</p>
 </section>
 
@@ -190,11 +201,30 @@
 	<p><b>Full-Image</b> provides a little image-viewer. Zoom and pan around.</p>
 	<p><b>Description</b> provides important <b>metadata</b>: Title, Date, Creator, etc. Also, read the <b>Rights</b> and <b>download a copy</b>.</p>
 </section>
+<section>
+	<h1>Important!</h1>
+	<p>Pitt's maps themselves (which we will use for our examples tonight) are in <b>public domain</b>, but <em>technically</em> University of Pittsburgh retains the rights to the map <b>images</b>. For this educational workshop tonight we are covered under “fair use.”</p>
+	<p>To be 100% legit, if someone wanted to do a larger scale project with these, they should double-check with Pitt first.</p>
+</section>
+
+<section>
+	<h1 class="gold">New York Public Library (NYPL) Digital Collection: <a href="http://digitalcollections.nypl.org/" target="_blank">digitalcollections.nypl.org</a></h1>
+	<p>NYPL includes some maps outside NYC. Search for <b>“pennsylvania map”</b> and check the <b>“search only public domain”</b> to see some great stuff! (and you can filter down by “place” once you are in the main search area.)</p>
+	<p class="small-text">Also see <a href="http://buildinginspector.nypl.org/" target="_blank">buildinginspector.nypl.org</a> and <a href="http://spacetime.nypl.org/" target="_blank">spacetime.nypl.org</a> for some interesting historic mapping projects from the NYPL.</p>
+</section>
+
+<section id="historic-03" class="bgimg">
+	<h1 class="gold">Penn State Digital Sanborn Maps: <a href="https://www.libraries.psu.edu/psul/digital/sanborn.html" target="_blank">www.libraries.psu.edu/psul/digital/sanborn.html</a></h1>
+	<p>Great collection, doesn’t appear to have any use restrictions, and Sanborn maps are relatively easy to georeference due to the map projection (more on that later).</p>
+</section>
 
 <section id="maps-as-files" class="bgimg front-center">
-	<h3>These maps are stored as <b>image files.</b></h3>
+	<h3>All the maps maps on these sites are stored as <b>image files.</b></h3>
 	<p>The files themselves contain <b>no machine-readable</b> geographic information.</p>
-	<p>If we want to view these maps in a geographic context, we need to <b>georeference</b> them</p>
+</section>
+
+<section class="front-center">
+		<h1>If we want to view these maps in a geographic context, with other geographic data...</h1><h1> we need to <b>georeference</b> them</h1>
 </section>
 
 <section class="front-center">
@@ -314,10 +344,11 @@
 
 <section id="controlpoints2">
 	<h3 class="gold">Identify Control Points</h3>
-	<p class="small-text">Find clearly-defined points of reference,<br> like building corners or intersections.<p>
-	<p class="small-text">Avoid using "soft" reference points,<br> like shorelines.
-	</p>
 	<p>A little bit of art<br> to the science...</p>
+	<p class="small-text">Find clearly-defined points of reference,<br> like buildings or intersections.<p>
+	<p class="small-text">Avoid using "soft" references,<br> like shorelines.
+	</p>
+
 </section>
 
 <section id="controlpoints3">
@@ -328,11 +359,17 @@
 <section class="fgimg front-center">
 	<h3>Technically...</h3>
 	<p><img src="./img/esri-image-to-xy-space.png" style="width:40%"></p>
+	<p class="small-text">
+		<a href="http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/fundamentals-for-georeferencing-a-raster-dataset.htm" target="_blank"><em>source</em></a>
+	</p>
 </section>
 
 <section class="fgimg front-center">
 	<h3>Stretch that map!</h3>
 	<p><img src="./img/esri-transformations.gif" style="width:50%"></p>
+	<p class="small-text">
+	<a href="http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/fundamentals-for-georeferencing-a-raster-dataset.htm" target="_blank"><em>source</em></a>
+</p>
 </section>
 
 <section>
@@ -341,17 +378,35 @@
 	<p><b>Align</b> lets you specify other maps you've uploaded to Map Warper</p>
 </section>
 
-
-
+<section>
+	<h1 class="gold">Now that I've georefernced this map...what do I do with it?</h1>
+	<p>EXPORT</p>
+	<ul>
+		<li>Download a georeferenced image file for use in geographic information systems (GIS) software</li>
+		<li>Get the <code>KML</code> version and view/share it with Google Maps</li>
+		<li>Build a web map and reference the map service hosted for you by MapWarper</li>
+	</ul>
+</section>
 
 <section>
-
 	<h3 class="gold">Work Session!</h3>
-	<p>Then, Share Your Work! <b>(tag your maps with MaptimePGH)</b></p>
-	<p>Q/A + troubleshooting: did anyone have a map didn't work?</p>
-	<p>Extra credit: coordinate systems, what is this open street map thing?, raster vs. vector georeferencing</p>
-	<p>Next! OpenPGH "Things that aren't there anymore" + Urban Scratch-Off Map </p>
+	<p>(tag your maps with MaptimePGH)</p>
+	<h3 class="gold">Share Your Work!</h3>
+	<h3 class="gold">Q/A + Troubleshooting</h3>
+	<p>Did anyone have a map didn't work?</p>
+</section>
 
+<section>
+	<h1>Historical maps are nice, but what else can I apply my new georeferencing skills to?</h1>
+	<p class="small-text">If it's a map that was created recently, try to get the original geographic data first. But sometimes that may not be available.</p>
+	<p>
+		<ul class="small-text">
+			<li>Photos of non-current political district maps...snap a photo of that old map you see in a public building</li>
+			<li>Maps from community development corporations, from old hand drawn annual reports and the like</li>
+			<li>Zoning maps from small municipalities that don’t have a GIS department</li>
+			<li>Community plan drafts handed out at public meetings (likely created in CAD/GIS, but without easy access to the consultant, etc.)</li>
+		</ul>
+	</p>
 </section>
 
 <!--------------->
@@ -359,21 +414,23 @@
 <!--------------->
 
 <section>
-	<h2>additional <strong>MaptimePGH</strong> resources</h2>
-	<p><a href="http://maptime.io/pittsburgh/presentations/geo101 ">Geo 101</a></p>
-	<p><a href="http://maptime.io/pittsburgh/presentations/ndoch2015 ">Geo 102: Mapping for the 2015 National Day of Civic Hacking</a></p>
-	<p><a href="http://maptime.io/lessons-resources/ ">Maptime HQ resources page</a></p>
-</section>
-<section>
 	<h1><strong>Thanks!</strong></h1>
-	<p>Carnegie Library of Pittsburgh</p>
-	<p><a href="http://www.opgh.org ">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
-	<p><a href="http://maptime.io ">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+	<p><a href="http://www.carnegielibrary.org/">Carnegie Library of Pittsburgh</a></p>
+	<p><a href="http://www.opgh.org">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<p><a href="http://maptime.io">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+	<h1 class="gold">Our next event will be announced soon, for end of May / beginning of June.</h1>
+</section>
 
+<section>
+	<h2>additional <strong>MaptimePGH</strong> resources</h2>
+	<p><a href="http://maptime.io/pittsburgh/presentations/2016-03-30-cartodb">Web Mapping + CartoDB</a></p>
+	<p><a href="http://maptime.io/pittsburgh/presentations/ndoch2015">Geo 102 & Web Mapping (for the 2015 National Day of Civic Hacking)</a></p>
+	<p><a href="http://maptime.io/pittsburgh/presentations/geo101">Geo 101 & Open Street Map</a></p>
+	<p><a href="http://maptime.io/lessons-resources/">Maptime HQ resources page</a></p>
 </section>
 
 <section style="text-align:center; padding:9em;font-size:0.7em ">
-	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB"> @GassChristianB</a> and Eleanor Tutte</p>
+	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB"> @GassChristianB</a> and <a href="http://www.twitter.com/eleanortutt">@eleanortutt</a></p>
 	<p>Presentation made with <strong>Stack</strong>.</p>
 	<p>Stack is made by <a href="http://bost.ocks.org/mike/ " rel="author ">Mike Bostock</a> and is available
 		<br>on <a href="https://github.com/mbostock/stack ">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE ">BSD license</a>.
@@ -384,6 +441,11 @@
 <!--------------->
 <!--EXTRAS------->
 <!--------------->
+
+<section>
+		<h1>Extra credit</h1>
+		<p>Coordinate Systems<br> what is this Open Street Map thing? <br>georeferencing vector data (sometimes also referred to as "spatial adjustment")</p>
+</section>
 
 <!--------------->
 <!--X&Y---------->
