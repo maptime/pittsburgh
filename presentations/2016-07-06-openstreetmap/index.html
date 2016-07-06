@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+</head>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
+	@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+	html,
+	body,
+	section {
+		background-color: #231f20;
+		color: #fff;
+		padding: 3em;
+		font-family: 'Titillium Web', Arial, sans-serif;
+		font-weight: 400;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	strong,
+	b,
+	em,
+	i {
+		color: #fdb930
+	}
+
+	strong,
+	b {
+		font-weight: 700;
+	}
+
+	em,
+	i {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	a:link,
+	a:visited {
+		color: #8ad3f4;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	td {
+		padding: 1em;
+		vertical-align: top;
+	}
+
+	code {
+		background-color: #555;
+		color: #fff;
+		font-family: 'Share Tech Mono', mono, sans-serif;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+
+	.gold {
+		color: #fdb930
+	}
+
+	.gray {
+		color: #231f20;
+	}
+
+	.small-text {
+		font-size: 0.75em;
+		line-height: 1em;
+	}
+
+	.front-center {
+		text-align: center;
+		padding-top: 5em;
+		padding-bottom: 4em;
+	}
+
+	.big {
+		text-align: center;
+		font-size: 3em;
+		line-height: 1em;
+		padding: 1em;
+	}
+
+	.fgimg {
+		padding: 1em;
+	}
+
+	.bgimg {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#osm-pitt {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/osm-pitt.png);
+	}
+
+	#osm-globe {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/osm-globe.png);
+	}
+
+	#osm-signup {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/osm-signup.png);
+	}
+
+	#what-to-map {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/what-to-map.png);
+	}
+
+	#osm-keys {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/osm-keys.png);
+	}
+
+	#field-papers {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/field-papers.png);
+	}
+
+	#id-editor {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/id-editor.png);
+	}
+
+	#building-footprints {
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/building-footprints.png);
+	}
+
+
+</style>
+
+<!--------------->
+<!--INTRO-------->
+<!--------------->
+
+<section class="front-center">
+	<h1>Everything <b>OpenStreetMap</b></h1>
+	<h3><a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a> | 07 July 2016</h3>
+	<p class="small-text">Follow along at
+		<br/> <a href="http://maptime.io/pittsburgh/presentations/2016-07-06-openstreetmap/"> maptime.io /pittsburgh /presentations /2016-07-06-openstreetmap</a>
+	</p>
+</section>
+
+<section>
+	<h1 class="gold">What is <a href="http://maptime.io">Maptime</a>?</h1>
+	<ul class=>
+		<li>A time for learning about maps</li>
+		<li>Hands-on</li>
+		<li>Beginner-focused</li>
+		<li>Emphasis on open source, programming, and web-mapping
+		</li>
+	</ul>
+	<p>Events / blog n'at: <a href="http://maptime.io/pittsburgh">maptime.io/pittsburgh</a></p>
+	<p>Code: <a href="http://github.com/maptime/pittsburgh">github.com/maptime/pittsburgh</a></p>
+</section>
+
+<section class="front-center">
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
+</section>
+
+<!--------------->
+<!--OSM---------->
+<!--------------->
+
+<section class="front-center">
+	<h1 class="gold">Today we're going to talk about <br>OpenStreetMap <br/><a href="http://www.openstreetmap.org/" target="_blank">openstreetmap.org</a></h1>
+	<h3>a free, open, community built map of the world</h3>
+	<p><b>(and how you can make it better)</b></p>
+</section>
+
+<section id="osm-pitt" class="bgimg">
+	<h1>What is OpenStreetMap?</h1>
+</section>
+
+<section id="osm-pitt" class="bgimg">
+	<h1>the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank">"Wikipedia of maps"</a></h1>
+</section>
+
+<section id="osm-globe" class="bgimg">
+	<h1>an editable database with global coverage</h1>
+</section>
+
+<section id="osm-globe" class="bgimg">
+	<h1>data licensed under the Open Database License: <a href="http://opendatacommons.org/licenses/odbl/" target="_blank">ODbL</a></h1>
+	<p>(This means that <strong>your</strong> contributions have to be open, too.)</p>
+</section>
+
+<section>
+	<h1><strong>Anyone can edit OSM</strong></h1>
+</section>
+
+<section id="osm-signup" class="bgimg">
+	<h1>So, let's sign up <a href="https://www.openstreetmap.org/user/new" target="_blank">now!</a></h1>
+</section>
+
+<section>
+	<h1>Meanwhile, here are some resources for later:</h1>
+	<ul>
+		<li><a href="http://learnosm.org" target="_newtab">learnosm.org</a></li>
+		<li><a href="http://wiki.openstreetmap.org" target="_newtab">wiki.osm.org</a></li>
+		<li><a href="http://help.openstreetmap.org" target="_newtab">help.osm.org</a></li>
+	</ul>
+</section>
+
+<section>
+	<h1>But wait - hold up! <br /><strong>Why does all this matter?</strong></h1>
+	<ul>
+		<li>Free and open data for geographic projects</li>
+		<li>Ability for volunteers to quickly respond to mapping needs</li>
+		<li>Sustainability</li>
+		<li><strong>Community agency</strong></li>
+	</ul>
+</section>
+
+<section id="what-to-map" class="bgimg">
+	<h1>And what do I map?</h1>
+</section>
+
+<section id="osm-keys" class="bgimg">
+	<h1>What do other people map?</h1>
+	<p><a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_newtab">wiki.osm.org / wiki / Map_Features</a> <br />
+	<a href="http://taginfo.openstreetmap.org/" target="_newtab">taginfo.openstreetmap.org</a></p>
+</section>
+
+<section>
+	<h1>Am I doing it the <em>right way?</em>
+	  <br><br>Read about <a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_newtab">wiki.osm.org / wiki / Good_practice</a></h1>
+</section>
+
+<section>
+	<h1>And now that I'm signed up...<strong>how do I start editing?</strong> <br /><br />Three options this evening!</h1>
+	<ul>
+		<li>Add features using the built in <a href="http://www.openstreetmap.org/" target="_newtab">iD Editor</a></li>
+		<li>Take a mini-tour of Lawrenceville and map using <a href="http://www.fieldpapers.org/" target="_newtab">Field Papers</a></li>
+		<li>Plan an import of <a href="http://wiki.openstreetmap.org/wiki/Allegheny_County,_PA_Import/" target="_newtab">Allegheny County building footprint open data</a></li>
+	</ul>
+</section>
+
+<section id="id-editor" class="bgimg">
+	<h1>Add features using the built in iD Editor</h1>
+</section>
+
+<section id="field-papers" class="bgimg">
+	<h1>Take a mini-tour of Lawrenceville and map using Field Papers</h1>
+</section>
+
+<section id="building-footprints" class="bgimg">
+	<h1>Plan an import of Allegheny County building footprint open data</h1>
+</section>
+
+<section>
+	<h1>Questions? <br/><br /> <strong>Let's go!</strong></h1>
+</section>
+
+<section>
+	<h1 class="gold">OK let's chat!</h1>
+	<h3>What did you map?</h3>
+	<h3>Q/A + Troubleshooting</h3>
+</section>
+
+<!--------------->
+<!--FIN---------->
+<!--------------->
+
+<section>
+	<h1><strong>Thanks!</strong></h1>
+	<p><a href="http://www.carnegielibrary.org/">Carnegie Library of Pittsburgh</a></p>
+	<p><a href="http://www.opgh.org">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<p><a href="http://maptime.io">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+	<h1 class="gold">Our next event will be announced soon! What would you like to explore?</h1>
+</section>
+
+<section style="text-align:center; padding:9em;font-size:0.7em ">
+	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB"> @GassChristianB</a> and <a href="http://www.twitter.com/eleanortutt">@eleanortutt</a></p>
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/ " rel="author ">Mike Bostock</a> and is available
+		<br>on <a href="https://github.com/mbostock/stack ">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE ">BSD license</a>.
+		<p class="grey ">
+</section>
+
+<!--------------------------------------------->
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js "></script>
+<script src="js/stack.v1.js "></script>
