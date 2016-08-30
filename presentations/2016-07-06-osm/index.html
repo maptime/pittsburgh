@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<head>
+</head>
+<style>
+	/*
+	@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+	@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+	*/
+
+	@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic);
+	@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+	html,
+	body,
+	section {
+		background-color: #231f20;
+		color: #fff;
+		padding: 3em;
+		font-family: 'Titillium Web', Arial, sans-serif;
+		font-weight: 400;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	strong,
+	b,
+	em,
+	i {
+		color: #fdb930
+	}
+
+	strong,
+	b {
+		font-weight: 700;
+	}
+
+	em,
+	i {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.gold {
+		color: #fdb930
+	}
+
+	.gray {
+		color: #231f20;
+	}
+
+	.small-text {
+		font-size: 0.75em;
+		line-height: 1em;
+	}
+
+	.front-and-center {
+		text-align: center;
+		padding-top: 3em;
+	}
+
+	a:link,
+	a:visited {
+		color: #8ad3f4;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	td {
+		padding: 1em;
+		vertical-align: top;
+	}
+
+	code {
+		background-color: #555;
+		color: #fff;
+		font-family: 'Share Tech Mono', mono, sans-serif;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+</style>
+<section class="front-and-center">
+	<h1 class="gold">Everything OpenStreetMap</h1>
+	<p>MaptimePGH // 06 July 2016</p>
+	<p>Follow along at <a href="http://maptime.io/pittsburgh"> maptime.io/pittsburgh</a></p>
+	<p><em>courtesy of <a href="http://www.twitter.com/maptimePGH">@MaptimePGH</a></em></p>
+</section>
+
+<section>
+	<h2>What is <b>Maptime</b>?</h2>
+	<ul>
+		<li>A time for learning about maps</li>
+		<li>Hands-on</li>
+		<li>Beginner-focused</li>
+		<li>Emphasis on open source, programming, and web-mapping
+		</li>
+	</ul>
+	<p><a href="http://maptime.io/pittsburgh">maptime.io/pittsburgh</a></p>
+	<p><a href="http://github.com/maptime/pittsburgh">github.com/maptime/pittsburgh</a></p>
+</section>
+
+<section>
+	<h1><strong>PLEASE</strong> interrupt if you have questions!</section></h1>
+</section>
+
+<section>
+	<h1>What is <strong>Open Street Map</strong>?</h1>
+	<p><a class="t " href="http://www.openstreetmap.org ">www.openstreetmap.org</a></p>
+	<p>It is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22" target="_blank ">"Wikipedia of maps"</a>: a publicy editable global base map that you can use in your mapping project.</p>
+	<p>OSM is is licensed under the <a href="http://opendatacommons.org/licenses/odbl/ " target="_blank "> Open Database License (ODbL)</a></p>
+</section>
+
+<section class="gray" style="padding: 7em; text-align: center; background:url(img/osm_pgh.png);background-size:105%; background-position: center;background-repeat: no-repeat;">
+	<h1><a href="https://www.openstreetmap.org/user/new " target="_blank" style="color:#231f20">If you haven't already, sign up now and contribute</a></h1>
+</section>
+
+<section>
+	<h1>What is on <strong>Open Street Map</strong>?</h1>
+	<p>Generally, anything representing discrete physical geographic objects</p>
+	<p>From the docs: <em>OpenStreetMap represents physical features on the ground (e.g., roads or buildings) using tags attached to its basic data structures (its nodes, ways, and relations). Each tag describes a geographic attribute of the feature being shown by that specific node, way or relation.</em></p>
+</section>
+
+<section>
+	<h1><strong>Open Street Map</strong> is not:</h1>
+	<p><ul>
+		<li>A complete web mapping or GIS platform in and of itself
+			<ul><li>
+				<em>It is a database, with APIs and tools for accessesing, querying, and displaying the data within. Other tools use OSM as a data source.</em>
+			</li></ul>
+		</li>
+		<li>A hosting service for operational, transient, temporal data, or non-discrete data.
+			<ul><li>
+				<em>Data you add should be verifiable, permanent, and significant. More on that in a bit.</em>
+			</li></ul>
+		</li>
+	</ul></p>
+</section>
+
+<section>
+	<h1>Why OSM?</h1>
+	<p>(instead of Google, Bing, HERE (Navteq) TomTom (Tele Atlas))</p>
+	<p>"...no one company should have a monopoly on place...Place is a shared resource, and when you give all that power to a single entity, you are giving them the power not only to tell you about your location, but to shape it."</p>
+	<p><em><a href=https://twitter.com/emacsen>- Serge Wroclawski, OSM Contributor/Ethical Hacker</a></em></p>
+</section>
+
+
+<section style="padding-top:1em">
+	<h2>Resources</h2>
+	<p class="small-text"><em>overviews</em>
+		<br><a href=http://wiki.openstreetmap.org/wiki/How_to_contribute target="_blank">How to Contribute (OSM Wiki)</a>
+		<br><a href="http://beamapper.com/" target="_blank">Be A Mapper: How to contribute to OpenStreetMap</a>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Beginners%27_guide" target="_blank">Beginners Guide to OSM</a>
+		<br><a href="http://maptime.github.io/osm-101/" target="_blank">maptime: OpenStreetMap 101</a>
+		<br><a href="http://learnosm.org/en" target="_blank">LearnOSM.com</a>
+	</p>
+	<p class="small-text"><em>some specific tasks</em>
+		<br>To learn how to add any kind of thing to the map:
+		<br><a href="http://wiki.openstreetmap.org/wiki/Map_Features " target="_blank ">wiki.osm.org / wiki / Map_Features</a>
+		<br>Am I doing it the <em>right way?</em>
+		<br><a href="http://wiki.openstreetmap.org/wiki/Good_practice " target="_blank ">wiki.osm.org / wiki / Good_practice</a>
+	</p>
+</section>
+
+<section>
+	<h2><strong>Two ways to view/edit OSM:</strong></h2>
+	<h2>web (basic): <a href="https://www.openstreetmap.org " target="_blank ">iD</a></h2>
+	<h2>desktop (advanced): <a href="https://josm.openstreetmap.de/ " target="_blank ">JOSM</a></h2>
+</section>
+
+<section>What can I do with OSM? <em>Suggestions:</em>
+	<ul>
+		<li>Use one of the editors to trace some buildings, add some POIs (points of interest), identify local place names in your own neighborhood.</li>
+		<li>Play <a href="http://maproulette.org ">MapRoulette</a></li>
+		<li>Do some <a href="http://tasks.hotosm.org/ ">HOT tasks</a> (Humanitarian OSM Team)</li>
+		<li>Go outside and map with <a href="http://fieldpapers.org/ ">Field Papers</a></li>
+	</ul>
+</section>
+
+<section class="front-and-center">
+	<h1>3 rules for deciding what to add to OSM</h1>
+	<p><em>from <a href=http://beamapper.com/>beamapper.com/</a></em></p>
+</section>
+<section>
+	<h1>Map things that are Verifiable</h1>
+	<p>Add things that are verifiable by other mappers; we're all collaborating on this map. If a business has a sign, add it to OpenStreetMap. Don't add information that would disturb the privacy of somebody. So, the address of a building is fine. The name of the residential tenant is not.</p>
+</section>
+<section>
+	<h1>Map things that are Permanent</h1>
+	<p>Add things that are relatively permanent. Is there a public restroom at the local ball diamond? Add it to the map. Did the city place a portable toilet for a parade this weekend? That can be left off the map, or be certain to both add and remove it promptly.</p>
+</section>
+<section>
+	<h1>Map things that are Significant</h1>
+	<p>Add your local park picnic table to the map. That's significant enough to add to the map. Don't add the piece of gum stuck under the park bench to the map. It might be permanent and verifiable, but it isn't significant. Just throw the gum away.</p>
+</section>
+
+
+
+<section>
+	<h1>Going Mobile</h1>
+	<p>Many apps are available that enable viewing and editing OSM data in numerous ways, including using those with desktop-like functionality, use of GPS traces, and even augmented reality apps.
+	<ul>
+	<li><a href=http://wiki.openstreetmap.org/wiki/Apple_iOS>iOS</a></li>
+	<li><a href=http://wiki.openstreetmap.org/wiki/Android>Android</a></li>
+	<li><a href=http://wiki.openstreetmap.org/wiki/Windows_Phone>Windows (no editing apps)</a></li>
+	</ul>
+	</p>
+</section>
+
+<!----Tools that use OSM -->
+
+<section style="padding-top: 1em">
+	<h1>OSM is relied upon by many <strong>free and open source software (FOSS) </strong> geo-tools.</h1>
+	<p>In rough order of "off-the-shelf-completeness" for those new to web map development:</p>
+	<ul>
+		<li><a href="http://mapnik.org/" target="_blank">Mapnik</a></li>
+		<li><a href="http://www.leafletjs.com" target="_blank">Leaflet</a></li>
+		<li><a href="http://openlayers.org" target="_blank">Open Layers</a></li>
+		<li><a href="http://www.mapzen.com" target="_blank">Mapzen</a></li>
+		<li><a href="http://www.mapbox.com" target="_blank">Mapbox</a></li>
+		<li><a href="http://www.cartodb.com" target="_blank">CartoDB</a></li>
+	</ul>
+</section>
+
+<section>
+	<h2><a href="http://mapnik.org/" target="_blank">Mapnik</a></h2>
+	<p class="small-text"><em>"Mapnik is an open source toolkit for developing mapping applications...basically a collection of geographic objects like maps, layers, datasources, features, and geometries...It is intended to play fair in a multi-threaded environment and is aimed primarily, but not exclusively, at web-based development."</em> src: <a href="https://github.com/mapnik/mapnik/blob/master/README.md">Mapnik on Github</a></p>
+	<p>Mapnik powers Open Street Map and many other FOSS geo tools</p>
+</section>
+
+
+<section>
+	<h2><a href="http://www.leafletjs.com" target="_blank">Leaflet</a></h2>
+	<p class="small-text"><em>"Leaflet is an open source JavaScript library for mobile-friendly interactive maps...it has all the features most developers ever need for online maps." </em>src: <a href="https://github.com/Leaflet/Leaflet/blob/master/README.md">Leaflet on Github</a></p>
+	<p>With some basic web-dev skills, make simple, functional, and great-looking web maps.</p>
+</section>
+
+<section>
+	<h2><a href="http://openlayers.org" target="_blank">Open Layers</a></h2>
+	<p class="small-text"><em>"OpenLayers 3 is a high-performance, feature-packed library for creating interactive maps on the web." </em>src: <a href="https://github.com/openlayers/ol3/blob/master/README.md">Open Layers on Github</a></p>
+	<p>A full-featured web mapping library, with support for WebGL, 3D, many projections, lots of data types, animation, etc. Many <a href="http://openlayers.org/en/v3.14.2/examples/" target="_blank">examples </a> for creating your web map.</p>
+</section>
+
+<section>
+	<h2><a href="http://www.mapzen.com" target="_blank">Mapzen</a></h2>
+	<p class="small-text"><em>"Mapzen builds open-source mapping tools and collaborates on open geodata initiatives. " </em>src: <a href="https://mapzen.com/">Mapzen.com</a></p>
+	<p>These folks build open-source tools focused on getting the most out of OSM. <a href="https://mapzen.com/projects/tangram" target="_blank">Tanagram</a> is a really awesome library for creating custom-styled, 2D and 3D basemaps using OSM data. <a href="https://mapzen.com/projects/turn-by-turn" target="_blank">Mapzen Turn-by-Turn</a> and <a href="https://mapzen.com/projects/search" target="_blank">Mapzen Search</a> are fast, free-to-use directions and geocoding tools, respectively.</p>
+</section>
+
+<section>
+	<p class="small-text"></p>
+	<h2><a href="http://www.mapbox.com" target="_blank">Mapbox</a></h2>
+	<p class="small-text"><em>"Mapbox is a mapping platform for developers. Our building blocks make it easy to integrate location into any mobile or online application." </em>src: <a href="https://www.mapbox.com/">Mapbox.com</a></p>
+	<p class="small-text">Mapbox provide open-source tools to build web maps from scratch, such as
+		<a href=https://github.com/mapbox/mapbox-gl-js "target="_blank ">MapboxGL</a>, and tools for, geocoding, directions, and some geospatial analysis with <a href="http://turfjs.org/ ">Turf</a>. They offer basic geodata hosting services that their tools are built to use. <a href="https://www.mapbox.com/studio/ "target="_blank ">Mapbox Studio</a> is an incredible cartographic design tool for creating custom <strong>basemaps</strong> using OSM and your own data.</p>
+	<p>Check out the <a href="https://www.mapbox.com/gallery/ " target="_blank ">Mapbox Studio Gallery</a>.</p>
+</section>
+
+<section>
+	<p class="small-text "></p>
+	<h2><a href="http://www.cartodb.com " target="_blank ">CartoDB</a></h2>
+	<p>A Software as a Service (SaaS) cloud computing platform that <b>provides GIS and web mapping tools for display in a web browser</b>. CartoDB users can use the company's free platform or deploy their own instance of the open source software. CartoDB is offered as freemium service, where accounts are free up to a certain size. For larger accounts, a fee is applied. src: <a href="https://en.wikipedia.org/wiki/CartoDB ">wikipedia</a></p>
+</section>
+
+<!------------------------------->
+
+<section>
+	<h1><strong>Thanks!</strong></h1>
+	<p><a href="http://www.opgh.org ">OpenPGH, Pittsburgh's Code for America Brigade</a></p>
+	<a href="http://maptime.io ">Maptime HQ</a> and the other Maptime chapters for providing great resource material</p>
+</section>
+
+<section style="text-align:center; padding:9em;font-size:0.7em ">
+	<p>Presentation pulled together by <a href="http://www.twitter.com/@GassChristianB "> @GassChristianB</a> with generous borrowing from the folks at <a href="http://maptime.io/dc/ ">MaptimeDC</a></p>
+	<p>Presentation made with <strong>Stack</strong>.</p>
+	<p>Stack is made by <a href="http://bost.ocks.org/mike/ " rel="author ">Mike Bostock</a> and is available
+		<br>on <a href="https://github.com/mbostock/stack ">GitHub</a> under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE ">BSD license</a>.
+		<p class="grey ">
+</section>
+
+<!--Load scripts------------------------------->
+<script src="js/d3.v3.min.js "></script>
+<script src="js/stack.v1.js "></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js "></script>
+<script>
+	$(document).foundation();
+</script>
