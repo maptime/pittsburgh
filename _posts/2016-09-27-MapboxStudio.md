@@ -13,7 +13,7 @@ Thanks | [SUDS](https://thebridge.cmu.edu/organization/SUDS) and [Code for Pitts
 
 Join MaptimePGH and the Carnegie Mellon *Students for Urban Data Systems* (SUDS) group to learn about designing custom web map cartography using [Mapbox Studio](https://www.mapbox.com/studio/).
 
-<img style="position:relative;left:0px;" src="https://www.mapbox.com/help/img/studio/editor-new-layer.gif"/>
+<a href="https://www.mapbox.com/help/getting-started-mapbox-studio-2/"><img style="position:relative;left:0px;" src="https://www.mapbox.com/help/img/studio/editor-new-layer.gif"/></a>
 
 > ***Mapbox Studio** is a modern platform for managing your spatial data and designing custom map styles. Use Mapbox Studio to build and design a map to your exact specifications by uploading and editing custom data, utilizing Mapbox-provided tilesets, uploading your own vector or raster data, adding custom fonts and images, or simply refining the built-in template map styles. With Mapbox Studio, full data management and design control are at your fingertips. (from [mapbox.com/help/getting-started-mapbox-studio-1/](https://www.mapbox.com/help/getting-started-mapbox-studio-1/))*
 
