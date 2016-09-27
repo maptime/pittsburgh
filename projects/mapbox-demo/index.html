@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; z-index:-1;}
+        #heading {z-index:1; padding: 0.5rem; display: inline;}
+        #source {z-index:1; display: inline; position: absolute; bottom: 0.5rem; right:0.5rem;}
+        h1, h2 {background: rgba(0, 0, 0, 0.75); color:#fff; padding: 0.5rem;}
+        a {color:#fff};
+    </style>
+</head>
+<body>
+
+<div id="heading">
+    <h1>Bicycle Crashes, Allegheny County, 2015</h1>
+</div>
+<div id="source">
+    <h2>source: <a href="https://data.wprdc.org/dataset/allegheny-county-crash-data/resource/d90eb4fd-1234-4f3b-ba3d-422769cd3761">WPRDC</a></h2>
+</div>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2JndGhvcjYyNCIsImEiOiJzZ2NaNmo4In0.hbXzZPAvaCO5GLu45bptTw';
+
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/cbgthor624/cipq73zea0010brnl8jlui4dz', //hosted style id
+    zoom: 13,
+    center: [-79.9977139,40.4413301]
+});
+
+map.on('load', function () {
+    map.addSource("points", {
+        "type": "geojson",
+        "data": "./bicycle_crashes_2010_15.geojson"
+    });
+    map.addLayer({
+        "id": "shadow",
+        "type": "circle",
+        "source": "points",
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'stops': [[10, 4], [22, 18]]
+            },
+            // color circles by ethnicity, using data-driven styles
+            'circle-color': '#000',
+            'circle-blur': 0.5,
+            'circle-opacity': 0.75,
+            'circle-translate': [3,3]
+        }
+    });
+    map.addLayer({
+        "id": "points",
+        "type": "circle",
+        "source": "points",
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'stops': [[10, 4], [22, 18]]
+            },
+            // color circles by ethnicity, using data-driven styles
+            'circle-color': {
+                property: 'max_severity_level',
+                type: 'categorical',
+                stops: [
+                    ['Killed', '#a63603' ],
+                    ["Major injury", '#e6550d'],
+                    ["Moderate injury", '#fd8d3c'],
+                    ["Minor injury", '#fdbe85'],
+                    ["Injury/ Unknown Severity", '#feedde'],
+                    ["Not injured", '#0B7381']]
+            }
+        }
+    });
+
+});
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+});
+
+map.on('mousemove', function(e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+    // Change the cursor style as a UI indicator.
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+    if (!features.length) {
+        popup.remove();
+        return;
+    }
+
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    popup.setLngLat(feature.geometry.coordinates)
+        .setHTML(
+            "<h2>" + feature.properties.max_severity_level + "</h2>" +
+            "<h3>" + feature.properties.crash_month + " " + feature.properties.crash_year + "</h3>" +
+            "<p>" + feature.properties.street_name + ", " + feature.properties.name + "</p>"
+            )
+        .addTo(map);
+});
+
+</script>
+
+</body>
+</html>

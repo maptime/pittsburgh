@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foo</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <style type='text/css'>
+        body {
+            font-family: 'Helvetica';
+            background: #000;
+            background-size: 100%;
+            color: #fff;
+            margin: 0;
+            padding: 0.5em;
+            font-weight: bold;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #fdb930;
+        }
+
+        em,
+        a {
+            font-style: normal;
+            color: #8ad3f4;
+        }
+
+        a {
+            background: #8ad3f4;
+            color: #000;
+            text-decoration: none;
+        }
+        strong {
+            color: #fdb930;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        div {
+            cursor: pointer;
+            cursor: hand;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script src='big.js'></script>
+</head>
+
+<body>
+<div>
+    <h1 id="maptimepgh">MaptimePGH</h1>
+    <p>Web Map Cartography with <strong>Mapbox Studio</strong></p>
+</div>
+<div>
+    <p>What is Maptime?</p>
+</div>
+<div>
+    <ul>
+        <li>A time for learning about maps</li>
+        <li>Hands-on</li>
+        <li>Beginner-focused</li>
+        <li>Emphasis on open source, programming, and web-mapping</li>
+    </ul>
+</div>
+<div>
+    <p><strong>Today:</strong></p>
+    <ul>
+        <li>Maps on the www</li>
+        <li>Mapbox Studio overview</li>
+        <li>Custom cartography walkthrough</li>
+        <li>Using your custom base map</li>
+        <li>Alternatives</li>
+    </ul>
+</div>
+<div>
+    <h1 id="some-things-to-know-about-making-maps-on-the-www">Some things to know about making maps on the WWW</h1>
+</div>
+<div>
+    <h2 id="3-things">3 things</h2>
+    <ul>
+        <li><strong>Your Data</strong>: data that tells story</li>
+        <li><strong>Base Map</strong>: data that provides geo context</li>
+        <li><strong>Coordinate System</strong>: puts everything in place</li>
+    </ul>
+</div>
+<div>
+    <p><img src="http://maptime.io/pittsburgh/presentations/ndoch2015/img/c0.png" alt=""></p>
+</div>
+<div>
+    <p><img src="http://maptime.io/pittsburgh/presentations/ndoch2015/img/c1.png" alt=""></p>
+</div>
+<div>
+    <p><img src="http://maptime.io/pittsburgh/presentations/ndoch2015/img/c2.png" alt=""></p>
+</div>
+<div>
+    <p>Today we're going to talk (mostly) about designing the <strong>Base Map</strong></p>
+</div>
+<div>
+    <ul>
+        <li>
+            <p>What is this <em>Base Map</em> thing?</p>
+        </li>
+        <li>
+            <p>Isn't it all a just <em>web map</em>?</p>
+        </li>
+    </ul>
+</div>
+<div>
+    <p>Let's look at some examples.</p>
+</div>
+<div>
+    <ul>
+        <li><a href="www.google.com/maps">Google Maps</a></li>
+        <li><a href="www.bing.com/maps">Bing Maps</a></li>
+        <li><a href="www.mapquest.com">MapQuest</a></li>
+        <li><a href="www.openstreemap.org">Open Street Map</a></li>
+    </ul>
+</div>
+<div>
+    <h2 id="data-for-context">Data for context</h2>
+    <p>roads, water, buildings, forests, topography, points of interest...</p>
+</div>
+<div>
+    <p><strong>MapQuest</strong>: data from <em>Open Street Map</em>, designed using <em>Mapbox</em></p>
+</div>
+<div>
+    <h1 id="-mapbox-www-mapbox-com-"><a href="www.mapbox.com">Mapbox</a></h1>
+</div>
+<div>
+    <p>Freemium model software-as-a-service platform for making web maps, apps, data.</p>
+</div>
+<div>
+    <p><em>Acknowledgement: A good bit of the content shown here comes straight from Mapbox</em></p>
+</div>
+<div>
+    <h1 id="mapbox-studio">Mapbox Studio</h1>
+</div>
+<div>
+    <p>A tool for the programmatic design of base map cartography</p>
+</div>
+<div>
+    <p>A way to style all of the data from Open Street Map (sort of)</p>
+</div>
+<div>
+    <h2 id="mapbox-terminology">Mapbox Terminology</h2>
+</div>
+<div>
+    <p><strong>Datasets</strong> vs. <strong>Tilesets</strong></p>
+</div>
+<div>
+    <p><strong>Datasets:</strong> fully editable geographic data. The data you are telling a story about.</p>
+</div>
+<div>
+    <p><strong>Tilesets:</strong> optimized for quick display of lots of geodata. The format of your base map.</p>
+</div>
+<div>
+    <p>We are going to talk (mostly) about <strong>tilesets</strong> today.</p>
+</div>
+<div>
+    <p>The base map is comprised of a tileset: many, many individual tiles.</p>
+</div>
+<div>
+    <p><img src="https://i-msdn.sec.s-msft.com/dynimg/IC96238.jpeg" alt=""></p>
+</div>
+<div>
+    <p>Tiles are a super-efficient way to serve up lots of geodata.</p>
+</div>
+<div>
+    <p>Tiles can be served up as <strong>raster</strong> images (pictures) or <strong>vector</strong> data.</p>
+</div>
+<div>
+    <p><img src="http://maptime.io/pittsburgh/presentations/geo101/img//mapschool.io_raster.png" alt=""></p>
+</div>
+<div>
+    <p><img src="http://maptime.io/pittsburgh/presentations/geo101/img/mapschool.io_vector.png" alt=""></p>
+</div>
+<div>
+    <p>Tiles loaded are dependent on location (X and Y), and zoom (Z) of your map view.</p>
+</div>
+<div>
+    <p>Exponential increase in tiles per zoom level that must be stored.</p>
+</div>
+<div>
+    <p><img src="./img/mapbox-editor-z17.png" alt=""></p>
+</div>
+<div>
+    <h2 id="-17-billion-tiles">~17 billion tiles</h2>
+</div>
+<div>
+    <p>Vector data are stored in tiles, but are rendered independent of zoom level.</p>
+</div>
+<div>
+    <p><img src="https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif" alt=""></p>
+</div>
+<div>
+    <ul>
+        <li>Lighter data storage and transfer burden.</li>
+        <li>Heavier rendering burden on your device.</li>
+    </ul>
+</div>
+<div>
+    <p><strong>Mapbox Studio</strong>: a way to <em>style</em> all the data for all the tiles at all the zoom levels</p>
+</div>
+<div>
+    <h1 id="let-s-dig-in-">Let's dig in!</h1>
+</div>
+<div>
+    <ul>
+        <li><a href="https://www.mapbox.com/help/getting-started-mapbox-studio-1/">Getting Started</a></li>
+        <li><a href="https://www.mapbox.com/studio/">Home and Welcome screens</a></li>
+        <li><a href="https://www.mapbox.com/gallery/">Style Gallery</a></li>
+    </ul>
+</div>
+<div>
+    <p><img src="https://www.mapbox.com/help/img/studio/home.gif" alt=""></p>
+</div>
+<div>
+    <h2><a href="https://www.mapbox.com/help/getting-started-mapbox-studio-2/">Mapbox Studio Editor</a></h2>
+</div>
+<div>
+    <p><img src="https://www.mapbox.com/help/img/studio/styles.png" alt=""></p>
+</div>
+<div>
+    <p>Create a new style from a template:</p>
+    <p><em>Styles</em> &gt;&gt;&gt; <em>New Style</em> &gt;&gt;&gt; <em>Basic</em></p>
+</div>
+<div>
+    <p><img src="https://www.mapbox.com/help/img/studio/editor-new-layer.gif" alt=""></p>
+</div>
+<div>
+    <p>Styles &gt; Layers &gt; Data Sources</p>
+</div>
+<div>
+    <p>A <strong>style</strong> is made of links to many <strong>layers</strong>.</p>
+    <p>Layers are linked from a <strong>data source</strong>.</p>
+</div>
+<div>
+    <h2 id="data-sources">Data sources</h2>
+</div>
+<div>
+    <p><img src="https://www.mapbox.com/help/img/studio/editor-select-tileset.png" alt=""></p>
+</div>
+<div>
+    <p>Mapbox hosts a <a href="https://www.mapbox.com/vector-tiles/mapbox-streets-v7/">curated version of OpenStreetMap</a> for your use as a data source.</p>
+    <p>You can also upload your own data.</p>
+</div>
+<div>
+    <p>OK, let's make a custom base map</p>
+</div>
+<div>
+    <h2 id="two-approaches">Two approaches</h2>
+    <ul>
+        <li>Customize an existing style</li>
+        <li>Create a style from scratch</li>
+    </ul>
+</div>
+<div>
+    <p>Remember: <strong>maps are communication tools</strong></p>
+</div>
+<div>
+    <ul>
+        <li>data included/excluded</li>
+        <li>level of detail shown (or not shown)</li>
+        <li>visual priority via color, contrast, negative space</li>
+    </ul>
+</div>
+<div>
+    <p><a href="http://jonahadkins.github.io/bridges.html">Bridges of America</a></p>
+</div>
+<div><iframe src='http://jonahadkins.github.io/bridges.html' height=600 width=1200></iframe>
+
+</div>
+<div>
+    <p><a href="http://oysteratlas.com/">Oyster Atlas</a></p>
+</div>
+<div><iframe src='http://oysteratlas.com/' height=600 width=1200></iframe>
+
+</div>
+<div>
+    <p><a href="https://www.mapbox.com/bites/00183/polarmap.html#4.05/-0.432/-11.580">Arctic Sea Ice</a></p>
+</div>
+<div><iframe src='https://www.mapbox.com/bites/00183/polarmap.html#4.05/-0.432/-11.580' height=600 width=1200></iframe>
+
+</div>
+<div>
+    <p>Remember: imitation is the finest form of flattery,</p>
+    <p>but give credit where credit is due</p>
+</div>
+<div>
+    <p>Also remember: <a href="https://www.amazon.com/How-Lie-Maps-Mark-Monmonier-ebook/dp/B00R621P7W/ref=pd_sim_351_2?ie=UTF8&amp;pd_rd_i=B00R621P7W&amp;pd_rd_r=4Z52Q2Z6F7CM88BRN0MV&amp;pd_rd_w=k7U7e&amp;pd_rd_wg=sUpnN&amp;psc=1&amp;refRID=4Z52Q2Z6F7CM88BRN0MV">it&#39;s easy to lie with maps</a>,</p>
+    <p>but <strong>don&#39;t</strong>.</p>
+</div>
+<div>
+    <p><img src="https://images-na.ssl-images-amazon.com/images/I/51O5WEPbv1L._SX321_BO1,204,203,200_.jpg" alt=""></p>
+</div>
+<div>
+    <h2 id="-select-data-debug-windows"><em>select data</em> + <em>debug</em> windows</h2>
+    <p>see raw data and compare styles</p>
+</div>
+<div>
+    <p>
+        <a href="https://www.mapbox.com/help/compare-style/"><img src="https://www.mapbox.com/help/img/studio/editor-compare.gif" alt=""></a>
+    </p>
+</div>
+<div>
+    <h1 id="customize-">Customize!</h1>
+</div>
+<div>
+    <ul>
+        <li><a href="https://www.mapbox.com/help/style-single-country/">add/remove data</a></li>
+        <li>layers: ordering, finding, styling, selecting</li>
+        <li>properties: colors, weights, textures, fonts, labels, size and shape</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li><a href="http://www.palettable.io/">palettable.io/</a></li>
+        <li><a href="http://colorbrewer2.org">Color Brewer</a></li>
+        <li><a href="http://www.webdesignbooth.com/the-ultimate-list-of-online-color-tools-for-web-developers/">web color tool list</a></li>
+        <li><a href="https://vis4.net/blog/posts/mastering-multi-hued-color-scales">multi-hued color scales</a></li>
+    </ul>
+</div>
+<div>
+    <p>
+        <a href="http://wesandersonpalettes.tumblr.com/"><img src="http://67.media.tumblr.com/ab2f006632656256433200b3b4acc527/tumblr_n2a0afiXub1tvvqeko1_500.jpg" alt=""></a>
+    </p>
+</div>
+<div>
+    <ul>
+        <li><a href="https://www.mapbox.com/help/filter-layer-studio/">filter data by attribute/value</a></li>
+        <li>adjust style properties by zoom</li>
+        <li><a href="https://www.mapbox.com/help/property-types/">adjust properties en-masse</a></li>
+    </ul>
+</div>
+<div>
+    <p><strong>Not everything from a layer is showing all the time!?</strong></p>
+</div>
+<div>
+    <p>Mapbox&#39;s curated OSM data source has some pre-applied filters. <a href="https://www.mapbox.com/vector-tiles/mapbox-streets-v7/">Read more here.</a></p>
+</div>
+<div>
+    <p>e.g.,: <strong>building</strong></p>
+    <p>&quot;Large buildings appear at zoom level 13, and all buildings are included in zoom level 14 and up.&quot;</p>
+</div>
+<div>
+    <p>OK! I have some data representing <em>some theme</em>. Should I load/style it with Mapbox Studio?</p>
+</div>
+<div>
+    <h1 id="maybe-">Maybe!</h1>
+</div>
+<div>
+    <p>use tileset for data visualization when</p>
+    <ul>
+        <li>geometrically complex and/or numerous data points</li>
+        <li>colors/legend alone can communicate meaning intuitively</li>
+        <li>attributes are shallow</li>
+    </ul>
+</div>
+<div>
+    <p>(later on, use the <a href="https://www.mapbox.com/mapbox-gl-js/example/queryrenderedfeatures/">Query Rendered Features API</a>: accessing tileset data attrs in pop-ups)</p>
+</div>
+<div>
+    <h1 id="publish">PUBLISH</h1>
+</div>
+<div>
+    <h1 id="using-your-styles-in-your-web-maps">Using your styles in your web maps</h1>
+    <ul>
+        <li><a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox GL</a>, <a href="https://www.mapbox.com/mapbox.js/example/v1.0.0/stylelayer/">Mapbox.js/Leaflet</a></li>
+        <li><a href="https://www.mapbox.com/help/mapbox-with-openlayers/">Open Layers</a></li>
+        <li><a href="https://www.mapbox.com/help/cartodb/">CARTO</a></li>
+        <li><a href="https://www.mapbox.com/help/arcgis-online-mapbox-basemap/">ArcGIS Online</a></li>
+        <li><a href="https://www.mapbox.com/help/mapbox-arcgis-qgis/">QGIS, ArcMap (desktop)</a></li>
+    </ul>
+</div>
+<div>
+    <h1 id="alternatives">Alternatives</h1>
+</div>
+<div>
+    <p><a href="http://osm2vectortiles.org/">OSM2VectorTiles</a> +
+        <a href="https://www.kickstarter.com/projects/174808720/maputnik-visual-map-editor-for-mapbox-gl">Maputnik</a></p>
+</div>
+<div>
+    <h1 id="thanks-">Thanks!</h1>
+</div>
+<div>
+    <ul>
+        <li><a href="http://maptime.io/pittsburgh">maptime.io/pittsburgh</a></li>
+        <li><a href="https://twitter.com/maptimePGH">@maptimepgh</a></li>
+        <li><a href="https://twitter.com/GassChristianB">@GassChristianB</a></li>
+    </ul>
+</div>
+</body>
+</html>
