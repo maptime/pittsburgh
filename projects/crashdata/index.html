@@ -40,22 +40,6 @@ map.on('load', function () {
         "data": "./bicycle_crashes_2010_15.geojson"
     });
     map.addLayer({
-        "id": "shadow",
-        "type": "circle",
-        "source": "points",
-        'paint': {
-            // make circles larger as the user zooms from z12 to z22
-            'circle-radius': {
-                'stops': [[10, 4], [22, 18]]
-            },
-            // color circles by ethnicity, using data-driven styles
-            'circle-color': '#000',
-            'circle-blur': 0.5,
-            'circle-opacity': 0.75,
-            'circle-translate': [3,3]
-        }
-    });
-    map.addLayer({
         "id": "points",
         "type": "circle",
         "source": "points",
@@ -77,7 +61,23 @@ map.on('load', function () {
                     ["Not injured", '#0B7381']]
             }
         }
-    });
+    }, 'poi-scalerank1');
+    map.addLayer({
+        "id": "shadow",
+        "type": "circle",
+        "source": "points",
+        'paint': {
+            // make circles larger as the user zooms from z12 to z22
+            'circle-radius': {
+                'stops': [[10, 4], [22, 18]]
+            },
+            // color circles by ethnicity, using data-driven styles
+            'circle-color': '#000',
+            'circle-blur': 0.5,
+            'circle-opacity': 0.75,
+            'circle-translate': [3,3]
+        }
+    },'points');
 
 });
 
