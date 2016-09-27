@@ -7,7 +7,7 @@ published: true
 ---
 
 When | September, 27 2016, from 5:30-7:30 PM
-Where | TBD @ Carnegie Mellon University, with Students for Urban Data Systems (SUDS) Data User Group
+Where | [Hamburg Hall (HBH 2003) @ Carnegie Mellon University](https://www.google.com/maps/place/Hamburg+Hall/@40.4441767,-79.9455595,15z/data=!4m5!3m4!1s0x0:0x4bee170862d2ca08!8m2!3d40.4441767!4d-79.9455595), with Students for Urban Data Systems (SUDS) Data User Group
 Contact	| [@MaptimePGH](http://twitter.com/maptimePGH), [pittsburgh@maptime.io](mailto:pittsburgh@maptime.io)
 Thanks | [SUDS](https://thebridge.cmu.edu/organization/SUDS) and [Code for Pittsburgh (formerly OpenPGH)](http://codeforpittsburgh.github.io)
 
