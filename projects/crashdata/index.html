@@ -18,7 +18,7 @@
 <body>
 
 <div id="heading">
-    <h1>Bicycle Crashes, Allegheny County</h1>
+    <h1>Bicycle Crashes in Allegheny County, 2010-15</h1>
 </div>
 <div id="source">
     <h2>source: <a href="https://data.wprdc.org/dataset/allegheny-county-crash-data/">WPRDC</a></h2>
@@ -30,7 +30,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2JndGhvcjYyNCIsImEiOiJzZ2NaNmo4In0.hbXzZPAva
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/cbgthor624/cipq73zea0010brnl8jlui4dz', //hosted style id
-    zoom: 13,
+    zoom: 11,
     center: [-79.9977139,40.4413301]
 });
 
@@ -44,7 +44,7 @@ map.on('load', function () {
         "type": "circle",
         "source": "points",
         'paint': {
-            // make circles larger as the user zooms from z12 to z22
+            // make circles larger as the user zooms from z10 to z22
             'circle-radius': {
                 'stops': [[10, 4], [22, 18]]
             },
@@ -61,7 +61,9 @@ map.on('load', function () {
                     ["Not injured", '#0B7381']]
             }
         }
+    // place this layer in the mapbox style's layer stack under POI labels
     }, 'poi-scalerank1');
+    // drop shadow for the points (there must be a better way to do this)
     map.addLayer({
         "id": "shadow",
         "type": "circle",
